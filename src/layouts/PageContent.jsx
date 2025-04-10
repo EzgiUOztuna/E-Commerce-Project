@@ -15,6 +15,7 @@ export default function PageContent() {
             <Content />
             <Features />
             <Blog />
+            <br></br>
         </>
     )
 }

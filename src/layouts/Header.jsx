@@ -7,6 +7,7 @@ export default function Header() {
             <div>Header</div>
             <NavBar />
             <ContainerShop />
+            <br></br>
         </>
     )
 }

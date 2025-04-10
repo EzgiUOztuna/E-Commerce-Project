@@ -14,7 +14,7 @@ export default function HomePages() {
 
 
 /*
- Desktop 2
+ Desktop 1
     # Header ✅
         * NavBar ✅
             - NavBar 1 ~dosyada yapılacak, ayrı bir klasöre gerek yok.
