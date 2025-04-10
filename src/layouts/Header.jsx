@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 export default function Header() {
     return (
         <>
-            <div>Header</div>
+            {/*<div>Header</div>*/}
             <NavBar />
             <ContainerShop />
             <br></br>

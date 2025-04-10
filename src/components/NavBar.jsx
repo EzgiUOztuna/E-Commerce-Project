@@ -10,7 +10,7 @@ export default function NavBar() {
     };
 
     return <>
-        <div className='navbar-container'>-NavBar
+        <div className='navbar-container'>
             <div className='navbar-dark'>
                 <div className='navbar-col-left'>
                     <div className='navbar-phone'>
@@ -69,12 +69,18 @@ export default function NavBar() {
                                 <li><a href="#">Bags</a></li>
                                 <li><a href="#">Hats</a></li>
                             </ul>
-
                         </div>
                     )}
                 </div>
 
                 <div className='navbar-nav-right'>
+                    <div className='login-register'>
+                        <img src='src/assets/user.svg'></img>
+                        <p>Login / Register</p>
+                    </div>
+                    <img className='search' src='src/assets/search.svg'></img>
+                    <img className='cart' src='src/assets/cart.svg'></img>
+                    <img className='heart' src='src/assets/heart.svg'></img>
 
                 </div>
 
