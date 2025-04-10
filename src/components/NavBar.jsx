@@ -22,17 +22,25 @@ export default function NavBar() {
                 <div className='navbar-col-right'>
                     <h6>Follow Us : </h6>
                     <div className='social-media'>
-                        <a><img src='src/assets/instagram.svg'></img></a>
-                        <a><img src='src/assets/youtube.svg'></img></a>
-                        <a><img src='src/assets/facebook.svg'></img></a>
-                        <a><img src='src/assets/twitter.svg'></img></a>
+                        <a href='#'><img src='src/assets/instagram.svg'></img></a>
+                        <a href='#'><img src='src/assets/youtube.svg'></img></a>
+                        <a href='#'><img src='src/assets/facebook.svg'></img></a>
+                        <a href='#'><img src='src/assets/twitter.svg'></img></a>
                     </div>
                 </div>
-
             </div>
 
             <div className='navbar-light'>
+                <h3 className='navbar-brand'>Bandage</h3>
 
+                <div className='navbar-nav-middle'>
+                    <a href='#'>Home</a>
+                    <a href='#'>Shop</a>
+                    <a href='#'>About</a>
+                    <a href='#'>Blog</a>
+                    <a href='#'>Contact</a>
+                    <a href='#'>Pages</a>
+                </div>
             </div>
 
         </div>

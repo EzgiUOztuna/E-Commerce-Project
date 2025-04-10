@@ -104,3 +104,39 @@ h6 {
 .social-media a {
     padding: 5px;
 }
+
+.navbar-light {
+    width: 100%;
+    box-sizing: border-box;
+    height: 3.62rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+
+.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.navbar-nav-middle {
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-decoration: none;
+    color: #737373;
+}
