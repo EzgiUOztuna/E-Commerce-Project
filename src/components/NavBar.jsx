@@ -72,7 +72,9 @@ export default function NavBar() {
 
                         </div>
                     )}
+                </div>
 
+                <div className='navbar-nav-right'>
 
                 </div>
 
