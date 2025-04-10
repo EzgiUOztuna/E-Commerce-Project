@@ -113,6 +113,8 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    border: 1px solid #23A6F0;
+    /* border kaldırılacak */
 }
 
 .navbar-brand {
@@ -156,15 +158,11 @@ ul {
 
 .dropdown-content {
     position: absolute;
-    top: 150px;
+    top: 115px;
+    left: 475px;
     background-color: white;
     display: flex;
     border: 1px solid #ccc;
-    /*
-    Top: -1918px;
-    Left: -31px;
-    */
-    left: 500px;
 }
 
 .female,
