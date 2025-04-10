@@ -113,7 +113,6 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    border: 1px solid black;
 }
 
 .navbar-brand {
@@ -127,10 +126,18 @@ h6 {
 
 .navbar-nav-middle {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
 }
 
-a {
+.middle-nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.link,
+.dropbtn,
+.dropdown-content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -139,4 +146,47 @@ a {
     text-align: center;
     text-decoration: none;
     color: #737373;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 150px;
+    background-color: white;
+    display: flex;
+    border: 1px solid #ccc;
+    /*
+    Top: -1918px;
+    Left: -31px;
+    */
+    left: 500px;
+}
+
+.female,
+.male {
+    width: 186px;
+}
+
+.female-header,
+.male-header {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    color: #252B42;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.female a,
+.male a {
+    display: flex;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
 }

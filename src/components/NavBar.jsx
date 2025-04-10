@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import '../CssFolders/NavBar.css';
 
 export default function NavBar() {
+
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
     return <>
         <div className='navbar-container'>-NavBar
             <div className='navbar-dark'>
@@ -10,7 +18,7 @@ export default function NavBar() {
                         <h6 className='phone-number'>(225) 555-0118</h6>
                     </div>
                     <div className='navbar-email'>
-                        <img className='email-img ' src="src/assets/email.svg"></img>
+                        <img className='email-img' src="src/assets/email.svg"></img>
                         <h6 className='email-address'>michelle.rivera@example.com</h6>
                     </div>
                 </div>
@@ -34,13 +42,41 @@ export default function NavBar() {
                 <h3 className='navbar-brand'>Bandage</h3>
 
                 <div className='navbar-nav-middle'>
-                    <a href='#'>Home</a>
-                    <a href='#'>Shop</a>
-                    <a href='#'>About</a>
-                    <a href='#'>Blog</a>
-                    <a href='#'>Contact</a>
-                    <a href='#'>Pages</a>
+                    <div className='middle-nav-links'>
+                        <a className='link' href='#'>Home</a>
+                        <a className='dropbtn' onClick={toggleDropdown}>Shop <img className='dropdown-icon' src="src/assets/dropdown.svg"></img></a>
+                        <a className='link' href='#'>About</a>
+                        <a className='link' href='#'>Blog</a>
+                        <a className='link' href='#'>Contact</a>
+                        <a className='link' href='#'>Pages</a>
+                    </div>
+
+                    {isDropdownOpen && (
+                        <div className='dropdown-content'>
+                            <ul className='female'>
+                                <p className='female-header'>Kadın</p>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Belts</a></li>
+                                <li><a href="#">Cosmetics</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Hats</a></li>
+                            </ul>
+                            <ul className='male'>
+                                <p className='female-header'>Erkek</p>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Belts</a></li>
+                                <li><a href="#">Cosmetics</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Hats</a></li>
+                            </ul>
+
+                        </div>
+                    )}
+
+
                 </div>
+
+
             </div>
 
         </div>
