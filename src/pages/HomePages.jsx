@@ -31,5 +31,4 @@ export default function HomePages() {
         * FooterRowFirst ~dosyada yapılacak, ayrı bir klasöre gerek yok.
         * FooterRowSecond ~dosyada yapılacak, ayrı bir klasöre gerek yok.
         * FooterRowThird ~dosyada yapılacak, ayrı bir klasöre gerek yok.
-        * dflgjhdjfgdkjfghdkj
 */
