@@ -6,10 +6,9 @@
     display: none;
 }
 
+
 .control-prev {
-    width: 24px;
-    height: 44.47px;
-    top: 100%;
+    top: 17.69rem;
     left: 2%;
     border: none;
     background-color: transparent;
@@ -20,8 +19,8 @@
 .control-next {
     width: 24px;
     height: 44.47px;
-    top: 40%;
-    left: 94%;
+    top: 17.69rem;
+    left: 93%;
     border: none;
     background-color: transparent;
     position: relative;
