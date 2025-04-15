@@ -11,7 +11,8 @@ export default function NavBar() {
 
     return <>
         <div className='w-full'>{/*navbar-container*/}
-            <div className='navbar-dark'>
+            <div className='navbar-dark'> {/*hidden
+                            lg:flex lg:bg-[#252B42] lg:items-center lg:justify-between lg:py-0 lg:px-[0.625rem] lg:w-full lg:box-border lg:h-[3.62rem]*/}
                 <div className='navbar-col-left'> {/*hidden
                                 lg:flex lg:w-[25.94rem] lg:h-[2.875rem] lg:gap-[0.625rem]
                                 xl:flex xl:w-[25.94rem] xl:h-[2.875rem] xl:gap-[0.625rem]*/}

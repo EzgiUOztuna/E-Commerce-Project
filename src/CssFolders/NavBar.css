@@ -2,12 +2,11 @@ body {
     margin: 0;
 }
 
-
+/*
 .navbar-container {
     width: 100%;
-    /*89.938rem;*/
 }
-
+*/
 .navbar-dark {
     background-color: #252B42;
     width: 100%;
@@ -18,7 +17,6 @@ body {
     justify-content: space-between;
     padding: 0 10px;
 }
-
 
 .navbar-col-left {
     width: 415px;
