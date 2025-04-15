@@ -74,20 +74,19 @@ export default function NavBar() {
                 </div>
 
                 <div className='navbar-nav-right'>
-                    <div className='login-register'>
+                    <a href="/login" className='login-register'>
                         <img src='src/assets/user.svg'></img>
                         <p>Login / Register</p>
-                    </div>
-                    <img className='search' src='src/assets/search.svg'></img>
-                    <img className='cart' src='src/assets/cart.svg'></img>
-                    <img className='heart' src='src/assets/heart.svg'></img>
-
+                    </a>
+                    <a href='/search'><img className='search' src='src/assets/search.svg'></img></a>
+                    <a href='/cart'><img className='cart' src='src/assets/cart.svg'></img></a>
+                    <a href='/favorites'><img className='heart' src='src/assets/heart.svg'></img></a>
                 </div>
 
 
             </div>
 
-        </div>
+        </div >
 
     </>
 }

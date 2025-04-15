@@ -203,6 +203,7 @@ ul {
     display: flex;
     gap: 5px;
     padding: 15px;
+    text-decoration: none;
 }
 
 .login-register p {
@@ -212,4 +213,5 @@ ul {
     line-height: 24px;
     letter-spacing: 0.2px;
     text-align: center;
+    color: #23A6F0;
 }
