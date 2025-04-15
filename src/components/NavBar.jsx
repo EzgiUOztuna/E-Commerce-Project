@@ -82,12 +82,9 @@ export default function NavBar() {
                     <a href='/cart'><img className='cart' src='src/assets/cart.svg'></img></a>
                     <a href='/favorites'><img className='heart' src='src/assets/heart.svg'></img></a>
                 </div>
-
-
             </div>
 
         </div >
-
     </>
 }
 
