@@ -32,7 +32,7 @@ export default function ContainerShop() {
                         backgroundRepeat: 'no-repeat'
                     }} >
                     <button className="control-prev" onClick={handlePrev}>
-                        <img src='src/assets/carousel-control-prev.svg'></img>
+                        <img src='src/assets/icons/carousel-control-prev.svg'></img>
                     </button>
                     <div className='inner-container'>
                         <h5>{item.h5}</h5>
@@ -41,7 +41,7 @@ export default function ContainerShop() {
                         <button><h3>{item.h3}</h3></button>
                     </div>
                     <button className="control-next" onClick={handleNext}>
-                        <img src='src/assets/carousel-control-next.svg'></img>
+                        <img src='src/assets/icons/carousel-control-next.svg'></img>
                     </button>
                 </div>
             ))}
