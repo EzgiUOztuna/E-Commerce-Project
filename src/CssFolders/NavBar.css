@@ -113,8 +113,6 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    border: 1px solid #23A6F0;
-    /* border kaldırılacak */
 }
 
 .navbar-brand {

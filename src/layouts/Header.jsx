@@ -1,5 +1,4 @@
 import ContainerShop from "../components/ContainerShop";
-import ControlledCarousel from "../components/ContainerShop";
 import NavBar from "../components/NavBar";
 
 export default function Header() {

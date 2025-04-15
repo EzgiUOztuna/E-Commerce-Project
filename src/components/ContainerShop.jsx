@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { carouselData } from '../assets/data';
+import { carouselData } from '../assets/dataStore/carouselData';
 import '../CssFolders/ContainerShop.css';
 //import ExampleCarouselImage from './subcomponents/ExampleCarouselImage.jsx';
 //import 'bootstrap/dist/css/bootstrap.min.css';
