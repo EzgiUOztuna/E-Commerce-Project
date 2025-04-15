@@ -1,19 +1,15 @@
-.carousel-1 {
-    width: 100%;
-    background-image: url("src/assets/carousel1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #FFFFFF;
-    border: 1px solid #dedede;
-    height: 716px;
-    border-radius: 5px;
-    position: relative;
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 .control-prev {
     width: 24px;
     height: 44.47px;
-    top: 40%;
+    top: 100%;
     left: 2%;
     border: none;
     background-color: transparent;
