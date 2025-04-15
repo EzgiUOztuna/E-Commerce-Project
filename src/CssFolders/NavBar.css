@@ -1,7 +1,10 @@
+body {
+    margin: 0;
+}
+
 .navbar-container {
     width: 100%;
     /*89.938rem;*/
-    height: 8.5rem;
 }
 
 .navbar-dark {
