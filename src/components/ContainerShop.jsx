@@ -34,21 +34,17 @@ export default function ContainerShop() {
                     <button className="control-prev" onClick={handlePrev}>
                         <img src='src/assets/carousel-control-prev.svg'></img>
                     </button>
-                    <button className="control-next" onClick={handleNext}>
-                        <img src='src/assets/carousel-control-next.svg'></img>
-                    </button>
                     <div className='inner-container'>
                         <h5>{item.h5}</h5>
                         <h1>{item.h1}</h1>
                         <h4>{item.h4}</h4>
                         <button><h3>{item.h3}</h3></button>
                     </div>
+                    <button className="control-next" onClick={handleNext}>
+                        <img src='src/assets/carousel-control-next.svg'></img>
+                    </button>
                 </div>
             ))}
-
-
-
-
         </div >
     </>
 }
