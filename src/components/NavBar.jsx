@@ -14,11 +14,11 @@ export default function NavBar() {
             <div className='navbar-dark'>
                 <div className='navbar-col-left'>
                     <div className='navbar-phone'>
-                        <img className='phone-img ' src="src/assets/phone.svg"></img>
+                        <img className='phone-img ' src="src/assets/icons/phone.svg"></img>
                         <h6 className='phone-number'>(225) 555-0118</h6>
                     </div>
                     <div className='navbar-email'>
-                        <img className='email-img' src="src/assets/email.svg"></img>
+                        <img className='email-img' src="src/assets/icons/email.svg"></img>
                         <h6 className='email-address'>michelle.rivera@example.com</h6>
                     </div>
                 </div>
@@ -30,10 +30,10 @@ export default function NavBar() {
                 <div className='navbar-col-right'>
                     <h6>Follow Us : </h6>
                     <div className='social-media'>
-                        <a href='#'><img src='src/assets/instagram.svg'></img></a>
-                        <a href='#'><img src='src/assets/youtube.svg'></img></a>
-                        <a href='#'><img src='src/assets/facebook.svg'></img></a>
-                        <a href='#'><img src='src/assets/twitter.svg'></img></a>
+                        <a href='#'><img src='src/assets/icons/instagram.svg'></img></a>
+                        <a href='#'><img src='src/assets/icons/youtube.svg'></img></a>
+                        <a href='#'><img src='src/assets/icons/facebook.svg'></img></a>
+                        <a href='#'><img src='src/assets/icons/twitter.svg'></img></a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ export default function NavBar() {
                 <div className='navbar-nav-middle'>
                     <div className='middle-nav-links'>
                         <a className='link' href='#'>Home</a>
-                        <a className='dropbtn' onClick={toggleDropdown}>Shop <img className='dropdown-icon' src="src/assets/dropdown.svg"></img></a>
+                        <a className='dropbtn' onClick={toggleDropdown}>Shop <img className='dropdown-icon' src="src/assets/icons/dropdown.svg"></img></a>
                         <a className='link' href='#'>About</a>
                         <a className='link' href='#'>Blog</a>
                         <a className='link' href='#'>Contact</a>
@@ -75,16 +75,20 @@ export default function NavBar() {
 
                 <div className='navbar-nav-right'>
                     <a href="/login" className='login-register'>
-                        <img src='src/assets/user.svg'></img>
+                        <img src='src/assets/icons/user.svg'></img>
                         <p>Login / Register</p>
                     </a>
-                    <a href='/search'><img className='search' src='src/assets/search.svg'></img></a>
-                    <a href='/cart'><img className='cart' src='src/assets/cart.svg'></img></a>
-                    <a href='/favorites'><img className='heart' src='src/assets/heart.svg'></img></a>
+                    <a href='/search'><img className='search' src='src/assets/icons/search.svg'></img></a>
+                    <a href='/cart'><img className='cart' src='src/assets/icons/cart.svg'></img></a>
+                    <a href='/favorites'><img className='heart' src='src/assets/icons/heart.svg'></img></a>
+
                 </div>
+
+
             </div>
 
         </div >
+
     </>
 }
 
