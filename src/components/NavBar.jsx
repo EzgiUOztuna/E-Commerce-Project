@@ -11,12 +11,12 @@ export default function NavBar() {
 
     return <>
         <div className='w-full'>{/*navbar-container*/}
-            <div className='navbar-dark'> {/*navbar-dark*/}
-                <div className='hidden
+            <div className='navbar-dark'>
+                <div className='navbar-col-left'> {/*hidden
                                 lg:flex lg:w-[25.94rem] lg:h-[2.875rem] lg:gap-[0.625rem]
-                                xl:flex xl:w-[25.94rem] xl:h-[2.875rem] xl:gap-[0.625rem]'> {/*navbar-col-left*/}
-                    <div className='hidden
-                                    lg:flex lg:w-[9.063rem] lg:h-11 items-center gap-[0.313rem] p-[0.625rem] rounded-[0.313rem]'>{/*navbar-phone*/}
+                                xl:flex xl:w-[25.94rem] xl:h-[2.875rem] xl:gap-[0.625rem]*/}
+                    <div className='navbar-phone'>{/*hidden 
+                                                    lg:flex lg:w-[9.063rem] lg:h-11 lg:items-center lg:gap-[0.313rem] lg:p-[0.625rem] lg:rounded-[0.313rem]*/}
                         <img className='phone-img ' src="src/assets/icons/phone.svg"></img>
                         <h6 className='phone-number'>(225) 555-0118</h6>
                     </div>
