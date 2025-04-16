@@ -1,4 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*@import "tailwindcss";*/
+
+@layer components {
+    .heading-6 {
+        @apply font-montserrat font-bold text-[0.875rem] leading-6 tracking-[0.2px] text-white;
+    }
+}
