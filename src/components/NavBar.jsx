@@ -12,18 +12,17 @@ export default function NavBar() {
 
     return <>
         <div className='w-full'>{/*navbar-container*/}
-            <div className='navbar-dark'> {/*hidden
-                            lg:flex lg:bg-[#252B42] lg:items-center lg:justify-between lg:py-0 lg:px-[0.625rem] lg:w-full lg:box-border lg:h-[3.62rem]*/}
-                <div className='navbar-col-left'> {/*hidden
-                                lg:flex lg:w-[25.94rem] lg:h-[2.875rem] lg:gap-[0.625rem]
-                                xl:flex xl:w-[25.94rem] xl:h-[2.875rem] xl:gap-[0.625rem]*/}
-                    <div className='navbar-phone'>{/*hidden 
-                                                    lg:flex lg:w-[9.063rem] lg:h-11 lg:items-center lg:gap-[0.313rem] lg:p-[0.625rem] lg:rounded-[0.313rem]*/}
-                        <img className='phone-img ' src="src/assets/icons/phone.svg"></img>
+            <div className='hidden
+                            md:flex md:bg-[#252B42] md:items-center md:justify-between md:py-0 md:px-[0.625rem] md:w-full md:box-border md:h-[3.62rem]'> {/*navbar-dark*/}
+                <div className='hidden
+                                md:flex md:w-[25.94rem] md:h-[2.875rem] md:gap-[0.625rem]
+                                xl:flex xl:w-[25.94rem] xl:h-[2.875rem] xl:gap-[0.625rem]'> {/*navbar-col-left*/}
+                    <div className='md:flex md:w-[9.063rem] md:h-11 md:items-center md:gap-[0.313rem] md:p-[0.625rem] md:rounded-[0.313rem]'>{/*navbar-phone*/}
+                        <img className='md:w-4 md:h-4' src="src/assets/icons/phone.svg"></img>{/*phone-img*/}
                         <h6 className='phone-number'>(225) 555-0118</h6>
                     </div>
                     <div className='navbar-email'>
-                        <img className='email-img' src="src/assets/icons/email.svg"></img>
+                        <img className='md:w-4 md:h-4' src="src/assets/icons/email.svg"></img>{/*email-img*/}
                         <h6 className='email-address'>michelle.rivera@example.com</h6>
                     </div>
                 </div>
