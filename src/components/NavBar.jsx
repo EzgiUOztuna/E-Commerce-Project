@@ -40,50 +40,51 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
-
+            {/* RESPONSIVE - MOBİL !!!!*/}
             <div className='lg:w-full lg:h-[3.62rem] lg:flex lg:items-center lg:justify-between lg:px-[0.625rem]'>{/*navbar-light*/}
-                <h3 className='navbar-brand'>Bandage</h3>
+                <h3 className='lg:heading-6 lg:m-0'>Bandage</h3>{/*navbar-brand*/}
 
-                <div className='navbar-nav-middle'>
-                    <div className='middle-nav-links'>
-                        <a className='link' href='#'>Home</a>
-                        <a className='dropbtn' onClick={toggleDropdown}>Shop <img className='dropdown-icon' src="src/assets/icons/dropdown.svg"></img></a>
-                        <a className='link' href='#'>About</a>
-                        <a className='link' href='#'>Blog</a>
-                        <a className='link' href='#'>Contact</a>
-                        <a className='link' href='#'>Pages</a>
+                <div className='lg:flex lg:flex-col'>{/*navbar-nav-middle*/}
+                    <div className='lg:flex lg:gap-[0.9375rem] lg:items-center'>{/*middle-nav-links*/}
+                        <a className='lg:link-style' href='#'>Home</a>{/*link*/}
+                        <a className='lg:link-style lg:flex lg:gap-1' onClick={toggleDropdown}>Shop<img src="src/assets/icons/dropdown.svg"></img></a>{/*dropbtn*/}
+                        <a className='lg:link-style' href='#'>About</a>{/*link*/}
+                        <a className='lg:link-style' href='#'>Blog</a>{/*link*/}
+                        <a className='lg:link-style' href='#'>Contact</a>{/*link*/}
+                        <a className='lg:link-style' href='#'>Pages</a>{/*link*/}
                     </div>
 
                     {isDropdownOpen && (
-                        <div className='dropdown-content'>
-                            <ul className='female'>
-                                <p className='female-header'>Kadın</p>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Belts</a></li>
-                                <li><a href="#">Cosmetics</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Hats</a></li>
+                        <div className='lg:absolute lg:top-[7.18rem] lg:left-[30rem] lg:bg-white lg:flex lg:border lg:border-[#ccc] lg:pl-7'>{/*dropdown-content*/}
+                            <ul className='lg:list-none lg:w-[11.62rem]'>{/*female*/}
+                                <p className='lg:gender-header'>Kadın</p>{/*female-header*/}
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Bags</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Belts</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Belts</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Cosmetics</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Bags</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Hats</a></li>
                             </ul>
-                            <ul className='male'>
-                                <p className='female-header'>Erkek</p>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Belts</a></li>
-                                <li><a href="#">Cosmetics</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Hats</a></li>
+                            <ul className='lg:w-[11.62rem]'>{/*male*/}
+                                <p className='lg:gender-header'>Erkek</p>{/*male-header*/}
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Bags</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Belts</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Cosmetics</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Bags</a></li>
+                                <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Hats</a></li>
                             </ul>
                         </div>
                     )}
                 </div>
 
-                <div className='navbar-nav-right'>
-                    <a href="/login" className='login-register'>
+                <div className='navbar-nav-right'>{/*navbar-nav-right*/}
+                    <a href="/login" className='login-register'>{/*login-register*/}
                         <img src='src/assets/icons/user.svg'></img>
                         <p>Login / Register</p>
                     </a>
-                    <a href='/search'><img className='search' src='src/assets/icons/search.svg'></img></a>
-                    <a href='/cart'><img className='cart' src='src/assets/icons/cart.svg'></img></a>
-                    <a href='/favorites'><img className='heart' src='src/assets/icons/heart.svg'></img></a>
+                    <a href='/search'><img className='search' src='src/assets/icons/search.svg'></img></a>{/*search*/}
+                    <a href='/cart'><img className='cart' src='src/assets/icons/cart.svg'></img></a>{/*cart*/}
+                    <a href='/favorites'><img className='heart' src='src/assets/icons/heart.svg'></img></a>{/*heart*/}
 
                 </div>
 
