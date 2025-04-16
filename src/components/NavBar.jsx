@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import '../CssFolders/NavBar.css';
-
 
 export default function NavBar() {
 
@@ -40,7 +38,7 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
-            {/* RESPONSIVE - MOBİL !!!!*/}
+            {/* RESPONSIVE - MOBİL ⚠️⚠️⚠️*/}
             <div className='lg:w-full lg:h-[3.62rem] lg:flex lg:items-center lg:justify-between lg:px-[0.625rem]'>{/*navbar-light*/}
                 <h3 className='lg:heading-6 lg:m-0'>Bandage</h3>{/*navbar-brand*/}
 
@@ -53,7 +51,7 @@ export default function NavBar() {
                         <a className='lg:link-style' href='#'>Contact</a>{/*link*/}
                         <a className='lg:link-style' href='#'>Pages</a>{/*link*/}
                     </div>
-
+                    {/* SHOP SEKMESİ ALTINDAKİ KUTUNUN AYARLANMASI ⚠️⚠️⚠️*/}
                     {isDropdownOpen && (
                         <div className='lg:absolute lg:top-[7.18rem] lg:left-[30rem] lg:bg-white lg:flex lg:border lg:border-[#ccc] lg:pl-7'>{/*dropdown-content*/}
                             <ul className='lg:list-none lg:w-[11.62rem]'>{/*female*/}
@@ -77,14 +75,14 @@ export default function NavBar() {
                     )}
                 </div>
 
-                <div className='navbar-nav-right'>{/*navbar-nav-right*/}
-                    <a href="/login" className='login-register'>{/*login-register*/}
+                <div className='lg:text-[#23A6F0] lg:flex lg:items-center'>{/*navbar-nav-right*/}
+                    <a href="/login" className='lg:navbar-actions'>{/*login-register*/}
                         <img src='src/assets/icons/user.svg'></img>
-                        <p>Login / Register</p>
+                        <p className='lg:text-center lg:text-[#23A6F0] lg:font-bold lg:text-[0.875rem] lg:leading-[1.5rem] lg:tracking-[0.0125rem] lg:font-montserrat'>Login / Register</p>
                     </a>
-                    <a href='/search'><img className='search' src='src/assets/icons/search.svg'></img></a>{/*search*/}
-                    <a href='/cart'><img className='cart' src='src/assets/icons/cart.svg'></img></a>{/*cart*/}
-                    <a href='/favorites'><img className='heart' src='src/assets/icons/heart.svg'></img></a>{/*heart*/}
+                    <a href='/search'><img className='lg:navbar-actions' src='src/assets/icons/search.svg'></img></a>{/*search*/}
+                    <a href='/cart'><img className='lg:navbar-actions' src='src/assets/icons/cart.svg'></img></a>{/*cart*/}
+                    <a href='/favorites'><img className='lg:navbar-actions' src='src/assets/icons/heart.svg'></img></a>{/*heart*/}
 
                 </div>
 
