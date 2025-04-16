@@ -29,7 +29,8 @@ export default function ContainerShop() {
                     style={{
                         backgroundImage: `url(${item.bgImage})`,
                         backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
+                        backgroundRepeat: 'no-repeat',
+                        minHeight: '716px'
                     }} >
                     <button className="control-prev" onClick={handlePrev}>
                         <img src='src/assets/icons/carousel-control-prev.svg'></img>
