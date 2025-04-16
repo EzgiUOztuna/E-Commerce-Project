@@ -6,7 +6,7 @@ body {
 .navbar-container {
     width: 100%;
 }
-*/
+
 .navbar-dark {
     background-color: #252B42;
     width: 100%;
@@ -116,7 +116,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-}
+}*/
 
 .navbar-brand {
     font-family: "Montserrat", sans-serif;
