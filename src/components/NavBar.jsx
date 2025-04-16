@@ -40,7 +40,7 @@ export default function NavBar() {
             </div>
             {/* RESPONSIVE - MOBİL ⚠️⚠️⚠️*/}
             <div className='lg:w-full lg:h-[3.62rem] lg:flex lg:items-center lg:justify-between lg:px-[0.625rem]'>{/*navbar-light*/}
-                <h3 className='lg:heading-6 lg:m-0'>Bandage</h3>{/*navbar-brand*/}
+                <h3 className='lg:font-montserrat lg:font-bold lg:text-[1.5rem] lg:leading-[2rem] lg:tracking-[0.00625rem] lg:text-[#252B42] lg:m-0'>Bandage</h3>{/*navbar-brand*/}
 
                 <div className='lg:flex lg:flex-col'>{/*navbar-nav-middle*/}
                     <div className='lg:flex lg:gap-[0.9375rem] lg:items-center'>{/*middle-nav-links*/}
