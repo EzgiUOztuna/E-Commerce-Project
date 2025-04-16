@@ -14,4 +14,8 @@
     .gender-header {
         @apply flex gap-[1rem] pb-[1rem] text-[#252B42] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] pr-[5rem];
     }
+
+    .navbar-actions {
+        @apply flex gap-[0.313rem] p-[0.938rem] no-underline
+    }
 }
