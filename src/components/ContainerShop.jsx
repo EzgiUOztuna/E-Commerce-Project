@@ -18,9 +18,13 @@ export default function ContainerShop() {
         {carouselData.map((item, index) => (
             <div key={index}
                 className={`${currentIndex === index ? 'block' : 'hidden'}
+                            h-[753px]
                             lg:bg-cover lg:bg-no-repeat lg:h-[44.75rem]
-                        `} style={{ backgroundImage: `url(${item.bgImage})` }}>
-                <button className="lg:w-6 lg:h-[2.78rem] lg:top-[20rem] lg:left-[2%] lg:border-none lg:bg-transparent lg:relative lg:cursor-pointer" onClick={handlePrev}> {/*control-prev*/}
+                        `} style={{
+                    backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
+                }}>
+                <button className="w-6 h-[2.78rem] top-[20rem] left-8 relative bg-transparent border-none
+                                   lg:top-[20rem] lg:left-[2%] lg:cursor-pointer" onClick={handlePrev}> {/*control-prev*/}
                     <img src='src/assets/icons/carousel-control-prev.svg'></img>
                 </button>
                 <div className='lg:w-[37.44rem] lg:h-[20.68rem] lg:flex lg:flex-col lg:gap-9 lg:pt-28 lg:pb-28 lg:ml-[12.5rem]'> {/*inner-container*/}
@@ -31,7 +35,8 @@ export default function ContainerShop() {
                         <h3 className='lg:font-montserrat lg:font-bold lg:text-base lg:leading-8 lg:tracking-[0.00625rem] lg:text-center lg:m-0 lg:text-white'>{item.h3}</h3>
                     </button>
                 </div>
-                <button className="lg:w-6 lg:h-[2.78rem] lg:top-[27.5rem] lg:left-[94%] lg:border-none lg:bg-transparent lg:absolute lg:cursor-pointer " onClick={handleNext}> {/*control-prev */}
+                <button className="absolute w-6 h-[2.78rem] top-[52rem] left-[22.5rem]
+                                    lg:top-[27.5rem] lg:left-[94%] lg:border-none lg:bg-transparent lg:absolute lg:cursor-pointer " onClick={handleNext}> {/*control-next */}
                     <img src='src/assets/icons/carousel-control-next.svg'></img>
                 </button>
             </div>
