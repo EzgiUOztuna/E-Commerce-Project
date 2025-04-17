@@ -39,7 +39,7 @@ export default function NavBar() {
                 </div>
             </div>
 
-            <div className='flex flex-wrap h-[32rem] px-6 
+            <div className='flex flex-wrap h-[33rem] px-6 
                             lg:w-full lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-between lg:px-[0.625rem]'>{/*navbar-light*/}
                 <h3 className='w-1/2 order-1 font-montserrat font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 lg:oder-1 flex items-center'>Bandage</h3>{/*navbar-brand*/}
 
