@@ -18,4 +18,8 @@
     .navbar-actions {
         @apply flex gap-[0.313rem] p-[0.938rem] no-underline
     }
+
+    .middle-nav-links {
+        @apply font-montserrat font-normal text-[1.875rem] leading-[2.8125rem] tracking-[0.0125rem] text-center text-[#737373];
+    }
 }
