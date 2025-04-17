@@ -39,9 +39,9 @@ export default function NavBar() {
                 </div>
             </div>
 
-            <div className='flex flex-wrap h-[33rem] px-6 
-                            lg:w-full lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-between lg:px-[0.625rem]'>{/*navbar-light*/}
-                <h3 className='w-1/2 order-1 font-montserrat font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 lg:oder-1 flex items-center'>Bandage</h3>{/*navbar-brand*/}
+            <div className='flex flex-wrap h-[33rem] px-6
+                            lg:w-full lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-between '>{/*navbar-light*/}
+                <h3 className='w-1/2 order-1 font-montserrat font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 flex items-center lg:oder-1 '>Bandage</h3>{/*navbar-brand*/}
 
                 <div className='w-full order-3 
                                 lg:flex lg:flex-col lg:order-2'>{/*navbar-nav-middle*/}
@@ -90,7 +90,7 @@ export default function NavBar() {
                 </div>
 
                 <div className='w-1/2 order-2 flex items-center gap-[0.5rem]
-                                lg:text-[#23A6F0] lg:gap-0 lg:order-3'>{/*navbar-nav-right*/}
+                                lg:text-[#23A6F0] lg:gap-0 lg:order-3 lg:w-[37rem]'>{/*navbar-nav-right*/}
                     <a href="/login" className='lg:navbar-actions'>{/*login-register*/}
                         <img className='hidden lg:block' src='src/assets/icons/user.svg'></img>
                         <img className='block lg:hidden' src='src/assets/icons/user-mobile.svg'></img>
