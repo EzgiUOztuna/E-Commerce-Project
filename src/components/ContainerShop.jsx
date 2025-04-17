@@ -18,8 +18,8 @@ export default function ContainerShop() {
         {carouselData.map((item, index) => (
             <div key={index}
                 className={`${currentIndex === index ? 'block' : 'hidden'}
-                            h-[753px]
-                            lg:bg-cover lg:bg-no-repeat lg:h-[44.75rem]
+                            h-[753px] bg-cover bg-no-repeat
+                            lg:h-[44.75rem]
                         `} style={{
                     backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
                 }}>
@@ -27,7 +27,7 @@ export default function ContainerShop() {
                                    lg:top-[20rem] lg:left-[2%] lg:cursor-pointer" onClick={handlePrev}> {/*control-prev*/}
                     <img src='src/assets/icons/carousel-control-prev.svg'></img>
                 </button>
-                <div className='flex flex-col items-center gap-[2.18rem] pt-[10rem]
+                <div className='flex flex-col items-center gap-[2.18rem] pt-[8rem]
                                 lg:w-[37.44rem] lg:h-[20.68rem] lg:items-start lg:gap-9 lg:pt-28 lg:pb-28 lg:ml-[12.5rem]'> {/*inner-container*/}
                     <h5 className='font-montserrat font-bold text-base leading-6 tracking-[0.1px] m-0 text-[#FFFFFF]
                                    '>{item.h5}</h5>
