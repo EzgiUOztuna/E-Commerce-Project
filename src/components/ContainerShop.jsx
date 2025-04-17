@@ -22,31 +22,25 @@ export default function ContainerShop() {
 
 
     return <>
-        <div className='carousels'>
-            {carouselData.map((item, index) => (
-                <div key={index}
-                    className={`carousel-slide ${currentIndex === index ? 'active' : 'hidden'}`}
-                    style={{
-                        backgroundImage: `url(${item.bgImage})`,
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                        height: '44.75rem'
-                    }} >
-                    <button className="control-prev" onClick={handlePrev}>
-                        <img src='src/assets/icons/carousel-control-prev.svg'></img>
-                    </button>
-                    <div className='inner-container'>
-                        <h5>{item.h5}</h5>
-                        <h1>{item.h1}</h1>
-                        <h4>{item.h4}</h4>
-                        <button><h3>{item.h3}</h3></button>
-                    </div>
-                    <button className="control-next" onClick={handleNext}>
-                        <img src='src/assets/icons/carousel-control-next.svg'></img>
-                    </button>
+        {carouselData.map((item, index) => (
+            <div key={index}
+                className={`${currentIndex === index ? 'block' : 'hidden'}
+                            lg:bg-cover lg:bg-no-repeat lg:h-[44.75rem]
+                        `} style={{ backgroundImage: `url(${item.bgImage})` }}>
+                <button className="lg:w-6 lg:h-[2.78rem] lg:top-[20rem] lg:left-[2%] lg:border-none lg:bg-transparent lg:relative lg:cursor-pointer" onClick={handlePrev}> {/*control-prev */}
+                    <img src='src/assets/icons/carousel-control-prev.svg'></img>
+                </button>
+                <div className='inner-container'>
+                    <h5>{item.h5}</h5>
+                    <h1>{item.h1}</h1>
+                    <h4>{item.h4}</h4>
+                    <button><h3>{item.h3}</h3></button>
                 </div>
-            ))}
-        </div >
+                <button className="lg:w-6 lg:h-[2.78rem] lg:top-[27.5rem] lg:left-[94%] lg:border-none lg:bg-transparent lg:absolute lg:cursor-pointer " onClick={handleNext}> {/*control-prev */}
+                    <img src='src/assets/icons/carousel-control-next.svg'></img>
+                </button>
+            </div>
+        ))}
     </>
 }
 
