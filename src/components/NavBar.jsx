@@ -40,20 +40,32 @@ export default function NavBar() {
             </div>
             {/* RESPONSIVE - MOBİL ⚠️⚠️⚠️*/}
             <div className='lg:w-full lg:h-[3.62rem] lg:flex lg:items-center lg:justify-between lg:px-[0.625rem]'>{/*navbar-light*/}
-                <h3 className='lg:font-montserrat lg:font-bold lg:text-[1.5rem] lg:leading-[2rem] lg:tracking-[0.00625rem] lg:text-[#252B42] lg:m-0'>Bandage</h3>{/*navbar-brand*/}
+                <h3 className='font-montserrat font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0'>Bandage</h3>{/*navbar-brand*/}
 
                 <div className='lg:flex lg:flex-col'>{/*navbar-nav-middle*/}
-                    <div className='lg:flex lg:gap-[0.9375rem] lg:items-center'>{/*middle-nav-links*/}
-                        <a className='lg:link-style' href='#'>Home</a>{/*link*/}
-                        <a className='lg:link-style lg:flex lg:gap-1' onClick={toggleDropdown}>Shop<img src="src/assets/icons/dropdown.svg"></img></a>{/*dropbtn*/}
-                        <a className='lg:link-style' href='#'>About</a>{/*link*/}
-                        <a className='lg:link-style' href='#'>Blog</a>{/*link*/}
-                        <a className='lg:link-style' href='#'>Contact</a>{/*link*/}
-                        <a className='lg:link-style' href='#'>Pages</a>{/*link*/}
+                    <div className='flex flex-col gap-[1.875rem]
+                                    lg:flex lg:flex-row lg:gap-[0.9375rem] lg:items-center'>{/*middle-nav-links*/}
+                        <a className='middle-nav-links
+                                    lg:link-style' href='#'>Home</a>{/*link*/}
+                        <a className='middle-nav-links
+                                    lg:hidden' href='#'>Product</a>{/*link*/}
+                        <a className='middle-nav-links
+                                    lg:hidden' href='#'>Pricing</a>{/*link*/}
+                        <a className='hidden
+                                    lg:link-style lg:flex lg:gap-1' onClick={toggleDropdown}>Shop<img src="src/assets/icons/dropdown.svg"></img></a>{/*dropbtn*/}
+                        <a className='hidden
+                                    lg:block lg:link-style' href='#'>About</a>{/*link*/}
+                        <a className='hidden
+                                    lg:block lg:link-style' href='#'>Blog</a>{/*link*/}
+                        <a className='middle-nav-links
+                                    lg:link-style' href='#'>Contact</a>{/*link*/}
+                        <a className='hidden
+                                    lg:block lg:link-style' href='#'>Pages</a>{/*link*/}
                     </div>
                     {/* SHOP SEKMESİ ALTINDAKİ KUTUNUN AYARLANMASI ⚠️⚠️⚠️*/}
                     {isDropdownOpen && (
-                        <div className='lg:absolute lg:top-[7.18rem] lg:left-[30rem] lg:bg-white lg:flex lg:border lg:border-[#ccc] lg:pl-7'>{/*dropdown-content*/}
+                        <div className='hidden
+                                        lg:absolute lg:top-[7.18rem] lg:left-[30rem] lg:bg-white lg:flex lg:border lg:border-[#ccc] lg:pl-7'>{/*dropdown-content*/}
                             <ul className='lg:list-none lg:w-[11.62rem]'>{/*female*/}
                                 <p className='lg:gender-header'>Kadın</p>{/*female-header*/}
                                 <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Bags</a></li>
@@ -75,15 +87,18 @@ export default function NavBar() {
                     )}
                 </div>
 
-                <div className='lg:text-[#23A6F0] lg:flex lg:items-center'>{/*navbar-nav-right*/}
+                <div className='flex
+                                lg:text-[#23A6F0] lg:items-center'>{/*navbar-nav-right*/}
                     <a href="/login" className='lg:navbar-actions'>{/*login-register*/}
                         <img src='src/assets/icons/user.svg'></img>
-                        <p className='lg:text-center lg:text-[#23A6F0] lg:font-bold lg:text-[0.875rem] lg:leading-[1.5rem] lg:tracking-[0.0125rem] lg:font-montserrat'>Login / Register</p>
+                        <p className='hidden
+                                    lg:block lg:text-center lg:text-[#23A6F0] lg:font-bold lg:text-[0.875rem] lg:leading-[1.5rem] lg:tracking-[0.0125rem] lg:font-montserrat'>Login / Register</p>
                     </a>
                     <a href='/search'><img className='lg:navbar-actions' src='src/assets/icons/search.svg'></img></a>{/*search*/}
                     <a href='/cart'><img className='lg:navbar-actions' src='src/assets/icons/cart.svg'></img></a>{/*cart*/}
-                    <a href='/favorites'><img className='lg:navbar-actions' src='src/assets/icons/heart.svg'></img></a>{/*heart*/}
-
+                    <a href='/favorites'><img className='hidden
+                                                        lg:navbar-actions' src='src/assets/icons/heart.svg'></img></a>{/*heart*/}
+                    <a href='/menu'><img className='lg:hidden' src='src/assets/icons/hamburger.svg'></img></a>{/*hamburger*/}
                 </div>
 
 
