@@ -16,7 +16,7 @@
     }
 
     .navbar-actions {
-        @apply flex gap-[0.313rem] p-[0.938rem] no-underline
+        @apply flex gap-[0.313rem] p-[0.938rem] no-underline items-center
     }
 
     .middle-nav-links {
