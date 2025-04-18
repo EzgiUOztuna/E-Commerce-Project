@@ -1,5 +1,5 @@
 import Blog from "../components/Blog";
-import Clients from "../components/Clients";
+//import Clients from "../components/Clients";
 import Content from "../components/Content";
 import Features from "../components/Features";
 import ProductCards from "../components/ProductCards";
@@ -9,7 +9,7 @@ export default function PageContent() {
     return (
         <>
             <div>PageContent</div>
-            <Clients />
+            {/* <Clients /> */}
             <ShopCards />
             <ProductCards />
             <Content />
