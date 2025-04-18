@@ -19,7 +19,7 @@ export default function ContainerShop() {
             <div key={index}
                 className={`${currentIndex === index ? 'block' : 'hidden'}
                             h-[753px] bg-cover bg-no-repeat
-                            lg:h-[44.75rem]
+                            lg:h-[44.75rem] 
                         `} style={{
                     backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
                 }}>
