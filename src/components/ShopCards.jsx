@@ -1,3 +1,6 @@
 export default function ShopCards() {
-    return <div>-ShopCards</div>;
+    return <>
+        {/* </><div>-ShopCards</div>; */}
+
+    </>
 }
