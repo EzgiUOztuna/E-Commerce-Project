@@ -8,7 +8,7 @@ import ShopCards from "../components/ShopCards";
 export default function PageContent() {
     return (
         <>
-            <div>PageContent</div>
+            {/* <div>PageContent</div> /> */}
             {/* <Clients /> */}
             <ShopCards />
             <ProductCards />
