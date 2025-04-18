@@ -31,10 +31,10 @@ export default function NavBar() {
                 <div className='lg:flex lg:gap-[0.625rem] lg:items-center lg:justify-center'>{/*navbar-col-right*/}
                     <h6 className='lg:heading-6'>Follow Us : </h6>
                     <div className='lg:flex lg:items-center lg:gap-[0.625rem]'>{/*social-media*/}
-                        <a className='lg:p-[0.313rem]' href='#'><img src='src/assets/icons/instagram.svg'></img></a>
-                        <a className='lg:p-[0.313rem]' href='#'><img src='src/assets/icons/youtube.svg'></img></a>
-                        <a className='lg:p-[0.313rem]' href='#'><img src='src/assets/icons/facebook.svg'></img></a>
-                        <a className='lg:p-[0.313rem]' href='#'><img src='src/assets/icons/twitter.svg'></img></a>
+                        <a className='lg:p-[0.313rem]' href='/instagram'><img src='src/assets/icons/instagram.svg'></img></a>
+                        <a className='lg:p-[0.313rem]' href='/youtube'><img src='src/assets/icons/youtube.svg'></img></a>
+                        <a className='lg:p-[0.313rem]' href='/facebook'><img src='src/assets/icons/facebook.svg'></img></a>
+                        <a className='lg:p-[0.313rem]' href='/twitter'><img src='src/assets/icons/twitter.svg'></img></a>
                     </div>
                 </div>
             </div>
@@ -48,21 +48,21 @@ export default function NavBar() {
                     <div className='flex flex-col gap-[1.875rem]
                                     lg:flex lg:flex-row lg:gap-[0.9375rem] lg:items-center'>{/*middle-nav-links*/}
                         <a className='middle-nav-links
-                                    lg:link-style' href='#'>Home</a>{/*link*/}
+                                    lg:link-style' href='/home'>Home</a>{/*link*/}
                         <a className='middle-nav-links
-                                    lg:hidden' href='#'>Product</a>{/*link*/}
+                                    lg:hidden' href='/products'>Product</a>{/*link*/}
                         <a className='middle-nav-links
-                                    lg:hidden' href='#'>Pricing</a>{/*link*/}
+                                    lg:hidden' href='/price'>Pricing</a>{/*link*/}
                         <a className='hidden
                                     lg:link-style lg:flex lg:gap-1' onClick={toggleDropdown}>Shop<img src="src/assets/icons/dropdown.svg"></img></a>{/*dropbtn*/}
                         <a className='hidden
-                                    lg:block lg:link-style' href='#'>About</a>{/*link*/}
+                                    lg:block lg:link-style' href='/about'>About</a>{/*link*/}
                         <a className='hidden
-                                    lg:block lg:link-style' href='#'>Blog</a>{/*link*/}
+                                    lg:block lg:link-style' href='/blog'>Blog</a>{/*link*/}
                         <a className='middle-nav-links
-                                    lg:link-style' href='#'>Contact</a>{/*link*/}
+                                    lg:link-style' href='/contact'>Contact</a>{/*link*/}
                         <a className='hidden
-                                    lg:block lg:link-style' href='#'>Pages</a>{/*link*/}
+                                    lg:block lg:link-style' href='/pages'>Pages</a>{/*link*/}
                     </div>
                     {/* SHOP SEKMESİ ALTINDAKİ KUTUNUN AYARLANMASI ⚠️⚠️⚠️*/}
                     {isDropdownOpen && (
