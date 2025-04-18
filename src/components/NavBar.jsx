@@ -41,10 +41,10 @@ export default function NavBar() {
 
             <div className='flex flex-wrap h-[33rem] px-6
                             lg:w-full lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-between '>{/*navbar-light*/}
-                <h3 className='w-1/2 order-1 font-montserrat font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 flex items-center lg:oder-1 '>Bandage</h3>{/*navbar-brand*/}
+                <h3 className='w-1/2 order-1 font-montserrat font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 flex items-center lg:oder-1 lg:w-[11.68rem]'>Bandage</h3>{/*navbar-brand*/}
 
-                <div className='w-full order-3 
-                                lg:flex lg:flex-col lg:order-2'>{/*navbar-nav-middle*/}
+                <div className='w-full order-3
+                                lg:flex lg:flex-col lg:order-2 items-center'>{/*navbar-nav-middle*/}
                     <div className='flex flex-col gap-[1.875rem]
                                     lg:flex lg:flex-row lg:gap-[0.9375rem] lg:items-center'>{/*middle-nav-links*/}
                         <a className='middle-nav-links
@@ -67,7 +67,7 @@ export default function NavBar() {
                     {/* SHOP SEKMESİ ALTINDAKİ KUTUNUN AYARLANMASI ⚠️⚠️⚠️*/}
                     {isDropdownOpen && (
                         <div className='hidden
-                                        lg:absolute lg:top-[7.18rem] lg:left-[30rem] lg:bg-white lg:flex lg:border lg:border-[#ccc] lg:pl-7'>{/*dropdown-content*/}
+                                        lg:absolute lg:top-[7.18rem] lg:left-[32rem] lg:bg-white lg:flex lg:border lg:border-none lg:pl-7 lg:pt-4'>{/*dropdown-content*/}
                             <ul className='lg:list-none lg:w-[11.62rem]'>{/*female*/}
                                 <p className='lg:gender-header'>Kadın</p>{/*female-header*/}
                                 <li><a className='lg:link-style lg:flex lg:pt-2 lg:pb-4' href="#">Bags</a></li>
@@ -90,7 +90,7 @@ export default function NavBar() {
                 </div>
 
                 <div className='w-1/2 order-2 flex items-center gap-[0.5rem]
-                                lg:text-[#23A6F0] lg:gap-0 lg:order-3 lg:w-[37rem]'>{/*navbar-nav-right*/}
+                                lg:text-[#23A6F0] lg:gap-0 lg:order-3 lg:max-w-[19.06rem]'>{/*navbar-nav-right*/}
                     <a href="/login" className='lg:navbar-actions'>{/*login-register*/}
                         <img className='hidden lg:block' src='src/assets/icons/user.svg'></img>
                         <img className='block lg:hidden' src='src/assets/icons/user-mobile.svg'></img>
