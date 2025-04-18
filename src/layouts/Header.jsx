@@ -15,8 +15,8 @@ export default function Header() {
 /*
  Desktop 
     # Header
-        - NavBar ✔️ ✅
+        - NavBar ✅
             - NavBar 1 ✅
             - NavBar 2 ✅
-        - ContainerShop ✔️
+        - ContainerShop ✅
  */
