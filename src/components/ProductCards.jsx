@@ -25,30 +25,10 @@ export default function ProductCards() {
                                 <h5 className="text-[#23856D]">${item.originalPrice - (Number(item.originalPrice) - (Number(item.originalPrice) * (Number(item.discountRate) / 100))).toFixed(2)}</h5>
                             </div>
                             <div className="flex gap-2">
-                                <div className="w-4 h-4 border rounded-lg"
-                                    style={{
-                                        color: item.colors.firstColor,
-                                        backgroundColor: item.colors.firstColor
-                                    }} >
-                                </div>
-                                <div className="w-4 h-4 border rounded-lg"
-                                    style={{
-                                        color: item.colors.secondColor,
-                                        backgroundColor: item.colors.secondColor
-                                    }} >
-                                </div>
-                                <div className="w-4 h-4 border rounded-lg"
-                                    style={{
-                                        color: item.colors.thirdColor,
-                                        backgroundColor: item.colors.thirdColor
-                                    }} >
-                                </div>
-                                <div className="w-4 h-4 border rounded-lg"
-                                    style={{
-                                        color: item.colors.fourthColor,
-                                        backgroundColor: item.colors.fourthColor
-                                    }} >
-                                </div>
+                                <div className="w-4 h-4 border rounded-lg" style={{ color: item.colors.firstColor, backgroundColor: item.colors.firstColor }}></div>
+                                <div className="w-4 h-4 border rounded-lg" style={{ color: item.colors.secondColor, backgroundColor: item.colors.secondColor }}></div>
+                                <div className="w-4 h-4 border rounded-lg" style={{ color: item.colors.thirdColor, backgroundColor: item.colors.thirdColor }}></div>
+                                <div className="w-4 h-4 border rounded-lg" style={{ color: item.colors.fourthColor, backgroundColor: item.colors.fourthColor }}></div>
                             </div>
                         </div>
 
