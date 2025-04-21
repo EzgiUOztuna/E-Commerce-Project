@@ -4,7 +4,7 @@ export default function ShopCards() {
     return <>
         {/* </><div>-ShopCards</div>; */}
         <div className="bg-[#FAFAFA] h-[115rem] py-16 gap-12 flex flex-col items-center
-                        lg:flex lg:flex-col lg:items-center lg:gap-10">
+                        lg:flex lg:flex-col lg:items-center lg:gap-10 lg:h-[48.12rem] ">
             <div className="flex flex-col gap-[0.625rem] items-center
                             lg:w-[38rem] ">
                 <h3 className="font-montserrat font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] text-center 
