@@ -23,8 +23,8 @@ export default function PageContent() {
 /* 
  Desktop 
     # PageContent
-        * Clients
-        * ShopCards
+        * Clients 𑑛
+        * ShopCards ✅
         * ProductCards
         * Content
         * Features
