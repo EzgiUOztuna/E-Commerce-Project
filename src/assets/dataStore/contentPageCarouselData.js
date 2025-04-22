@@ -5,7 +5,7 @@ export const contentPageCarouselData = [
         h1: "Vita Classic Product",
         text: "We know how large objects will act, but things on a small scale.",
         price: "16.48",
-        //mobileImage: "src/assets/images/contentPageImg/bg-mobile.png",
+        mobileImage: "src/assets/images/contentPageImg/contentPageCarousel1-mobile.png",
         h3: "ADD TO CART"
     },
     {
@@ -14,7 +14,7 @@ export const contentPageCarouselData = [
         h1: "COZY COLLECTION",
         text: "Everything you need to stay warm this winter.",
         price: "16.48",
-        //mobileImage: "src/assets/images/contentPageImg/bg-mobile.png",
+        mobileImage: "src/assets/images/contentPageImg/contentPageCarousel1-mobile.png",
         h3: "ADD TO CART"
     },
     {
@@ -23,7 +23,7 @@ export const contentPageCarouselData = [
         h1: "FRESH LOOK",
         text: "Time for new beginnings.",
         price: "16.48",
-        //mobileImage: "src/assets/images/contentPageImg/bg-mobile.png",
+        mobileImage: "src/assets/images/contentPageImg/contentPageCarousel1-mobile.png",
         h3: "ADD TO CART"
     }
 ];
