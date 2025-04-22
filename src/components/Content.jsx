@@ -21,7 +21,7 @@ export default function Content() {
                             h-[1230px] bg-cover bg-no-repeat
                             lg:h-[709px] 
                         `} style={{
-                    backgroundImage: `url(${item.bgImage})`
+                    backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
                 }}>
                 <button className="w-6 h-[2.78rem] top-[35rem] left-8 relative bg-transparent border-none
                                    lg:top-[22rem] lg:left-[2%] lg:cursor-pointer" onClick={handlePrev}>
