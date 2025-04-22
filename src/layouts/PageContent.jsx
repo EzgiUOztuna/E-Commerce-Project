@@ -25,8 +25,8 @@ export default function PageContent() {
     # PageContent
         * Clients 𑑛
         * ShopCards ✅
-        * ProductCards
-        * Content
+        * ProductCards ✅
+        * Content ✅
         * Features
         * Blog
 */
