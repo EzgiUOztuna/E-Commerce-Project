@@ -18,9 +18,9 @@ export default function Content() {
         {contentPageCarouselData.map((item, index) => (
             <div key={index}
                 className={`${currentIndex === index ? 'block' : 'hidden'}
-                            h-[1230px] bg-cover bg-no-repeat
-                            lg:h-[709px] 
-                            xl:h-[850px]
+                            h-[76.875rem] bg-cover bg-no-repeat
+                            lg:h-[44.313rem] 
+                            xl:h-[53.5rem]
                         `} style={{
                     backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
                 }}>
