@@ -20,6 +20,7 @@ export default function Content() {
                 className={`${currentIndex === index ? 'block' : 'hidden'}
                             h-[1230px] bg-cover bg-no-repeat
                             lg:h-[709px] 
+                            xl:h-[850px]
                         `} style={{
                     backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
                 }}>
