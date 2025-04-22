@@ -4,8 +4,8 @@ export default function ProductCards() {
 
     return <>
         {/*<div>-ProductCard</div>;*/}
-        <div className="font-montserrat flex flex-col w-[328px] py-20 gap-12 m-auto
-                        lg:w-[1124px] lg:h-[103.25rem] lg:gap-20">
+        <div className="font-montserrat flex flex-col w-[20.5rem] py-20 gap-12 m-auto
+                        lg:w-[70.25rem] lg:h-[103.25rem] lg:gap-20">
 
             <div className="flex flex-col items-center w-[17.43rem] gap-[10px] text-center mx-auto lg:w-[691px]">
                 <h4 className="font-normal text-xl leading-[1.875rem] tracking-[0.2px] text-center text-[#737373]">Featured Products</h4>
