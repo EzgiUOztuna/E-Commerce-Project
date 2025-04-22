@@ -6,6 +6,7 @@ export const contentPageCarouselData = [
         text: "We know how large objects will act, but things on a small scale.",
         price: "16.48",
         //mobileImage: "src/assets/images/carousel1-mobile.svg"
+        h3: "ADD TO CART"
     },
     {
         bgImage: "src/assets/images/contentPageImg/contentPageCarousel1.png",
@@ -14,6 +15,7 @@ export const contentPageCarouselData = [
         text: "Everything you need to stay warm this winter.",
         price: "16.48",
         //mobileImage: "src/assets/images/carousel1-mobile.svg"
+        h3: "ADD TO CART"
     },
     {
         bgImage: "src/assets/images/contentPageImg/contentPageCarousel1.png",
@@ -22,5 +24,6 @@ export const contentPageCarouselData = [
         text: "Time for new beginnings.",
         price: "16.48",
         //mobileImage: "src/assets/images/carousel1-mobile.svg"
+        h3: "ADD TO CART"
     }
 ];
