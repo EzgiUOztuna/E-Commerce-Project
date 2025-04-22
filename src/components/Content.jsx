@@ -35,8 +35,8 @@ export default function Content() {
                                    lg:w-[35.62rem] lg:text-[3.625rem] lg:leading-[5rem] lg:text-left'>{item.h1}</h1>
                     <p className='w-[18rem] font-normal text-xl leading-[1.875rem] tracking-[0.2px] m-0 text-center
                                   lg:w-[23.5rem] lg:text-sm lg:leading-[1.25rem] lg:tracking-[0.0125rem] lg:text-left'>{item.text}</p>
-                    <div className="flex flex-col gap-5 font-bold items-center
-                                    lg:gap-9 lg:flex-row">
+                    <div className="flex flex-col gap-5 font-bold
+                                    lg:gap-9 lg:flex-row lg:items-center">
                         <h3 className="text-2xl leading-8 tracking-[0.1px] text-center">${item.price}</h3>
                         <button className='w-[12.4rem] h-[3.4rem] gap-[0.625rem] bg-[#2DC071] px-10 py-[0.9375rem] rounded-[0.3125rem] border-none
                                            lg:h-[3.25rem] lg:cursor-pointer'>
