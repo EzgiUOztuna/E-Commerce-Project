@@ -1,6 +1,7 @@
 import Blog from "../components/Blog";
 //import Clients from "../components/Clients";
 import Content from "../components/Content";
+import FeaturedPosts from "../components/FeaturedPosts";
 import Features from "../components/Features";
 import ProductCards from "../components/ProductCards";
 import ShopCards from "../components/ShopCards";
@@ -14,6 +15,7 @@ export default function PageContent() {
             <ProductCards />
             <Content />
             <Features />
+            <FeaturedPosts />
             <Blog />
             <br></br>
         </>
@@ -27,6 +29,7 @@ export default function PageContent() {
         * ShopCards ✅
         * ProductCards ✅
         * Content ✅
-        * Features
+        * Features ✅
+        * FeaturedPosts
         * Blog
 */
