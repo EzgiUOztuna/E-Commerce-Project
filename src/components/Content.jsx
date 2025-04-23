@@ -20,16 +20,18 @@ export default function Content() {
                 className={`${currentIndex === index ? 'block' : 'hidden'}
                             h-[76.875rem] bg-cover bg-no-repeat
                             lg:h-[44.313rem] 
-                            xl:h-[53.5rem]
+                            xl:h-[60rem]
                         `} style={{
                     backgroundImage: `url(${window.innerWidth >= 1024 ? item.bgImage : item.mobileImage})`
                 }}>
                 <button className="w-6 h-[2.78rem] top-[35rem] left-8 relative bg-transparent border-none
-                                   lg:top-[22rem] lg:left-[2%] lg:cursor-pointer" onClick={handlePrev}>
+                                   lg:top-[22rem] lg:left-[2%] lg:cursor-pointer
+                                   xl:top-[27rem]" onClick={handlePrev}>
                     <img src='src/assets/icons/carousel-control-prev.svg'></img>
                 </button>
                 <div className='font-montserrat text-[#FFFFFF] flex flex-col items-center gap-[2.18rem] pt-[8rem]
-                                lg:w-[37.44rem] lg:h-[20.68rem] lg:items-start lg:gap-9 lg:pt-28 lg:pb-28 lg:ml-[12.5rem]'>
+                                lg:w-[37.44rem] lg:h-[20.68rem] lg:items-start lg:gap-9 lg:pt-28 lg:pb-28 lg:ml-[12.5rem]
+                                xl:pt-[13rem] xl:ml-[15rem]'>
                     <h4 className='font-normal text-xl leading-[1.875rem] tracking-[0.2px] m-0 
                                    '>{item.h4}</h4>
                     <h1 className='font-bold text-[2.5rem] leading-[3.125rem] tracking-[0.2px] lg:m-0 w-[16.75rem] text-center
@@ -46,7 +48,8 @@ export default function Content() {
                     </div>
                 </div>
                 <button className="relative w-6 h-[2.78rem] top-[-3rem] left-[22.5rem] bg-transparent
-                                    lg:top-[-2rem] lg:left-[96%] lg:border-none lg:relative lg:cursor-pointer " onClick={handleNext}>
+                                    lg:top-[-2rem] lg:left-[96%] lg:border-none lg:relative lg:cursor-pointer
+                                    xl:top-[3rem]" onClick={handleNext}>
                     <img src='src/assets/icons/carousel-control-next.svg'></img>
                 </button>
             </div>
