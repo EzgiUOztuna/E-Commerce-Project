@@ -1,16 +1,19 @@
-import HomePages from './pages/HomePages'
-import InnerPages from './pages/InnerPages'
-import ProductDetailsPages from './pages/ProductDetailsPages'
-import ShopPages from './pages/ShopPages'
+import { Routes, Route } from 'react-router-dom';
+import HomePages from './pages/HomePages';
+import InnerPages from './pages/InnerPages';
+import ProductDetailsPages from './pages/ProductDetailsPages';
+import ShopPages from './pages/ShopPages';
 
 function App() {
 
   return (
     <>
-      <HomePages />
-      <ShopPages />
-      <ProductDetailsPages />
-      <InnerPages />
+      <Routes>
+        <Route path="/" element={<HomePages />} />
+        <Route path="/shop" element={<ShopPages />} />
+        <Route path="/product/:id" element={<ProductDetailsPages />} />
+        <Route path="/inner" element={<InnerPages />} />
+      </Routes>
     </>
   )
 }
