@@ -22,4 +22,12 @@
     .middle-nav-links {
         @apply font-montserrat font-normal text-[1.875rem] leading-[2.8125rem] tracking-[0.0125rem] text-center text-[#737373];
     }
+
+    .text-feature-title {
+        @apply text-base leading-6 tracking-[0.1px] text-[#252B42];
+    }
+
+    .link-feature {
+        @apply text-sm text-[#737373] tracking-[0.2px];
+    }
 }
