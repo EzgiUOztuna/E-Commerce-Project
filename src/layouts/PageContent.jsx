@@ -30,6 +30,6 @@ export default function PageContent() {
         * ProductCards ✅
         * Content ✅
         * Features ✅
-        * FeaturedPosts
+        * FeaturedPosts ✅
         * Blog
 */
