@@ -11,8 +11,8 @@ export default function FeaturedPosts() {
                 <p className="font-normal text-sm leading-5 tracking-[0.2px] text-center text-[#737373] w-[17rem] lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center
-                            lg:flex-row lg:gap-8">
+            <div className="flex flex-col items-center justify-center gap-8
+                            lg:flex-row">
                 {featuredPostsData.map((item, index) => (
                     <div key={index} className="flex flex-col shadow-custom w-[20.5rem] lg:w-[22rem]">
                         <img src={item.image} />
@@ -25,21 +25,21 @@ export default function FeaturedPosts() {
                                 <p className="text-[#737373]">Trending</p>
                                 <p className="text-[#737373]">New</p>
                             </div>
-                            <h4>{item.h4}</h4>
-                            <p>{item.def}</p>
-                            <div className="flex">
-                                <div className="flex">
+                            <h4 className="font-normal text-xl leading-8 tracking-[0.2px] text-[#252B42]">{item.h4}</h4>
+                            <p className="font-normal text-sm leading-5 tracking-[0.2px] text-[#737373] w-[18rem]">{item.def}</p>
+                            <div className="flex w-[18rem] py-4 justify-between font-normal text-xs leading-4 tracking-[0.2px] text-[#737373]">
+                                <div className="flex gap-[0.313rem]">
                                     <img src="src/assets/icons/clock.svg" />
                                     <p>{item.date}</p>
                                 </div>
-                                <div className="flex">
+                                <div className="flex gap-[0.313rem]">
                                     <img src="src/assets/icons/content-card.svg" />
                                     <p>{item.comments}</p>
                                 </div>
                             </div>
-                            <a className="flex gap-3" href="#">
-                                <h6>Learn More</h6>
-                                <img src="src/assets/icons/icon-arrow-next.svg" />
+                            <a className="flex items-center gap-[0.625rem]" href="#">
+                                <h6 className="font-bold text-sm leading-6 tracking-[0.2px] text-[#737373]">Learn More</h6>
+                                <img className="w-[0.6rem] h-4" src="src/assets/icons/icon-arrow-next.svg" />
                             </a>
                         </div>
 
