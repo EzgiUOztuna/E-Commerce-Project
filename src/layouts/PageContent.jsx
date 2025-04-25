@@ -16,7 +16,7 @@ export default function PageContent() {
             <Content />
             <Features />
             <FeaturedPosts />
-            <Blog />
+            {/*<Blog />*/}
             <br></br>
         </>
     )
@@ -31,5 +31,5 @@ export default function PageContent() {
         * Content ✅
         * Features ✅
         * FeaturedPosts ✅
-        * Blog
+        * Blog 𑑛
 */
