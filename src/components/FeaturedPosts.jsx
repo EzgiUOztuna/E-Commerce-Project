@@ -10,7 +10,9 @@ export default function FeaturedPosts() {
             </div>
 
             <div>
+                <div className="flex flex-col">
 
+                </div>
             </div>
         </div>
     </>
