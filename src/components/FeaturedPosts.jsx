@@ -37,7 +37,6 @@ export default function FeaturedPosts() {
                             <h6>Learn More</h6>
                             <img src="src/assets/icons/icon-arrow-next.svg" />
                         </a>
-
                     </div>
                 ))}
 
