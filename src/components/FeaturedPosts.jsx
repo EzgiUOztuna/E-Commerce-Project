@@ -1,3 +1,5 @@
+import { featuredPostsData } from "../assets/dataStore/featuredPostsData";
+
 export default function FeaturedPosts() {
     return <>
         {/*<div>-Featured Posts</div>*/}
@@ -9,10 +11,37 @@ export default function FeaturedPosts() {
                 <p className="font-normal text-sm leading-5 tracking-[0.2px] text-center text-[#737373] w-[17rem] lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
 
-            <div>
-                <div className="flex flex-col">
+            <div className="flex flex-col
+                            lg:flex-row">
+                {featuredPostsData.map((item, index) => (
+                    <div key={index} className="flex flex-col">
+                        <img src={item.image} />
+                        <div className="flex">
+                            <p>Google</p>
+                            <p>Trending</p>
+                            <p>New</p>
+                        </div>
+                        <h4>{item.h4}</h4>
+                        <p>{item.def}</p>
+                        <div className="flex">
+                            <div className="flex">
+                                <img src="src/assets/icons/clock.svg" />
+                                <p>{item.date}</p>
+                            </div>
+                            <div className="flex">
+                                <img src="src/assets/icons/content-card.svg" />
+                                <p>{item.comments}</p>
+                            </div>
+                        </div>
+                        <a className="flex gap-3" href="#">
+                            <h6>Learn More</h6>
+                            <img src="src/assets/icons/icon-arrow-next.svg" />
+                        </a>
 
-                </div>
+                    </div>
+                ))}
+
+
             </div>
         </div>
     </>
