@@ -15,9 +15,9 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="py-12">
-                <div className="flex flex-row gap-8 justify-between mx-auto font-bold
-                                lg:w-[70rem]">
+            <div className="py-[70px] lg:py-12">
+                <div className="flex flex-col gap-8 justify-between mx-auto font-bold w-[20rem]
+                                lg:flex-row lg:w-[70rem]">
                     <div className="flex flex-col gap-5">
                         <h5 className="text-feature-title">Company Info</h5>
                         <a className="link-feature" href="/about">About Us</a>
@@ -49,22 +49,25 @@ export default function Footer() {
                     <div className="flex flex-col gap-5">
                         <h5 className="text-feature-title">Get In Touch</h5>
                         <form>
-                            <input className="bg-[#F9F9F9] border border-[#E6E6E6] rounded-tl-md rounded-bl-md text-[#737373] font-normal pl-2 text-xs placeholder:text-sm placeholder:font-normal placeholder:pl-2 placeholder:leading-7 placeholder:tracking-[0.2px] placeholder:text-[#737373]
-                                              lg:h-[3.63rem] lg:w-[195px]"
+                            <input className="bg-[#F9F9F9] border border-[#E6E6E6] rounded-tl-md rounded-bl-md text-[#737373] font-normal pl-2 text-xs placeholder:text-sm placeholder:font-normal placeholder:pl-2 placeholder:leading-7 placeholder:tracking-[0.2px] placeholder:text-[#737373] h-[3.63rem] w-[195px]"
                                 type="text"
                                 placeholder="Your Email"
                                 name="name" />
-                            <input className="border border-[#23A6F0] bg-[#23A6F0] text-[#FFFFFF] rounded-tr-md rounded-br-md cursor-pointer font-normal text-sm leading-7 tracking-[0.2px] text-center
-                                              lg:w-[7.32rem] lg:h-[3.63rem]"
+                            <input className="border border-[#23A6F0] bg-[#23A6F0] text-[#FFFFFF] rounded-tr-md rounded-br-md cursor-pointer font-normal text-sm leading-7 tracking-[0.2px] text-center w-[7.32rem] h-[3.63rem]"
                                 type="submit"
                                 value="Subscribe"></input>
                         </form>
-
                     </div>
                 </div>
 
             </div>
 
+            <div className="bg-[#FAFAFA] lg:h-20">
+                <div className="mx-auto py-6 w-[12.5rem] lg:w-[70rem]">
+                    <h6 className="text-center font-bold text-sm leading-6 tracking-[0.2px] text-[#737373] lg:text-left">Made With Love By Finland All Right Reserved </h6>
+                </div>
+
+            </div>
 
 
         </div>
