@@ -11,9 +11,9 @@ export default function ShopPages() {
 
     return <>
         <div className='w-full font-montserrat'>{/*navbar-container*/}
-            <div className='lg:bg-[#23856D] lg:h-[3.62rem]'>
+            <div className='lg:bg-[#23856D] '>
                 <div className='hidden
-                                lg:flex lg:items-center lg:justify-between lg:py-0 lg:w-[71rem] lg:box-border lg:gap-3 lg:mx-auto'> {/*navbar-dark*/}
+                                lg:flex lg:items-center lg:justify-between lg:py-0 lg:w-[70rem] lg:box-border lg:gap-3 lg:mx-auto lg:h-[3.62rem]'> {/*navbar-dark*/}
                     <div className='hidden
                                 lg:flex lg:w-[25.94rem] lg:h-[2.875rem] lg:gap-[0.625rem]'> {/*navbar-col-left*/}
                         <div className='lg:flex lg:w-[9.063rem] lg:h-11 lg:items-center lg:gap-[0.313rem] lg:p-[0.625rem] lg:rounded-[0.313rem]'>{/*navbar-phone*/}
