@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Footer from '../layouts/Footer';
 import Clients from '../components/Clients';
+import ProductCards from '../components/ProductCards';
 
 export default function ShopPages() {
 
@@ -109,10 +110,7 @@ export default function ShopPages() {
                     <a href='/favorites'><img className='hidden lg:navbar-actions' src='src/assets/icons/heart.svg'></img></a>{/*heart*/}
                     <a href='/menu'><img className='block lg:hidden' src='src/assets/icons/hamburger.svg'></img></a>{/*hamburger*/}
                 </div>
-
-
             </div>
-
         </div >
         <Clients />
         <Footer />
