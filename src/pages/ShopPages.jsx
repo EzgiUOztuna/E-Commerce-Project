@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Footer from '../layouts/Footer';
+import Clients from '../components/Clients';
 
 export default function ShopPages() {
 
@@ -113,6 +114,7 @@ export default function ShopPages() {
             </div>
 
         </div >
+        <Clients />
         <Footer />
 
     </>
