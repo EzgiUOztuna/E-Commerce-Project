@@ -1,5 +1,3 @@
-import Blog from "../components/Blog";
-//import Clients from "../components/Clients";
 import Content from "../components/Content";
 import FeaturedPosts from "../components/FeaturedPosts";
 import Features from "../components/Features";
