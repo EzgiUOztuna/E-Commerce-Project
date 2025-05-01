@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Footer from '../layouts/Footer';
 
 export default function ShopPages() {
 
@@ -10,37 +11,38 @@ export default function ShopPages() {
 
     return <>
         <div className='w-full font-montserrat'>{/*navbar-container*/}
-            <div className='hidden
-                            lg:flex lg:bg-[#23856D] lg:items-center lg:justify-around lg:py-0 lg:px-[0.625rem] lg:w-full lg:box-border lg:h-[3.62rem]'> {/*navbar-dark*/}
+            <div className='lg:bg-[#23856D] lg:h-[3.62rem]'>
                 <div className='hidden
+                                lg:flex lg:items-center lg:justify-between lg:py-0 lg:w-[71rem] lg:box-border lg:gap-3 lg:mx-auto'> {/*navbar-dark*/}
+                    <div className='hidden
                                 lg:flex lg:w-[25.94rem] lg:h-[2.875rem] lg:gap-[0.625rem]'> {/*navbar-col-left*/}
-                    <div className='lg:flex lg:w-[9.063rem] lg:h-11 lg:items-center lg:gap-[0.313rem] lg:p-[0.625rem] lg:rounded-[0.313rem]'>{/*navbar-phone*/}
-                        <img className='lg:w-4 lg:h-4' src="src/assets/icons/phone.svg"></img>{/*phone-img*/}
-                        <h6 className='!font-normal lg:heading-6'>(225) 555-0118</h6>{/*phone-number*/}
+                        <div className='lg:flex lg:w-[9.063rem] lg:h-11 lg:items-center lg:gap-[0.313rem] lg:p-[0.625rem] lg:rounded-[0.313rem]'>{/*navbar-phone*/}
+                            <img className='lg:w-4 lg:h-4' src="src/assets/icons/phone.svg"></img>{/*phone-img*/}
+                            <h6 className='!font-normal lg:heading-6'>(225) 555-0118</h6>{/*phone-number*/}
+                        </div>
+                        <div className='lg:w-[16.25rem] lg:h-[2.75rem] lg:flex lg:items-center lg:gap-[0.3125rem] lg:p-[0.625rem] lg:rounded-[0.3125rem]'>{/*navbar-email*/}
+                            <img className='lg:w-4 lg:h-4' src="src/assets/icons/email.svg"></img>{/*email-img*/}
+                            <h6 className='!font-normal lg:heading-6 lg:[13.68rem] lg:h-[1.5rem]'>michelle.rivera@example.com</h6>{/*email-address*/}
+                        </div>
                     </div>
-                    <div className='lg:w-[16.25rem] lg:h-[2.75rem] lg:flex lg:items-center lg:gap-[0.3125rem] lg:p-[0.625rem] lg:rounded-[0.3125rem]'>{/*navbar-email*/}
-                        <img className='lg:w-4 lg:h-4' src="src/assets/icons/email.svg"></img>{/*email-img*/}
-                        <h6 className='!font-normal lg:heading-6 lg:[13.68rem] lg:h-[1.5rem]'>michelle.rivera@example.com</h6>{/*email-address*/}
+
+                    <div className='lg:w-[20.75rem] lg:h-[2.75rem] lg:flex lg:items-center lg:gap-[0.625rem]'>{/*navbar-col-middle*/}
+                        <h6 className='lg:heading-6'>Follow Us  and get a chance to win 80% off</h6>
                     </div>
-                </div>
 
-                <div className='lg:w-[20.75rem] lg:h-[2.75rem] lg:flex lg:items-center lg:gap-[0.625rem]'>{/*navbar-col-middle*/}
-                    <h6 className='lg:heading-6'>Follow Us  and get a chance to win 80% off</h6>
-                </div>
-
-                <div className='lg:flex lg:gap-[0.625rem] lg:items-center lg:justify-center'>{/*navbar-col-right*/}
-                    <h6 className='lg:heading-6'>Follow Us : </h6>
-                    <div className='lg:flex lg:items-center lg:gap-[0.625rem]'>{/*social-media*/}
-                        <a className='lg:p-[0.313rem]' href='/instagram'><img src='src/assets/icons/instagram.svg'></img></a>
-                        <a className='lg:p-[0.313rem]' href='/youtube'><img src='src/assets/icons/youtube.svg'></img></a>
-                        <a className='lg:p-[0.313rem]' href='/facebook'><img src='src/assets/icons/facebook.svg'></img></a>
-                        <a className='lg:p-[0.313rem]' href='/twitter'><img src='src/assets/icons/twitter.svg'></img></a>
+                    <div className='lg:flex lg:gap-[0.625rem] lg:items-center lg:justify-center lg:p-3'>{/*navbar-col-right*/}
+                        <h6 className='lg:heading-6'>Follow Us : </h6>
+                        <div className='lg:flex lg:items-center lg:gap-[0.625rem]'>{/*social-media*/}
+                            <a className='lg:p-[0.313rem]' href='/instagram'><img src='src/assets/icons/instagram.svg'></img></a>
+                            <a className='lg:p-[0.313rem]' href='/youtube'><img src='src/assets/icons/youtube.svg'></img></a>
+                            <a className='lg:p-[0.313rem]' href='/facebook'><img src='src/assets/icons/facebook.svg'></img></a>
+                            <a className='lg:p-[0.313rem]' href='/twitter'><img src='src/assets/icons/twitter.svg'></img></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
             <div className='flex flex-wrap h-[33rem] px-6
-                            lg:w-full lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-around '>{/*navbar-light*/}
+                            lg:w-[78rem] lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-around lg:mx-auto'>{/*navbar-light*/}
                 <h3 className='w-1/2 order-1 font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 flex items-center lg:oder-1 lg:w-[11.68rem]'>Bandage</h3>{/*navbar-brand*/}
 
                 <div className='w-full order-3
@@ -111,6 +113,7 @@ export default function ShopPages() {
             </div>
 
         </div >
+        <Footer />
 
     </>
 }
