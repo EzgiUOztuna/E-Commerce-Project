@@ -16,11 +16,11 @@ export default function ShopPages() {
                                 lg:flex lg:w-[25.94rem] lg:h-[2.875rem] lg:gap-[0.625rem]'> {/*navbar-col-left*/}
                     <div className='lg:flex lg:w-[9.063rem] lg:h-11 lg:items-center lg:gap-[0.313rem] lg:p-[0.625rem] lg:rounded-[0.313rem]'>{/*navbar-phone*/}
                         <img className='lg:w-4 lg:h-4' src="src/assets/icons/phone.svg"></img>{/*phone-img*/}
-                        <h6 className='font-normal lg:heading-6'>(225) 555-0118</h6>{/*phone-number*/}
+                        <h6 className='!font-normal lg:heading-6'>(225) 555-0118</h6>{/*phone-number*/}
                     </div>
                     <div className='lg:w-[16.25rem] lg:h-[2.75rem] lg:flex lg:items-center lg:gap-[0.3125rem] lg:p-[0.625rem] lg:rounded-[0.3125rem]'>{/*navbar-email*/}
                         <img className='lg:w-4 lg:h-4' src="src/assets/icons/email.svg"></img>{/*email-img*/}
-                        <h6 className='lg:heading-6 lg:[13.68rem] lg:h-[1.5rem]'>michelle.rivera@example.com</h6>{/*email-address*/}
+                        <h6 className='!font-normal lg:heading-6 lg:[13.68rem] lg:h-[1.5rem]'>michelle.rivera@example.com</h6>{/*email-address*/}
                     </div>
                 </div>
 
