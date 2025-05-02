@@ -6,7 +6,7 @@ export default function ShopCards2() {
                         lg:flex-row lg:pb-12 lg:pt-0">
             {shopCards2Data.map((item, index) => (
                 <div key={index}
-                    className="flex flex-col justify-center items-center bg-cover w-[20.75rem] h-[18.75rem]
+                    className="flex flex-col justify-center items-center bg-cover w-[23rem] h-[23rem]
                                lg:w-[13rem] lg:h-[14rem]"
                     style={{ backgroundImage: `url(${item.bgImage})` }}>
                     <h6 className="font-bold text-base leading-6 tracking-[0.1px] text-center">{item.category}</h6>
