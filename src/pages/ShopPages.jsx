@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Footer from '../layouts/Footer';
 import Clients from '../components/Clients';
-import ProductCards from '../components/ProductCards';
 
 export default function ShopPages() {
 
