@@ -23,5 +23,5 @@ export const shopCards2Data = [
         bgImage: "src/assets/images/shopPages2Img/media bg-cover-5.png",
         category: "CLOTHS",
         numberOfItems: 5,
-    },
-]
+    }
+];
