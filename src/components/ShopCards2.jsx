@@ -2,15 +2,15 @@ import { shopCards2Data } from "../assets/dataStore/shopCards2Data";
 
 export default function ShopCards2() {
     return <>
-        <div className="flex flex-col bg-[#FAFAFA] mx-auto justify-center 
-                        lg:flex-row lg:pb-12 lg:gap-4">
+        <div className="flex flex-col bg-[#FAFAFA] mx-auto justify-center font-montserrat text-[#FFFFFF]
+                        lg:flex-row lg:pb-12 lg:gap-4 lg:w-[70rem]">
             {shopCards2Data.map((item, index) => (
                 <div key={index}
                     className="flex flex-col justify-center items-center bg-cover 
                                lg:w-[13rem] lg:h-[14rem]"
                     style={{ backgroundImage: `url(${item.bgImage})` }}>
-                    <h6>{item.category}</h6>
-                    <h6>{item.numberOfItems} Items</h6>
+                    <h6 className="font-bold text-base leading-6 tracking-[0.1px] text-center">{item.category}</h6>
+                    <h6 className="font-normal text-sm leading-5 tracking-[0.2px]">{item.numberOfItems} Items</h6>
                 </div>
 
             ))}
