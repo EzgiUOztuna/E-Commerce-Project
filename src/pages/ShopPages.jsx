@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Footer from '../layouts/Footer';
 import Clients from '../components/Clients';
 import ShopCards2 from '../components/ShopCards2';
 import ProductCards2 from '../components/ProductCards2';
+import FooterLight from '../components/FooterLight';
 
 export default function ShopPages() {
 
@@ -127,7 +127,6 @@ export default function ShopPages() {
         <ShopCards2 />
         <ProductCards2 />
         <Clients />
-        <Footer />
-
+        <FooterLight />
     </>
 }
