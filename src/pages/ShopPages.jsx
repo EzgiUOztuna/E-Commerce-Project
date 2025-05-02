@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Footer from '../layouts/Footer';
 import Clients from '../components/Clients';
+import ShopCards2 from '../components/ShopCards2';
 
 export default function ShopPages() {
 
@@ -120,8 +121,8 @@ export default function ShopPages() {
                     <h6 className='text-[#BDBDBD]'>Shop</h6>
                 </div>
             </div>
-
         </div>
+        <ShopCards2 />
         <Clients />
         <Footer />
 
