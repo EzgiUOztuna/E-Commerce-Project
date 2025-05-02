@@ -3,7 +3,7 @@ import { shopCards2Data } from "../assets/dataStore/shopCards2Data";
 export default function ShopCards2() {
     return <>
         <div className="flex flex-col bg-[#FAFAFA] mx-auto justify-center items-center font-montserrat text-[#FFFFFF] py-6 gap-4
-                        lg:flex-row lg:pb-12 lg:pt-0 lg:w-[70rem]">
+                        lg:flex-row lg:pb-12 lg:pt-0">
             {shopCards2Data.map((item, index) => (
                 <div key={index}
                     className="flex flex-col justify-center items-center bg-cover w-[20.75rem] h-[18.75rem]
