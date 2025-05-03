@@ -2,7 +2,7 @@ import { productCards2Data } from "../assets/dataStore/productCards2Data";
 
 export default function ProductCards2() {
     return <>
-        <div className="font-montserrat flex flex-col w-[20.5rem] py-20 gap-12 m-auto
+        <div className="font-montserrat flex flex-col w-[20.5rem] py-6 gap-12 m-auto
                             lg:w-[70.25rem] lg:gap-20">
 
             <div className="flex flex-col py-6 gap-6 justify-between items-center text-[#737373] lg:flex-row lg:gap-20">
