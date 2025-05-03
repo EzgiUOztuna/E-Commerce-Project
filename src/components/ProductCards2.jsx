@@ -1,6 +1,7 @@
 import { productCards2Data } from "../assets/dataStore/productCards2Data";
 
 export default function ProductCards2() {
+
     return <>
         <div className="font-montserrat flex flex-col w-[20.5rem] py-6 gap-12 m-auto
                             lg:w-[70.25rem] lg:gap-20">
@@ -52,10 +53,33 @@ export default function ProductCards2() {
                                 <div className="w-4 h-4 border rounded-lg" style={{ color: item.colors.thirdColor, backgroundColor: item.colors.thirdColor }}></div>
                                 <div className="w-4 h-4 border rounded-lg" style={{ color: item.colors.fourthColor, backgroundColor: item.colors.fourthColor }}></div>
                             </div>
+
                         </div>
 
                     </div>
                 ))}
+            </div>
+
+            <div>
+                <div className="flex justify-center items-center shadow-[0px_2px_4px_0px_#0000001A] border-[1.35px] border-[#BDBDBD] rounded-lg
+                                lg:w-80 lg:h-20">
+                    <button className="p-6 rounded border border-[#BDBDBD] text-[#BDBDBD] bg-gray-100 font-bold text-sm leading-6tracking-[0.2pxs] text-center">First</button>
+
+                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
+                        1
+                    </button>
+                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
+                        2
+                    </button>
+                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
+                        3
+                    </button>
+
+                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
+                        Next
+                    </button>
+                </div>
+
             </div>
         </div>
     </>
