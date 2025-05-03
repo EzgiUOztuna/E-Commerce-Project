@@ -5,7 +5,23 @@ export default function ProductCards2() {
         <div className="font-montserrat flex flex-col w-[20.5rem] py-20 gap-12 m-auto
                             lg:w-[70.25rem] lg:gap-20">
 
-            <div className=" ">
+            <div className="flex justify-between items-center text-[#737373] lg:py-6 lg:gap-20">
+                <h6 className="font-bold text-sm leading-6 tracking-[0.2px] ">Showing all 12 results</h6> {/* ⚠️ Buradaki 12'yi aşağıdaki ürün sayısına bağlanmalı. ⚠️ */}
+                <div className="flex items-center px-[1px] gap-4">
+                    <h6 className="font-bold text-sm leading-6 tracking-[0.2px]">Views: </h6>
+                    <button><img src="src/assets/icons/menu-style.svg" /></button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
+                    <button><img src="src/assets/icons/menu-style-2.svg" /></button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
+                </div>
+                <div className="flex item-center px-[1px] gap-4">
+                    <select className="w-36 h-12 text-center border border-[#DDDDDD] rounded-md px-4 py-3">
+                        <option value="popularity" className=""><p>Popularity</p></option>
+                        <option value="list-entry-1">List Entry 1</option>
+                        <option value="list-entry-2">List Entry 2</option>
+                        <option value="list-entry-3">List Entry 3</option>
+                        <option value="list-entry-4">List Entry 4</option>
+                        <option value="list-entry-5">List Entry 5</option>
+                    </select>
+                </div>
 
             </div>
 
