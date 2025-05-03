@@ -5,12 +5,16 @@ export default function ProductCards2() {
         <div className="font-montserrat flex flex-col w-[20.5rem] py-20 gap-12 m-auto
                             lg:w-[70.25rem] lg:gap-20">
 
-            <div className="flex justify-between items-center text-[#737373] lg:py-6 lg:gap-20">
+            <div className="flex flex-col py-6 gap-6 justify-between items-center text-[#737373] lg:flex-row lg:gap-20">
                 <h6 className="font-bold text-sm leading-6 tracking-[0.2px] ">Showing all 12 results</h6> {/* ⚠️ Buradaki 12'yi aşağıdaki ürün sayısına bağlanmalı. ⚠️ */}
                 <div className="flex items-center px-[1px] gap-4">
                     <h6 className="font-bold text-sm leading-6 tracking-[0.2px]">Views: </h6>
-                    <button><img src="src/assets/icons/menu-style.svg" /></button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
-                    <button><img src="src/assets/icons/menu-style-2.svg" /></button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
+                    <button className="border border-[#ECECEC] w-10 h-10 rounded-md">
+                        <img className="mx-auto" src="src/assets/icons/menu-style.svg" />
+                    </button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
+                    <button className="border border-[#ECECEC] w-10 h-10 rounded-md">
+                        <img className="mx-auto" src="src/assets/icons/menu-style-2.svg" />
+                    </button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
                 </div>
                 <div className="flex item-center px-[1px] gap-4">
                     <select className="w-36 h-12 border border-[#DDDDDD] rounded-md px-4 py-3 appearance-none bg-[url('src/assets/icons/dropdown.svg')] bg-no-repeat bg-[right_1.5rem_center] bg-[length:.7rem] cursor-pointer">
@@ -21,7 +25,10 @@ export default function ProductCards2() {
                         <option value="list-entry-4">List Entry 4</option>
                         <option value="list-entry-5">List Entry 5</option>
                     </select>
-                    <button><h6>Filter</h6></button>
+                    <button className="py-3 px-5 bg-[#23A6F0] rounded-md 
+                                       lg:w-24 lg:h-12">
+                        <h6 className="font-bold text-sm leading-6 tracking-[0.2px] text-center text-[#FFFFFF]">Filter</h6> {/* ⚠️ Filtre tetikleme. ⚠️ */}
+                    </button>
                 </div>
 
             </div>
