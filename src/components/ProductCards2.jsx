@@ -61,23 +61,18 @@ export default function ProductCards2() {
             </div>
 
             <div>
-                <div className="flex justify-center items-center shadow-[0px_2px_4px_0px_#0000001A] border-[1.35px] border-[#BDBDBD] rounded-lg
-                                lg:w-80 lg:h-20">
-                    <button className="p-6 rounded border border-[#BDBDBD] text-[#BDBDBD] bg-gray-100 font-bold text-sm leading-6tracking-[0.2pxs] text-center">First</button>
+                <div className="flex justify-center items-center border border-[#BDBDBD] shadow-[0px_2px_4px_0px_#0000001A] mx-auto rounded-lg lg:w-80 lg:h-26">
+                    <button className="p-6 rounded-lg rounded-r-none text-[#BDBDBD] bg-gray-100 font-bold text-sm leading-6 tracking-[0.2pxs] text-center
+                                lg:w-24 lg:h-20">First</button>
 
-                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
-                        1
-                    </button>
-                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
-                        2
-                    </button>
-                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
-                        3
-                    </button>
-
-                    <button className="px-3 py-1 rounded border border-gray-300 text-gray-600 hover:bg-gray-100">
-                        Next
-                    </button>
+                    <button className="p-6 border border-[#E9E9E9] text-[#23A6F0] bg-gray-100 font-bold text-sm leading-6tracking-[0.2pxs] text-center
+                                       lg:w-12 lg:h-20">1</button>
+                    <button className="p-6 border border-[#E9E9E9] text-[#FFFFFF] bg-[#23A6F0] font-bold text-sm leading-6tracking-[0.2pxs] text-center
+                                       lg:w-12 lg:h-20">2</button>
+                    <button className="p-6 border border-[#E9E9E9] text-[#23A6F0] bg-gray-100 font-bold text-sm leading-6tracking-[0.2pxs] text-center
+                                       lg:w-12 lg:h-20">3</button>
+                    <button className="p-6 rounded-lg rounded-l-none  text-[#23A6F0] bg-gray-100 font-bold text-sm leading-6tracking-[0.2pxs] text-center
+                                       lg:w-20 lg:h-20">Next</button>
                 </div>
 
             </div>
