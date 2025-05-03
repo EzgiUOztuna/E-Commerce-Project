@@ -45,7 +45,7 @@ export default function ShopPages() {
                 </div>
             </div>
             <div className='flex flex-wrap h-[33rem] px-6
-                            lg:w-[78rem] lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-around lg:mx-auto'>
+                            lg:w-[77rem] lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-around lg:mx-auto'>
                 <h3 className='w-1/2 order-1 font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 flex items-center lg:oder-1 lg:w-[11.68rem]'>Bandage</h3>
 
                 <div className='w-full order-3
@@ -115,7 +115,7 @@ export default function ShopPages() {
         </div >
         <div className='bg-[#FAFAFA] font-montserrat py-6'>
             <div className='flex flex-col items-center gap-8
-                            lg:w-[70rem] lg:flex-row lg:justify-between lg:mx-auto'>
+                            lg:w-[69rem] lg:flex-row lg:justify-between lg:mx-auto'>
                 <h3 className='font-bold text-2xl leading-8 tracking-[0.1px] text-center text-[#252B42] py-6'>Shop</h3>
                 <div className='flex items-center gap-4 py-3 font-bold text-sm leading-6 tracking-[0.2px] text-center'>
                     <a href='/home' className='text-[#252B42]'>Home</a>
