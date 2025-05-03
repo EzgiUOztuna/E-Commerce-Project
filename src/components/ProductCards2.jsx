@@ -13,7 +13,7 @@ export default function ProductCards2() {
                     <button><img src="src/assets/icons/menu-style-2.svg" /></button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
                 </div>
                 <div className="flex item-center px-[1px] gap-4">
-                    <select className="w-36 h-12 text-center border border-[#DDDDDD] rounded-md px-4 py-3">
+                    <select className="w-36 h-12 border border-[#DDDDDD] rounded-md px-4 py-3 appearance-none bg-[url('src/assets/icons/dropdown.svg')] bg-no-repeat bg-[right_1.5rem_center] bg-[length:.7rem] cursor-pointer">
                         <option value="popularity" className=""><p>Popularity</p></option>
                         <option value="list-entry-1">List Entry 1</option>
                         <option value="list-entry-2">List Entry 2</option>
@@ -21,6 +21,7 @@ export default function ProductCards2() {
                         <option value="list-entry-4">List Entry 4</option>
                         <option value="list-entry-5">List Entry 5</option>
                     </select>
+                    <button><h6>Filter</h6></button>
                 </div>
 
             </div>
