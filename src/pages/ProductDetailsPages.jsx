@@ -1,3 +1,5 @@
 export default function ProductDetailsPages() {
-    return;
+    return <>
+        <p>XXX</p>
+    </>
 }
