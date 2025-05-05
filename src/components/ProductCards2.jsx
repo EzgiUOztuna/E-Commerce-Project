@@ -37,11 +37,14 @@ export default function ProductCards2() {
                                 lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-8">
                 {productCards2Data.map((item, index) => (
                     <div key={index} className="flex flex-col items-center lg:mb-4">
-                        <img className="w-[21.75rem] h-[26.7rem] 
-                                        lg:w-[15rem] lg:h-[18.75rem]" src={item.productImage}></img>
+                        <a href="/product-detail"> {/* "/product/:id" */}
+                            <img className="w-[21.75rem] h-[26.7rem] 
+                                        lg:w-[15rem] lg:h-[18.75rem]" src={item.productImage}></img></a>
                         <div className="flex flex-col items-center w-[21.75rem] font-bold text-center pt-6 pb-9 gap-[0.625rem]">
-                            <h5 className="text-[#252B42] lg:text-base lg:leading-6 lg:tracking-[0.1px]">{item.productTitle}</h5>
-                            <a className="text-sm text-[#737373] lg:leading-6 lg:tracking-[0.2px]" href="/product-link">{item.productSubtitle}</a>
+                            <a href="/product-detail">
+                                <h5 className="text-[#252B42] lg:text-base lg:leading-6 lg:tracking-[0.1px]">{item.productTitle}</h5>
+                                <p className="text-sm text-[#737373] lg:leading-6 lg:tracking-[0.2px]" href="/product-detail">{item.productSubtitle}</p> {/* "/product/:id" */}
+                            </a>
                             <div className="flex font-bold text-base leading-6 tracking-[0.1px] text-center py-1 p-1 gap-2">
                                 <h5 className="text-[#BDBDBD]">${item.originalPrice}  </h5>
                                 <h5 className="text-[#23856D]">${item.originalPrice - (Number(item.originalPrice) - (Number(item.originalPrice) * (Number(item.discountRate) / 100))).toFixed(2)}</h5>
