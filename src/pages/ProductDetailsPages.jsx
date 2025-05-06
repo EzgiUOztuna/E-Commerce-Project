@@ -71,16 +71,16 @@ export default function ProductDetailsPages() {
                             <div className='flex gap-3'>
                                 <button className='rounded-md px-5 py-3 bg-[#23A6F0] gap-2 lg:w-36 lg:h-11'>
                                     <h6 className='font-bold text-sm leading-6 teacking-[0.2px] text-center text-[#FFFFFF]'>Select Option</h6>
-                                </button>
+                                </button> {/* ⚠️ */}
                                 <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
                                     <img className="pl-2" src='src/assets/icons/heart-black.svg' />
-                                </button>
+                                </button> {/* ⚠️ */}
                                 <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
                                     <img className="pl-2" src='src/assets/icons/cart-black.svg' />
-                                </button>
+                                </button> {/* ⚠️ */}
                                 <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
                                     <img className="pl-2" src='src/assets/icons/eye-black.svg' />
-                                </button>
+                                </button> {/* ⚠️ */}
                             </div>
 
 
