@@ -5,7 +5,7 @@ export default function ProductCards2() {
     return <>
         <div className="font-montserrat flex flex-col py-6 gap-20 justify-between items-center text-[#737373] mx-auto 
                         lg:flex-row lg:gap-20 lg:w-[69rem]">
-            <h6 className="font-bold text-sm leading-6 tracking-[0.2px] ">Showing all 12 results</h6> {/* ⚠️ Buradaki 12'yi aşağıdaki ürün sayısına bağlanmalı. ⚠️ */}
+            <h6 className="font-bold text-sm leading-6 tracking-[0.2px] ">Showing all {productCards2Data.length} results</h6>
             <div className="flex items-center px-[1px] gap-4">
                 <h6 className="font-bold text-sm leading-6 tracking-[0.2px]">Views: </h6>
                 <button className="border border-[#ECECEC] w-10 h-10 rounded-md">
@@ -43,7 +43,7 @@ export default function ProductCards2() {
                         <div className="flex flex-col items-center w-[21.75rem] font-bold text-center pt-6 pb-9 gap-[0.625rem]">
                             <a href="/product-detail">
                                 <h5 className="text-[#252B42] lg:text-base lg:leading-6 lg:tracking-[0.1px]">{item.productTitle}</h5>
-                                <p className="text-sm text-[#737373] lg:leading-6 lg:tracking-[0.2px]" href="/product-detail">{item.productSubtitle}</p> {/* "/product/:id" */}
+                                <p className="text-sm text-[#737373] lg:leading-6 lg:tracking-[0.2px]">{item.productSubtitle}</p> {/* "/product/:id" */}
                             </a>
                             <div className="flex font-bold text-base leading-6 tracking-[0.1px] text-center py-1 p-1 gap-2">
                                 <h5 className="text-[#BDBDBD]">${item.originalPrice}  </h5>
