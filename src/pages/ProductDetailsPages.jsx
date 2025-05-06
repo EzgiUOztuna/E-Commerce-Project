@@ -7,6 +7,7 @@ import SiteHeader from '../components/SiteHeader';
 export default function ProductDetailsPages() {
     const product = productDetailsData[0];
     const [selectedImage, setSelectedImage] = useState(product.images[0]);
+    {/* ⚠️ Prev ve Next butonları gelecek. */ }
 
     return <>
         <SiteHeader />
@@ -22,7 +23,6 @@ export default function ProductDetailsPages() {
                 </div>
             </div>
 
-
             <div className='flex mx-auto lg:flex-row lg:pb-12 lg:gap-8'>
                 <div className='flex flex-col gap-4 rounded-md'>
                     <img src={selectedImage}
@@ -31,8 +31,7 @@ export default function ProductDetailsPages() {
                     <div className='flex flex-col items-center
                                 lg:flex-row lg:gap-4'>
                         {product.images.map((img, index) => (
-                            <img className={`lg:w-24 lg:h-20
-                            ${selectedImage === img ? "" : "border-transparent"}`}
+                            <img className="lg:w-24 lg:h-20"
                                 key={index}
                                 src={img}
                                 onClick={() => setSelectedImage(img)} />
