@@ -23,13 +23,13 @@ export default function ProductDetailsPages() {
             </div>
 
 
-            <div className='flex lg:flex-row lg:pb-12 lg:gap-8'>
-                <div className='flex flex-col'>
+            <div className='flex mx-auto lg:flex-row lg:pb-12 lg:gap-8'>
+                <div className='flex flex-col gap-4 rounded-md'>
                     <img src={selectedImage}
                         className='lg:w-[31rem] lg:h-[28rem]' />
 
-                    <div className='flex flex-col 
-                                lg:flex-row'>
+                    <div className='flex flex-col items-center
+                                lg:flex-row lg:gap-4'>
                         {product.images.map((img, index) => (
                             <img className={`lg:w-24 lg:h-20
                             ${selectedImage === img ? "" : "border-transparent"}`}
@@ -41,12 +41,11 @@ export default function ProductDetailsPages() {
                 </div>
 
                 <div className='flex lg:flex-col'>
-
                     {productDetailsData.map((item, index) => (
                         <div key={index}
-                            className='flex flex-col lg:h-[29rem] lg:justify-between'>
-                            <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#252B42]'>{item.h4}</h4>
-                            <div className='flex gap-3 items-center'>
+                            className='flex flex-col lg:h-[27.8rem]'>
+                            <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#252B42] pb-3'>{item.h4}</h4>
+                            <div className='flex gap-3 items-center pb-3'>
                                 <div className='flex gap-1'>
                                     <img src={item.rates.fullStar} />
                                     <img src={item.rates.fullStar} />
@@ -56,21 +55,32 @@ export default function ProductDetailsPages() {
                                 </div>
                                 <h6 className='font-bold text-sm leading-6 tracking-[0.2px] text-[#737373]'>{item.rates.reviews} Reviews</h6>
                             </div>
-                            <h3 className='font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42]'>${item.price}</h3>
-                            <div className='flex gap-1 font-bold text-sm leading-6 tracking-[0.2px]'>
+                            <h3 className='font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] pb-2'>${item.price}</h3>
+                            <div className='flex gap-1 font-bold text-sm leading-6 tracking-[0.2px] pb-6'>
                                 <h6 className='text-[#737373]'>Availability : </h6>
                                 <h6 className='text-[#23A6F0]'>{item.availability}</h6>
                             </div>
-                            <p className='font-normal text-sm leading-5 tracking-[0.2px] text-[#858585] lg:w-[26.5rem]'>{item.desc}</p>
+                            <p className='font-normal text-sm leading-5 tracking-[0.2px] text-[#858585] py-6 lg:w-[26.5rem]'>{item.desc}</p>
                             <hr className='border text-[#BDBDBD] lg:w-[26rem]'></hr>
-                            <div className="flex gap-3">
+                            <div className="flex gap-3 pt-6 pb-16">
                                 <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.firstColor, backgroundColor: item.colors.firstColor }}></div>
                                 <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.secondColor, backgroundColor: item.colors.secondColor }}></div>
                                 <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.thirdColor, backgroundColor: item.colors.thirdColor }}></div>
                                 <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.fourthColor, backgroundColor: item.colors.fourthColor }}></div>
                             </div>
-                            <div className='flex'>
-
+                            <div className='flex gap-3'>
+                                <button className='rounded-md px-5 py-3 bg-[#23A6F0] gap-2 lg:w-36 lg:h-11'>
+                                    <h6 className='font-bold text-sm leading-6 teacking-[0.2px] text-center text-[#FFFFFF]'>Select Option</h6>
+                                </button>
+                                <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
+                                    <img className="pl-2" src='src/assets/icons/heart-black.svg' />
+                                </button>
+                                <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
+                                    <img className="pl-2" src='src/assets/icons/cart-black.svg' />
+                                </button>
+                                <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
+                                    <img className="pl-2" src='src/assets/icons/eye-black.svg' />
+                                </button>
                             </div>
 
 
