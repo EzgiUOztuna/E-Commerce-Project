@@ -3,16 +3,9 @@ import { productDetailsData } from '../assets/dataStore/productDetailsData';
 import Clients from '../components/Clients';
 import FooterLight from '../components/FooterLight';
 import SiteHeader from '../components/SiteHeader';
-import { useParams } from 'react-router-dom';
 
 export default function ProductDetailsPages() {
-    const { id } = useParams();
-    const product = productDetailsData.find(p => p.id === Number(id));
-
-    if (!product) {
-        return <p>Ürün bulunamadı.</p>;
-    }
-
+    const product = productDetailsData[0];
     const [selectedImage, setSelectedImage] = useState(product.images[0]);
 
     return <>
@@ -29,31 +22,23 @@ export default function ProductDetailsPages() {
                 </div>
             </div>
 
-            {/* Carousel */}
-            <div className='flex flex-col lg:flex-row gap-4 lg:w-[69rem] lg:mx-auto'>
-                {/* Büyük Resim */}
-                <div className='flex-1'>
-                    <img
-                        src={selectedImage}
-                        alt="Selected Product"
-                        className='w-full h-auto object-cover rounded-lg'
-                    />
-                </div>
 
-                {/* Thumbnail'lar */}
-                <div className='flex gap-3 mt-4 lg:mt-0 lg:flex-col'>
+            <div className='flex flex-col'>
+                <img src={selectedImage}
+                    className='lg:w-[31rem] lg:h-[28rem]' />
+
+                <div className='flex flex-col 
+                                lg:flex-row'>
                     {product.images.map((img, index) => (
-                        <img
+                        <img className={`lg:w-24 lg:h-20
+                            ${selectedImage === img ? "" : "border-transparent"}`}
                             key={index}
                             src={img}
-                            alt={`Thumbnail ${index}`}
-                            onClick={() => setSelectedImage(img)}
-                            className={`w-20 h-20 object-cover rounded cursor-pointer border-2 ${selectedImage === img ? "border-blue-500" : "border-transparent"
-                                }`}
-                        />
+                            onClick={() => setSelectedImage(img)} />
                     ))}
                 </div>
             </div>
+
 
 
 
