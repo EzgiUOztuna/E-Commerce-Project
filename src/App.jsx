@@ -11,12 +11,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePages />} />
         <Route path="/shop" element={<ShopPages />} />
-        <Route path="/product-detail" element={<ProductDetailsPages />} />
-        {/* <Route path="/product/:id" element={<ProductDetailsPages />} /> */}
+        <Route path="/product/:id" element={<ProductDetailsPages />} />
+        {/* <Route path="/product-detail" element={<ProductDetailsPages />} /> */}
         <Route path="/inner" element={<InnerPages />} />
       </Routes>
     </>
   )
 }
 
-export default App
+export default App;
