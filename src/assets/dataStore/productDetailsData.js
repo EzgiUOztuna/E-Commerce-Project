@@ -4,7 +4,6 @@ export const productDetailsData = [
         images: [
             "src/assets/images/productDetailsImg/single-product-1-cover-2.jpg",
             "src/assets/images/productDetailsImg/single-product-1-thumb-1.jpg",
-            "src/assets/images/productDetailsImg/single-product-1-thumb-2.jpg",
         ],
         h4: "Floating Phone",
         rates: {
