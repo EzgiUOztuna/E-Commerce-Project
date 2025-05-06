@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { productDetailsData } from '../assets/dataStore/productDetailsData';
 import Clients from '../components/Clients';
 import FooterLight from '../components/FooterLight';
@@ -7,6 +8,12 @@ import { useParams } from 'react-router-dom';
 export default function ProductDetailsPages() {
     const { id } = useParams();
     const product = productDetailsData.find(p => p.id === Number(id));
+
+    if (!product) {
+        return <p>Ürün bulunamadı.</p>;
+    }
+
+    const [selectedImage, setSelectedImage] = useState(product.images[0]);
 
     return <>
         <SiteHeader />
@@ -22,14 +29,31 @@ export default function ProductDetailsPages() {
                 </div>
             </div>
 
-            {productDetailsData.map((img, index) => (
-                <div key={index} className='flex flex-col lg:flex-row'>
-
-                    <div className='flex flex-col'>
-                        <img src={img.images[index]} />
-                    </div>
+            {/* Carousel */}
+            <div className='flex flex-col lg:flex-row gap-4 lg:w-[69rem] lg:mx-auto'>
+                {/* Büyük Resim */}
+                <div className='flex-1'>
+                    <img
+                        src={selectedImage}
+                        alt="Selected Product"
+                        className='w-full h-auto object-cover rounded-lg'
+                    />
                 </div>
-            ))}
+
+                {/* Thumbnail'lar */}
+                <div className='flex gap-3 mt-4 lg:mt-0 lg:flex-col'>
+                    {product.images.map((img, index) => (
+                        <img
+                            key={index}
+                            src={img}
+                            alt={`Thumbnail ${index}`}
+                            onClick={() => setSelectedImage(img)}
+                            className={`w-20 h-20 object-cover rounded cursor-pointer border-2 ${selectedImage === img ? "border-blue-500" : "border-transparent"
+                                }`}
+                        />
+                    ))}
+                </div>
+            </div>
 
 
 
