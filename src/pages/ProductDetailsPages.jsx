@@ -23,7 +23,7 @@ export default function ProductDetailsPages() {
             </div>
 
 
-            <div className='flex lg:flex-row'>
+            <div className='flex lg:flex-row lg:pb-12 lg:gap-8'>
                 <div className='flex flex-col'>
                     <img src={selectedImage}
                         className='lg:w-[31rem] lg:h-[28rem]' />
@@ -44,7 +44,7 @@ export default function ProductDetailsPages() {
 
                     {productDetailsData.map((item, index) => (
                         <div key={index}
-                            className='flex flex-col'>
+                            className='flex flex-col lg:h-[29rem] lg:justify-between'>
                             <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#252B42]'>{item.h4}</h4>
                             <div className='flex gap-3 items-center'>
                                 <div className='flex gap-1'>
@@ -62,7 +62,16 @@ export default function ProductDetailsPages() {
                                 <h6 className='text-[#23A6F0]'>{item.availability}</h6>
                             </div>
                             <p className='font-normal text-sm leading-5 tracking-[0.2px] text-[#858585] lg:w-[26.5rem]'>{item.desc}</p>
+                            <hr className='border text-[#BDBDBD] lg:w-[26rem]'></hr>
+                            <div className="flex gap-3">
+                                <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.firstColor, backgroundColor: item.colors.firstColor }}></div>
+                                <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.secondColor, backgroundColor: item.colors.secondColor }}></div>
+                                <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.thirdColor, backgroundColor: item.colors.thirdColor }}></div>
+                                <div className="w-8 h-8 border rounded-full" style={{ color: item.colors.fourthColor, backgroundColor: item.colors.fourthColor }}></div>
+                            </div>
+                            <div className='flex'>
 
+                            </div>
 
 
                         </div>
