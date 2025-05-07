@@ -66,12 +66,8 @@ export default function Footer() {
                 <div className="mx-auto py-6 w-[12.5rem] lg:w-[70rem]">
                     <h6 className="text-center font-bold text-sm leading-6 tracking-[0.2px] text-[#737373] lg:text-left">Made With Love By Finland All Right Reserved </h6>
                 </div>
-
             </div>
-
-
         </div>
-
     </>
 }
 
