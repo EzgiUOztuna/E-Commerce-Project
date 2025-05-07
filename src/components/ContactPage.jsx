@@ -19,16 +19,26 @@ export default function ContactPage() {
                 </div>
             </div>
 
-            <div className='w-1/2 order-2 flex items-center gap-[0.5rem]
-                                lg:text-[#23A6F0] lg:gap-0 lg:order-3 lg:max-w-[19.06rem]'>
+            <div className='w-1/2 order-2 flex items-center justify-between gap-[0.5rem]
+                                lg:text-[#23A6F0] lg:gap-11 lg:order-3 lg:max-w-[19.06rem]'>
                 <a href="/login" className='lg:navbar-actions'>
                     <p className='hidden
                                   lg:block lg:text-center lg:text-[#23A6F0] lg:font-bold lg:text-[0.875rem] lg:leading-[1.5rem] lg:tracking-[0.0125rem]'>Login</p>
                 </a>
-                <button className="flex border border-[#23A6F0] bg-[#23A6F0] w-52 h-14 py-4 px-6 gap-4">
-                    <p className="text-[#FFFFFF]">Become a member</p>
-                    <img src="src/assets/icons/arrow-right .icn-xs.svg" />
+                <button className="hidden
+                                   lg:flex lg:border lg:border-[#23A6F0] lg:bg-[#23A6F0] lg:w-56 lg:h-14 lg:py-4 lg:px-6 lg:gap-4 lg:items-center lg:rounded">
+                    <p className="text-[#FFFFFF] font-bold text-sm leading-6 tracking-[0.2px]">Become a member</p>
+                    <img className="w-3 h-3" src="src/assets/icons/arrow-right .icn-xs.svg" />
                 </button>
+
+                <a href='/search'><img className='hidden lg:navbar-actions' src='src/assets/icons/search.svg'></img></a>
+                <a href='/search'><img className='block lg:hidden' src='src/assets/icons/search-mobile.svg'></img></a>
+
+                <a href='/cart'><img className='hidden lg:navbar-actions' src='src/assets/icons/cart.svg'></img></a>
+                <a href='/cart'><img className='block lg:hidden' src='src/assets/icons/cart-mobile.svg'></img></a>
+
+                <a href='/favorites'><img className='hidden lg:navbar-actions' src='src/assets/icons/heart.svg'></img></a>
+                <a href='/menu'><img className='block lg:hidden' src='src/assets/icons/hamburger.svg'></img></a>
             </div>
         </div>
     </>
