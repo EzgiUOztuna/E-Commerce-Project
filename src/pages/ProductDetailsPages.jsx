@@ -83,22 +83,11 @@ export default function ProductDetailsPages() {
                                     <img className="pl-2" src='src/assets/icons/eye-black.svg' />
                                 </button> {/* ⚠️ */}
                             </div>
-
-
                         </div>
                     ))}
                 </div>
             </div>
-
-
-
-
         </div>
-
-
-
-
-
         <Clients />
         <FooterLight />
     </>
