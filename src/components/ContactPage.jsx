@@ -73,8 +73,67 @@ export default function ContactPage() {
                     </div>
                     <img className='block lg:hidden' src='src/assets/images/contactPageImg/background-mobile.png' />
                 </div>
-                <div className='hidden lg:block lg:w-[31rem]'></div>
+                <div className='hidden lg:block lg:w-[31rem] xl:w-[45.5rem]'></div>
             </div>
+        </div>
+
+        <div className='flex flex-col font-montserrat font-bold mx-auto
+                        lg:py-28 lg:gap-20 '>
+
+            <div className='flex flex-col gap-2 text-[#252B42] mx-auto text-center lg:w-[40rem]'>
+                <h6 className='text-sm leading-6 tracking-[0.2px]'>VISIT OUR OFFICE</h6>
+                <h2 className='text-[2.5rem] leading-[3.125rem] tracking-[0.2px]'>We help small businesses with big ideas</h2>
+            </div>
+
+            <div className='flex flex-col text-center mx-auto
+                            lg:flex-row '>
+                <a href='/contact'
+                    className='flex flex-col items-center gap-4 
+                              lg:hover-contact-div'>
+                    <img src='src/assets/icons/phone-icn-contact-page.svg' />
+                    <div className='text-sm leading-6 tracking-[0.2px] '>
+                        <h6>georgia.young@example.com</h6>
+                        <h6>georgia.young@ple.com</h6>
+                    </div>
+                    <h5 className='text-base leading-6 tracking-[0.1px]'>Get Support</h5>
+                    <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
+                                       lg:w-52 lg:h-14'>
+                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
+                </a>
+
+
+
+
+                <a href='/location'
+                    className='flex flex-col items-center gap-4 
+                               lg:hover-contact-div'>
+                    <img src='src/assets/icons/location-icn-contact-page.svg' />
+                    <div className='text-sm leading-6 tracking-[0.2px] '>
+                        <h6>georgia.young@example.com</h6>
+                        <h6>georgia.young@ple.com</h6>
+                    </div>
+                    <h5 className='text-base leading-6 tracking-[0.1px]'>Get Support</h5>
+                    <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
+                                       lg:w-52 lg:h-14'>
+                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
+                </a>
+
+                <a href='/support'
+                    className='flex flex-col items-center gap-4 
+                              lg:hover-contact-div'>
+                    <img src='src/assets/icons/mail-icn-contact-page.svg' />
+                    <div className='text-sm leading-6 tracking-[0.2px] '>
+                        <h6>georgia.young@example.com</h6>
+                        <h6>georgia.young@ple.com</h6>
+                    </div>
+                    <h5 className='text-base leading-6 tracking-[0.1px]'>Get Support</h5>
+                    <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
+                                       lg:w-52 lg:h-14'>
+                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
+                </a>
+
+            </div>
+
         </div>
 
         <FooterLight />
