@@ -61,7 +61,7 @@ export default function ContactPage() {
 
                     <div className='flex flex-col gap-4 font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] text-center mx-auto
                                     lg:text-left lg:w-[23.125rem]'>
-                        <h3>Phone ; +451 215 215</h3>
+                        <h3>Phone : +451 215 215</h3>
                         <h3>Fax : +451 215 215</h3>
                     </div>
                     <div className='flex items-center gap-8 mx-auto p-3
