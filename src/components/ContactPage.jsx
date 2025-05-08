@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import FooterLight from '../components/FooterLight';
 export default function ContactPage() {
     return <>
@@ -52,15 +53,19 @@ export default function ContactPage() {
                                    lg:text-left lg:w-[23.125rem]'>CONTACT US</h5>
                     <h1 className='font-bold text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] text-center w-[380px] mx-auto
                                    lg:text-left lg:w-[23.625rem] lg:text-[3.625rem] lg:leading-[5rem]'>Get in touch today!</h1>
-                    <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#737373] text-center w-[5rem] mx-auto
+
+
+                    <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#737373] text-center w-[17rem] mx-auto
                                    lg:text-left lg:w-[23rem]'>We know how large objects will act, but things on a small scale</h4>
+
+
                     <div className='flex flex-col gap-4 font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] text-center mx-auto
                                     lg:text-left lg:w-[23.125rem]'>
                         <h3>Phone ; +451 215 215</h3>
                         <h3>Fax : +451 215 215</h3>
                     </div>
-                    <div className='flex items-center gap-8 mx-auto 
-                                    lg:p-3 lg:w-[24.375rem]'>
+                    <div className='flex items-center gap-8 mx-auto p-3
+                                    lg:w-[24.375rem]'>
                         <img src='src/assets/icons/logos_twitter.svg' />
                         <img src='src/assets/icons/logos_facebook.svg' />
                         <img src='src/assets/icons/logos_instagram.svg' />
@@ -81,7 +86,7 @@ export default function ContactPage() {
             </div>
             <div className='flex flex-col text-center mx-auto gap-7
                             lg:flex-row lg:gap-0 '>
-                <a href='/contact'
+                <Link to="/contact"
                     className='hover-contact-mobile-div 
                               lg:hover-contact-div'>
                     <img src='src/assets/icons/phone-icn-contact-page.svg' />
@@ -93,8 +98,8 @@ export default function ContactPage() {
                     <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
                                        lg:w-52 lg:h-14'>
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button> {/* ⚠️ */}
-                </a>
-                <a href='/location'
+                </Link>
+                <Link to='/location'
                     className='hover-contact-mobile-div 
                                lg:hover-contact-div'>
                     <img src='src/assets/icons/location-icn-contact-page.svg' />
@@ -106,8 +111,8 @@ export default function ContactPage() {
                     <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
                                        lg:w-52 lg:h-14'>
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button> {/* ⚠️ */}
-                </a>
-                <a href='/support'
+                </Link>
+                <Link to='/support'
                     className='hover-contact-mobile-div 
                               lg:hover-contact-div'>
                     <img src='src/assets/icons/mail-icn-contact-page.svg' />
@@ -119,7 +124,7 @@ export default function ContactPage() {
                     <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
                                        lg:w-52 lg:h-14'>
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button> {/* ⚠️ */}
-                </a>
+                </Link>
             </div>
         </div>
 
