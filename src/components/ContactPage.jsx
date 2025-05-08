@@ -44,6 +44,7 @@ export default function ContactPage() {
                 </div>
             </div>
 
+
             <div className='flex gap-8 py-8 lg:py-28 lg:items-start '>
                 <div className='flex flex-col gap-10 mx-auto w-[27rem]
                                 lg:w-[37.5rem] lg:gap-9'>
@@ -51,14 +52,8 @@ export default function ContactPage() {
                                    lg:text-left lg:w-[23.125rem]'>CONTACT US</h5>
                     <h1 className='font-bold text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] text-center w-[380px] mx-auto
                                    lg:text-left lg:w-[23.625rem] lg:text-[3.625rem] lg:leading-[5rem]'>Get in touch today!</h1>
-
-
-
                     <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#737373] text-center w-[5rem] mx-auto
                                    lg:text-left lg:w-[23rem]'>We know how large objects will act, but things on a small scale</h4>
-
-
-
                     <div className='flex flex-col gap-4 font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] text-center mx-auto
                                     lg:text-left lg:w-[23.125rem]'>
                         <h3>Phone ; +451 215 215</h3>
@@ -80,7 +75,6 @@ export default function ContactPage() {
 
         <div className='flex flex-col font-montserrat font-bold mx-auto bg-[#FAFAFA] py-11 gap-14
                         lg:py-28 lg:gap-20 lg:bg-[#FFFFFF] '>
-
             <div className='flex flex-col gap-2 text-[#252B42] mx-auto text-center lg:w-[40rem]'>
                 <h6 className='text-sm leading-6 tracking-[0.2px]'>VISIT OUR OFFICE</h6>
                 <h2 className='w-[19rem] text-[2.5rem] leading-[3.125rem] tracking-[0.2px] mx-auto lg:w-[33rem]'>We help small businesses with big ideas</h2>
@@ -127,6 +121,17 @@ export default function ContactPage() {
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
                 </a>
             </div>
+        </div>
+
+        <div className='flex flex-col items-center font-montserrat 
+                        lg:h-[21.75rem] lg:gap-24'>
+            <img src='src/assets/icons/Arrow-curve.svg' />
+            <div className='flex flex-col text-center font-bold lg:gap-4'>
+                <h6 className='text-base leading-6 tracking-[0.1px] text-[#252B42]'>WE Can't WAIT TO MEET YOU</h6>
+                <h2 className='text-6xl leading-[5rem] tracking-[0.2px] text-[#252B42]'>Let’s Talk</h2>
+                <button className='border rounded-md py-4 px-10 bg-[#23A6F0] lg:w-[11.25]'></button>
+            </div>
+
 
         </div>
 
