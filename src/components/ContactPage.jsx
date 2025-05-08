@@ -92,7 +92,7 @@ export default function ContactPage() {
                     <h5 className='text-base leading-6 tracking-[0.1px]'>Get Support</h5>
                     <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
                                        lg:w-52 lg:h-14'>
-                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
+                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button> {/* ⚠️ */}
                 </a>
                 <a href='/location'
                     className='hover-contact-mobile-div 
@@ -105,7 +105,7 @@ export default function ContactPage() {
                     <h5 className='text-base leading-6 tracking-[0.1px]'>Get Support</h5>
                     <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
                                        lg:w-52 lg:h-14'>
-                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
+                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button> {/* ⚠️ */}
                 </a>
                 <a href='/support'
                     className='hover-contact-mobile-div 
@@ -118,17 +118,17 @@ export default function ContactPage() {
                     <h5 className='text-base leading-6 tracking-[0.1px]'>Get Support</h5>
                     <button className='border border-[#23A6F0] py-4 px-9 flex gap-3 rounded-[2.313rem]
                                        lg:w-52 lg:h-14'>
-                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
+                        <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button> {/* ⚠️ */}
                 </a>
             </div>
         </div>
 
 
-        <img className="mx-auto pb-7" src='src/assets/icons/Arrow-curve.svg' />
-        <div className='flex flex-col text-center font-bold items-center font-montserrat 
-                            lg:gap-4 lg:pb-20'>
+        <img className="mx-auto pt-8 pb-6 lg:pt-0" src='src/assets/icons/Arrow-curve.svg' />
+        <div className='flex flex-col text-center font-bold items-center font-montserrat gap-9 pb-20
+                            lg:gap-4'>
             <h6 className='text-base leading-6 tracking-[0.1px] text-[#252B42]'>WE Can't WAIT TO MEET YOU</h6>
-            <h2 className='text-6xl leading-[5rem] tracking-[0.2px] text-[#252B42]'>Let’s Talk</h2>
+            <h2 className='text-[3.625rem] leading-[5rem] tracking-[0.2px] text-[#252B42]'>Let’s Talk</h2>
 
             <button className='border rounded-md py-4 px-10 bg-[#23A6F0] mx-auto 
                                    lg:w-[12rem] lg:h-14'>
