@@ -54,7 +54,7 @@ export default function ContactPage() {
 
 
 
-                    <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#737373] text-center w-[17.5rem] mx-auto
+                    <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#737373] text-center w-[5rem] mx-auto
                                    lg:text-left lg:w-[23rem]'>We know how large objects will act, but things on a small scale</h4>
 
 
@@ -77,18 +77,18 @@ export default function ContactPage() {
             </div>
         </div>
 
-        <div className='flex flex-col font-montserrat font-bold mx-auto
-                        lg:py-28 lg:gap-20 '>
+
+        <div className='flex flex-col font-montserrat font-bold mx-auto bg-[#FAFAFA] py-11 gap-14
+                        lg:py-28 lg:gap-20 lg:bg-[#FFFFFF] '>
 
             <div className='flex flex-col gap-2 text-[#252B42] mx-auto text-center lg:w-[40rem]'>
                 <h6 className='text-sm leading-6 tracking-[0.2px]'>VISIT OUR OFFICE</h6>
-                <h2 className='text-[2.5rem] leading-[3.125rem] tracking-[0.2px]'>We help small businesses with big ideas</h2>
+                <h2 className='w-[19rem] text-[2.5rem] leading-[3.125rem] tracking-[0.2px] mx-auto lg:w-[33rem]'>We help small businesses with big ideas</h2>
             </div>
-
-            <div className='flex flex-col text-center mx-auto
-                            lg:flex-row '>
+            <div className='flex flex-col text-center mx-auto gap-7
+                            lg:flex-row lg:gap-0 '>
                 <a href='/contact'
-                    className='flex flex-col items-center gap-4 
+                    className='hover-contact-mobile-div 
                               lg:hover-contact-div'>
                     <img src='src/assets/icons/phone-icn-contact-page.svg' />
                     <div className='text-sm leading-6 tracking-[0.2px] '>
@@ -100,12 +100,8 @@ export default function ContactPage() {
                                        lg:w-52 lg:h-14'>
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
                 </a>
-
-
-
-
                 <a href='/location'
-                    className='flex flex-col items-center gap-4 
+                    className='hover-contact-mobile-div 
                                lg:hover-contact-div'>
                     <img src='src/assets/icons/location-icn-contact-page.svg' />
                     <div className='text-sm leading-6 tracking-[0.2px] '>
@@ -117,9 +113,8 @@ export default function ContactPage() {
                                        lg:w-52 lg:h-14'>
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
                 </a>
-
                 <a href='/support'
-                    className='flex flex-col items-center gap-4 
+                    className='hover-contact-mobile-div 
                               lg:hover-contact-div'>
                     <img src='src/assets/icons/mail-icn-contact-page.svg' />
                     <div className='text-sm leading-6 tracking-[0.2px] '>
@@ -131,7 +126,6 @@ export default function ContactPage() {
                                        lg:w-52 lg:h-14'>
                         <h6 className='text-sm leading-6 tracking-[0.2px] text-center text-[#23A6F0]'>Submit Request</h6></button>
                 </a>
-
             </div>
 
         </div>
