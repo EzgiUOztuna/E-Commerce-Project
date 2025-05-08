@@ -74,7 +74,7 @@ export default function ContactPage() {
 
 
         <div className='flex flex-col font-montserrat font-bold mx-auto bg-[#FAFAFA] py-11 gap-14
-                        lg:py-28 lg:gap-20 lg:bg-[#FFFFFF] '>
+                        lg:pt-28 lg:pb-16 lg:gap-20 lg:bg-[#FFFFFF] '>
             <div className='flex flex-col gap-2 text-[#252B42] mx-auto text-center lg:w-[40rem]'>
                 <h6 className='text-sm leading-6 tracking-[0.2px]'>VISIT OUR OFFICE</h6>
                 <h2 className='w-[19rem] text-[2.5rem] leading-[3.125rem] tracking-[0.2px] mx-auto lg:w-[33rem]'>We help small businesses with big ideas</h2>
@@ -123,17 +123,19 @@ export default function ContactPage() {
             </div>
         </div>
 
-        <div className='flex flex-col items-center font-montserrat 
-                        lg:h-[21.75rem] lg:gap-24'>
-            <img src='src/assets/icons/Arrow-curve.svg' />
-            <div className='flex flex-col text-center font-bold lg:gap-4'>
-                <h6 className='text-base leading-6 tracking-[0.1px] text-[#252B42]'>WE Can't WAIT TO MEET YOU</h6>
-                <h2 className='text-6xl leading-[5rem] tracking-[0.2px] text-[#252B42]'>Let’s Talk</h2>
-                <button className='border rounded-md py-4 px-10 bg-[#23A6F0] lg:w-[11.25]'></button>
-            </div>
 
+        <img className="mx-auto pb-7" src='src/assets/icons/Arrow-curve.svg' />
+        <div className='flex flex-col text-center font-bold items-center font-montserrat 
+                            lg:gap-4 lg:pb-20'>
+            <h6 className='text-base leading-6 tracking-[0.1px] text-[#252B42]'>WE Can't WAIT TO MEET YOU</h6>
+            <h2 className='text-6xl leading-[5rem] tracking-[0.2px] text-[#252B42]'>Let’s Talk</h2>
 
+            <button className='border rounded-md py-4 px-10 bg-[#23A6F0] mx-auto 
+                                   lg:w-[12rem] lg:h-14'>
+                <p className='text-sm leading-[1.375rem] text-[#FFFFFF] tracking-[0.2px] text-center'>Try it free now</p>
+            </button> {/* ⚠️ */}
         </div>
+
 
         <FooterLight />
     </>
