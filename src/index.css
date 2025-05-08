@@ -32,7 +32,7 @@
     }
 
     .hover-contact-mobile-div {
-        @apply flex flex-col gap-4 py-12 px-10 items-center h-[21rem] w-[20rem] hover:bg-[#252B42] hover:text-[#FFFFFF] hover:py-20 hover:h-[25rem];
+        @apply flex flex-col gap-4 py-12 px-10 items-center h-[21rem] w-[20rem] bg-[#FFFFFF] hover:bg-[#252B42] hover:text-[#FFFFFF] hover:py-20 hover:h-[25rem];
     }
 
     .hover-contact-div {
