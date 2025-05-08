@@ -31,7 +31,11 @@
         @apply text-sm text-[#737373] tracking-[0.2px];
     }
 
+    .hover-contact-mobile-div {
+        @apply flex flex-col gap-4 py-12 px-10 items-center h-[21rem] w-[20rem] hover:bg-[#252B42] hover:text-[#FFFFFF] hover:py-20 hover:h-[25rem];
+    }
+
     .hover-contact-div {
-        @apply lg:py-12 lg:px-10 lg:h-[22rem] lg:hover:h-[25rem] lg:hover:bg-[#252B42] lg:hover:text-[#FFFFFF] transition-transform duration-500 hover:scale-110;
+        @apply lg:h-[22rem] lg:hover:bg-[#252B42] lg:hover:text-[#FFFFFF] lg:transition-transform lg:duration-500 lg:hover:scale-110;
     }
 }
