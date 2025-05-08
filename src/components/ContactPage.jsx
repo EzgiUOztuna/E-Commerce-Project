@@ -44,8 +44,8 @@ export default function ContactPage() {
                 </div>
             </div>
 
-            <div className='flex gap-20 justify-around lg:py-28'>
-                <div className='flex flex-col gap-7  lg:w-[37.5rem]'>
+            <div className='flex gap-8 lg:py-28 '>
+                <div className='flex flex-col gap-9 mx-auto lg:w-[37.5rem]'>
                     <h5 className='font-bold text-base leading-6 tracking-[0.1px] text-[#252B42]'>CONTACT US</h5>
                     <h1 className='font-bold text-[3.625rem] leading-[5rem] tracking-[0.2px] text-[#252B42] lg:w-[23.625rem]'>Get in touch today!</h1>
                     <h4 className='font-normal text-xl leading-8 tracking-[0.2px] text-[#737373] lg:w-[23.5rem]'>We know how large objects will act, but things on a small scale</h4>
@@ -60,9 +60,7 @@ export default function ContactPage() {
                         <img src='src/assets/icons/logos_linkedin.svg' />
                     </div>
                 </div>
-                <div className='lg:w-[26rem]'>
-
-                </div>
+                <div className='lg:w-[31rem]'></div>
             </div>
         </div>
 
