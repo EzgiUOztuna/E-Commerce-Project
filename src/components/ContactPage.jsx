@@ -1,7 +1,8 @@
+import FooterLight from '../components/FooterLight';
 export default function ContactPage() {
     return <>
-        <div className='flex flex-wrap h-[33rem] px-6 font-montserrat items-center bg-[#F6F6F6]
-                            lg:w-[77rem] lg:h-[3.62rem] lg:flex lg:flex-nowrap lg:items-center lg:justify-around lg:mx-auto lg:pt-10 lg:bg-[#FFFFFF]'>
+        <div className='flex flex-wrap px-6 font-montserrat items-center bg-[#F6F6F6]
+                            lg:w-[73.5rem]  lg:flex lg:flex-nowrap lg:items-center lg:justify-between lg:mx-auto lg:pt-10 lg:bg-[#FFFFFF]'>
             <h3 className='w-1/2 order-1 font-bold text-[1.5rem] leading-[2rem] tracking-[0.00625rem]text-[#252B42] m-0 flex items-center lg:oder-1 lg:w-[11.68rem]'>Bandage</h3>
 
             <div className='w-full order-3
@@ -19,7 +20,7 @@ export default function ContactPage() {
                 </div>
             </div>
 
-            <div className='w-1/2 order-2 flex items-center gap-[0.5rem] justify-between mx-auto
+            <div className='w-1/2 order-2 flex items-center justify-between
                                 lg:text-[#23A6F0] lg:gap-11 lg:order-3 lg:w-80'>
                 <a href="/login" className='lg:navbar-actions'>
                     <p className='hidden
@@ -38,10 +39,8 @@ export default function ContactPage() {
                     <a href='/cart'><img className='w-6 h-6' src='src/assets/icons/cart-mobile.svg' alt="Cart" /></a>
                     <a href='/menu'><img className='w-6 h-6' src='src/assets/icons/hamburger.svg' alt="Menu" /></a>
                 </div>
-
-
-
             </div>
         </div>
+        <FooterLight />
     </>
 };
