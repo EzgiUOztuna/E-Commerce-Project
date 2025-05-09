@@ -1,4 +1,4 @@
-import { shopCardsData } from "../assets/dataStore/shopCardsData";
+import { shopCardsData } from "../../public/dataStore/shopCardsData";
 
 export default function ShopCards() {
     return <>

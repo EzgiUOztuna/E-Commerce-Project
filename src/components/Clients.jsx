@@ -1,4 +1,4 @@
-import { clientsData } from "../assets/dataStore/clientsData";
+import { clientsData } from "../../public/dataStore/clientsData";
 
 export default function Clients() {
     return <>

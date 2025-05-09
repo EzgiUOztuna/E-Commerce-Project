@@ -5,8 +5,8 @@ export default function Features() {
                         lg:flex-row lg:items-center lg:gap-24 lg:justify-center lg:h-[682px] lg:p-0">
             <img className="order-2 lg:order-1"
                 src={window.innerWidth >= 1024
-                    ? "src/assets/images/FeaturesImg/features1.png"
-                    : "src/assets/images/FeaturesImg/features1-mobile.png"} />
+                    ? "public/images/FeaturesImg/features1.png"
+                    : "public/images/FeaturesImg/features1-mobile.png"} />
             <div className="font-montserrat flex flex-col items-center gap-8 order-1 
                             lg:order-2 lg:items-start">
                 <h5 className="font-bold text-[#BDBDBD] text-base leading-6 tracking-[0.1px]">SUMMER 2020</h5>

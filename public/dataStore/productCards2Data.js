@@ -1,7 +1,7 @@
 export const productCards2Data = [
     {
         id: 1,
-        productImage: "src/assets/images/productCards2Img/product-cover-1.png",
+        productImage: "public/images/productCards2Img/product-cover-1.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -15,7 +15,7 @@ export const productCards2Data = [
     },
     {
         id: 2,
-        productImage: "src/assets/images/productCards2Img/product-cover-2.png",
+        productImage: "public/images/productCards2Img/product-cover-2.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -29,7 +29,7 @@ export const productCards2Data = [
     },
     {
         id: 3,
-        productImage: "src/assets/images/productCards2Img/product-cover-3.png",
+        productImage: "public/images/productCards2Img/product-cover-3.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -43,7 +43,7 @@ export const productCards2Data = [
     },
     {
         id: 4,
-        productImage: "src/assets/images/productCards2Img/product-cover-4.png",
+        productImage: "public/images/productCards2Img/product-cover-4.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -57,7 +57,7 @@ export const productCards2Data = [
     },
     {
         id: 5,
-        productImage: "src/assets/images/productCards2Img/product-cover-5.png",
+        productImage: "public/images/productCards2Img/product-cover-5.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -71,7 +71,7 @@ export const productCards2Data = [
     },
     {
         id: 6,
-        productImage: "src/assets/images/productCards2Img/product-cover-6.png",
+        productImage: "public/images/productCards2Img/product-cover-6.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -85,7 +85,7 @@ export const productCards2Data = [
     },
     {
         id: 7,
-        productImage: "src/assets/images/productCards2Img/product-cover-7.png",
+        productImage: "public/images/productCards2Img/product-cover-7.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -99,7 +99,7 @@ export const productCards2Data = [
     },
     {
         id: 8,
-        productImage: "src/assets/images/productCards2Img/product-cover-8.png",
+        productImage: "public/images/productCards2Img/product-cover-8.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -113,7 +113,7 @@ export const productCards2Data = [
     },
     {
         id: 9,
-        productImage: "src/assets/images/productCards2Img/product-cover-9.png",
+        productImage: "public/images/productCards2Img/product-cover-9.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -127,7 +127,7 @@ export const productCards2Data = [
     },
     {
         id: 10,
-        productImage: "src/assets/images/productCards2Img/product-cover-10.png",
+        productImage: "public/images/productCards2Img/product-cover-10.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -141,7 +141,7 @@ export const productCards2Data = [
     },
     {
         id: 11,
-        productImage: "src/assets/images/productCards2Img/product-cover-11.png",
+        productImage: "public/images/productCards2Img/product-cover-11.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",
@@ -155,7 +155,7 @@ export const productCards2Data = [
     },
     {
         id: 12,
-        productImage: "src/assets/images/productCards2Img/product-cover-12.png",
+        productImage: "public/images/productCards2Img/product-cover-12.png",
         productTitle: "Graphic Design",
         productSubtitle: "English Department",
         originalPrice: "16.48",

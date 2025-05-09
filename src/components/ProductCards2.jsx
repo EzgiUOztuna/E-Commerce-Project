@@ -1,4 +1,4 @@
-import { productCards2Data } from "../assets/dataStore/productCards2Data";
+import { productCards2Data } from "../../public/dataStore/productCards2Data";
 
 export default function ProductCards2() {
 
@@ -9,14 +9,14 @@ export default function ProductCards2() {
             <div className="flex items-center px-[1px] gap-4">
                 <h6 className="font-bold text-sm leading-6 tracking-[0.2px]">Views: </h6>
                 <button className="border border-[#ECECEC] w-10 h-10 rounded-md">
-                    <img className="mx-auto" src="src/assets/icons/menu-style.svg" />
+                    <img className="mx-auto" src="public/icons/menu-style.svg" />
                 </button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
                 <button className="border border-[#ECECEC] w-10 h-10 rounded-md">
-                    <img className="mx-auto" src="src/assets/icons/menu-style-2.svg" />
+                    <img className="mx-auto" src="public/icons/menu-style-2.svg" />
                 </button> {/* ⚠️ Görünüm değiştirecek tetikleme. ⚠️ */}
             </div>
             <div className="flex item-center px-[1px] gap-4">
-                <select className="w-36 h-12 border border-[#DDDDDD] rounded-md px-4 py-3 appearance-none bg-[url('src/assets/icons/dropdown.svg')] bg-no-repeat bg-[right_1.5rem_center] bg-[length:.7rem] cursor-pointer">
+                <select className="w-36 h-12 border border-[#DDDDDD] rounded-md px-4 py-3 appearance-none bg-[url('public/icons/dropdown.svg')] bg-no-repeat bg-[right_1.5rem_center] bg-[length:.7rem] cursor-pointer">
                     <option value="popularity" className=""><p>Popularity</p></option>
                     <option value="list-entry-1">List Entry 1</option>
                     <option value="list-entry-2">List Entry 2</option>

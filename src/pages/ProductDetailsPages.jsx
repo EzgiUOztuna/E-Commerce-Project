@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { productDetailsData } from '../assets/dataStore/productDetailsData';
+import { productDetailsData } from '../../public/dataStore/productDetailsData';
 import Clients from '../components/Clients';
 import FooterLight from '../components/FooterLight';
 import SiteHeader from '../components/SiteHeader';
@@ -17,7 +17,7 @@ export default function ProductDetailsPages() {
                             lg:w-[69rem] lg:mx-auto'>
                     <div className='flex items-center gap-4 py-3 font-bold text-sm leading-6 tracking-[0.2px] text-center'>
                         <a href='/home' className='text-[#252B42]'>Home</a>
-                        <img src='src/assets/icons/arrow-right-icn.svg' />
+                        <img src='public/icons/arrow-right-icn.svg' />
                         <h6 className='text-[#BDBDBD]'>Shop</h6>
                     </div>
                 </div>
@@ -74,13 +74,13 @@ export default function ProductDetailsPages() {
                                     <h6 className='font-bold text-sm leading-6 teacking-[0.2px] text-center text-[#FFFFFF]'>Select Option</h6>
                                 </button> {/* ⚠️ */}
                                 <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
-                                    <img className="pl-2" src='src/assets/icons/heart-black.svg' />
+                                    <img className="pl-2" src='public/icons/heart-black.svg' />
                                 </button> {/* ⚠️ */}
                                 <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
-                                    <img className="pl-2" src='src/assets/icons/cart-black.svg' />
+                                    <img className="pl-2" src='public/icons/cart-black.svg' />
                                 </button> {/* ⚠️ */}
                                 <button className='border border-[#E8E8E8] rounded-full lg:w-10 lg:h-10'>
-                                    <img className="pl-2" src='src/assets/icons/eye-black.svg' />
+                                    <img className="pl-2" src='public/icons/eye-black.svg' />
                                 </button> {/* ⚠️ */}
                             </div>
                         </div>

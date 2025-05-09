@@ -1,4 +1,4 @@
-import { featuredPostsData } from "../assets/dataStore/featuredPostsData";
+import { featuredPostsData } from "../../public/dataStore/featuredPostsData";
 
 export default function FeaturedPosts() {
     return <>
@@ -29,17 +29,17 @@ export default function FeaturedPosts() {
                             <p className="font-normal text-sm leading-5 tracking-[0.2px] text-[#737373] w-[18rem]">{item.def}</p>
                             <div className="flex w-[18rem] py-4 justify-between font-normal text-xs leading-4 tracking-[0.2px] text-[#737373]">
                                 <div className="flex gap-[0.313rem]">
-                                    <img src="src/assets/icons/clock.svg" />
+                                    <img src="public/icons/clock.svg" />
                                     <p>{item.date}</p>
                                 </div>
                                 <div className="flex gap-[0.313rem]">
-                                    <img src="src/assets/icons/content-card.svg" />
+                                    <img src="public/icons/content-card.svg" />
                                     <p>{item.comments}</p>
                                 </div>
                             </div>
                             <a className="flex items-center gap-[0.625rem]" href="#">
                                 <h6 className="font-bold text-sm leading-6 tracking-[0.2px] text-[#737373]">Learn More</h6>
-                                <img className="w-[0.6rem] h-4" src="src/assets/icons/icon-arrow-next.svg" />
+                                <img className="w-[0.6rem] h-4" src="public/icons/icon-arrow-next.svg" />
                             </a>
                         </div>
 

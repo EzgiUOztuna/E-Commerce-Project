@@ -1,4 +1,4 @@
-import { productCardsData } from "../assets/dataStore/productCardsData"
+import { productCardsData } from "../../public/dataStore/productCardsData"
 
 export default function ProductCards() {
 

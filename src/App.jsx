@@ -13,7 +13,7 @@ function App() {
         <Route path="/shop" element={<ShopPages />} />
         <Route path="/product-detail" element={<ProductDetailsPages />} />
         {/* <Route path="/product/:id" element={<ProductDetailsPages />} /> */}
-        <Route path="/inner" element={<InnerPages />} />
+        <Route path="/inner/*" element={<InnerPages />} />
       </Routes>
     </>
   )

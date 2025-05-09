@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { contentPageCarouselData } from '../assets/dataStore/contentPageCarouselData';
+import { contentPageCarouselData } from '../../public/dataStore/contentPageCarouselData';
 
 export default function Content() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +27,7 @@ export default function Content() {
                 <button className="w-6 h-[2.78rem] top-[35rem] left-8 relative bg-transparent border-none
                                    lg:top-[22rem] lg:left-[2%] lg:cursor-pointer
                                    xl:top-[27rem]" onClick={handlePrev}>
-                    <img src='src/assets/icons/carousel-control-prev.svg'></img>
+                    <img src='public/icons/carousel-control-prev.svg'></img>
                 </button>
                 <div className='font-montserrat text-[#FFFFFF] flex flex-col items-center gap-[2.18rem] pt-[8rem]
                                 lg:w-[37.44rem] lg:h-[20.68rem] lg:items-start lg:gap-9 lg:pt-28 lg:pb-28 lg:ml-[12.5rem]
@@ -50,7 +50,7 @@ export default function Content() {
                 <button className="relative w-6 h-[2.78rem] top-[-3rem] left-[22.5rem] bg-transparent
                                     lg:top-[-2rem] lg:left-[96%] lg:border-none lg:relative lg:cursor-pointer
                                     xl:top-[3rem]" onClick={handleNext}>
-                    <img src='src/assets/icons/carousel-control-next.svg'></img>
+                    <img src='public/icons/carousel-control-next.svg'></img>
                 </button>
             </div>
         ))}
