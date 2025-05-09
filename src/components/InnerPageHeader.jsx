@@ -29,14 +29,14 @@ export default function InnerPageHeader() {
                    lg:flex lg:w-56 lg:h-14 lg:items-center lg:justify-center
                    lg:border lg:border-[#23A6F0] lg:bg-[#23A6F0] lg:rounded">
                     <p className="text-white font-bold text-sm leading-6 tracking-[0.2px]">Become a member</p>
-                    <img className="w-3 h-3 ml-2" src="public/icons/arrow-right.svg" alt="Arrow Right" />
+                    <img className="w-3 h-3 ml-2" src="/icons/arrow-right.svg" alt="Arrow Right" />
                 </button>
 
 
                 <div className="flex lg:hidden gap-4">
-                    <a href='/search'><img className='w-6 h-6' src='public/icons/search-mobile.svg' alt="Search" /></a>
-                    <a href='/cart'><img className='w-6 h-6' src='public/icons/cart-mobile.svg' alt="Cart" /></a>
-                    <a href='/menu'><img className='w-6 h-6' src='public/icons/hamburger.svg' alt="Menu" /></a>
+                    <a href='/search'><img className='w-6 h-6' src='/icons/search-mobile.svg' alt="Search" /></a>
+                    <a href='/cart'><img className='w-6 h-6' src='/icons/cart-mobile.svg' alt="Cart" /></a>
+                    <a href='/menu'><img className='w-6 h-6' src='/icons/hamburger.svg' alt="Menu" /></a>
                 </div>
             </div>
         </div>
