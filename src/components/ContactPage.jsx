@@ -3,7 +3,7 @@ import FooterLight from '../components/FooterLight';
 import InnerPageHeader from './InnerPageHeader';
 export default function ContactPage() {
     return <>
-        <div className='font-montserrat lg:bg-[url("public/images/contactPageImg/background.png")] lg:bg-no-repeat lg:h-[882px]
+        <div className='font-montserrat lg:bg-[url("/images/contactPageImg/background.png")] lg:bg-no-repeat lg:h-[882px]
                         xl:bg-cover'>
             <InnerPageHeader />
             <div className='flex gap-8 py-8 lg:py-28 lg:items-start '>
@@ -26,12 +26,12 @@ export default function ContactPage() {
                     </div>
                     <div className='flex items-center gap-8 mx-auto p-3
                                     lg:w-[24.375rem]'>
-                        <img src='public/icons/logos_twitter.svg' />
-                        <img src='public/icons/logos_facebook.svg' />
-                        <img src='public/icons/logos_instagram.svg' />
-                        <img src='public/icons/logos_linkedin.svg' />
+                        <img src='/icons/logos_twitter.svg' />
+                        <img src='/icons/logos_facebook.svg' />
+                        <img src='/icons/logos_instagram.svg' />
+                        <img src='/icons/logos_linkedin.svg' />
                     </div>
-                    <img className='block lg:hidden' src='public/images/contactPageImg/background-mobile.png' />
+                    <img className='block lg:hidden' src='/images/contactPageImg/background-mobile.png' />
                 </div>
                 <div className='hidden lg:block lg:w-[31rem] xl:w-[45.5rem]'></div>
             </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <Link to="/contact"
                     className='hover-contact-mobile-div 
                               lg:hover-contact-div'>
-                    <img src='public/icons/phone-icn-contact-page.svg' />
+                    <img src='/icons/phone-icn-contact-page.svg' />
                     <div className='text-sm leading-6 tracking-[0.2px] '>
                         <h6>georgia.young@example.com</h6>
                         <h6>georgia.young@ple.com</h6>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 <Link to='/location'
                     className='hover-contact-mobile-div 
                                lg:hover-contact-div'>
-                    <img src='public/icons/location-icn-contact-page.svg' />
+                    <img src='/icons/location-icn-contact-page.svg' />
                     <div className='text-sm leading-6 tracking-[0.2px] '>
                         <h6>georgia.young@example.com</h6>
                         <h6>georgia.young@ple.com</h6>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 <Link to='/support'
                     className='hover-contact-mobile-div 
                               lg:hover-contact-div'>
-                    <img src='public/icons/mail-icn-contact-page.svg' />
+                    <img src='/icons/mail-icn-contact-page.svg' />
                     <div className='text-sm leading-6 tracking-[0.2px] '>
                         <h6>georgia.young@example.com</h6>
                         <h6>georgia.young@ple.com</h6>
@@ -89,7 +89,7 @@ export default function ContactPage() {
         </div>
 
 
-        <img className="mx-auto pt-8 pb-6 lg:pt-0" src='public/icons/Arrow-curve.svg' />
+        <img className="mx-auto pt-8 pb-6 lg:pt-0" src='/icons/Arrow-curve.svg' />
         <div className='flex flex-col text-center font-bold items-center font-montserrat gap-9 pb-20
                             lg:gap-4'>
             <h6 className='text-base leading-6 tracking-[0.1px] text-[#252B42]'>WE Can't WAIT TO MEET YOU</h6>
