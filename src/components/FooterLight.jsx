@@ -7,9 +7,9 @@ export default function FooterLight() {
                             lg:flex-row lg:items-center  lg:w-[70rem] lg:gap-[36.125rem]">
                     <h3 className="font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42]">Bandage</h3>
                     <div className="flex items-center gap-5">
-                        <a href="/facebook"><img className="text-black" src="public/icons/facebook-blue.svg" /></a>
-                        <a href="/facebook"><img className="text-black" src="public/icons/instagram-blue.svg" /></a>
-                        <a href="/facebook"><img className="text-black" src="public/icons/twitter-blue.svg" /></a>
+                        <a href="/facebook"><img className="text-black" src="/icons/facebook-blue.svg" /></a>
+                        <a href="/facebook"><img className="text-black" src="/icons/instagram-blue.svg" /></a>
+                        <a href="/facebook"><img className="text-black" src="/icons/twitter-blue.svg" /></a>
                     </div>
                 </div>
             </div>
