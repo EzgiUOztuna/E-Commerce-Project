@@ -9,11 +9,11 @@ export const teamPageData = [
     },
     {
         desktopImg: "/images/teamPageImg/img3.png",
-        mobileImg: "/images/teamPageImg/img1-mobile.png"
+        mobileImg: "/images/teamPageImg/img3-mobile.png"
     },
     {
         desktopImg: "/images/teamPageImg/img3.png",
-        mobileImg: "/images/teamPageImg/img1-mobile.png"
+        mobileImg: "/images/teamPageImg/img3-mobile.png"
     },
     {
         desktopImg: "/images/teamPageImg/img4.png",
