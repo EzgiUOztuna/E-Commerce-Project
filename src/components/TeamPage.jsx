@@ -4,7 +4,6 @@ import InnerPageHeader from "./InnerPageHeader";
 
 export default function TeamPage() {
 
-
     return <>
         <InnerPageHeader />
 
@@ -24,12 +23,24 @@ export default function TeamPage() {
 
         <div className="flex flex-col justify-center items-center gap-2
                         lg:flex-row">
-            <img src="/images/teamPageImg/img1.png" />
+            {window.innerWidth >= 1024 ? <img src="/images/teamPageImg/img1.png" /> : <img src="/images/teamPageImg/img1-mobile.png" />}
+
             <div className="grid grid-cols-2 grid-rows-2 gap-[0.7rem]">
-                <img src="/images/teamPageImg/img2.png" />
-                <img src="/images/teamPageImg/img3.png" />
-                <img src="/images/teamPageImg/img4.png" />
-                <img src="/images/teamPageImg/img5.png" />
+                {window.innerWidth >= 1024 ? (
+                    <>
+                        <img src="/images/teamPageImg/img2-mobile.png" />
+                        <img src="/images/teamPageImg/img3-mobile.png" />
+                        <img src="/images/teamPageImg/img4-mobile.png" />
+                        <img src="/images/teamPageImg/img5-mobile.png" />
+                    </>
+                ) : (
+                    <>
+                        <img src="/images/teamPageImg/img2-mobile.png" />
+                        <img src="/images/teamPageImg/img3-mobile.png" />
+                        <img src="/images/teamPageImg/img4-mobile.png" />
+                        <img src="/images/teamPageImg/img5-mobile.png" />
+                    </>
+                )}
             </div>
 
 
