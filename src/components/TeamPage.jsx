@@ -22,28 +22,22 @@ export default function TeamPage() {
         </div>
 
         <div className="flex flex-col justify-center items-center gap-2
-                        lg:flex-row">
-            {window.innerWidth >= 1024 ? <img src="/images/teamPageImg/img1.png" /> : <img src="/images/teamPageImg/img1-mobile.png" />}
-
-            <div className="grid grid-cols-2 grid-rows-2 gap-[0.7rem]">
-                {window.innerWidth >= 1024 ? (
-                    <>
-                        <img src="/images/teamPageImg/img2-mobile.png" />
-                        <img src="/images/teamPageImg/img3-mobile.png" />
-                        <img src="/images/teamPageImg/img4-mobile.png" />
-                        <img src="/images/teamPageImg/img5-mobile.png" />
-                    </>
-                ) : (
-                    <>
-                        <img src="/images/teamPageImg/img2-mobile.png" />
-                        <img src="/images/teamPageImg/img3-mobile.png" />
-                        <img src="/images/teamPageImg/img4-mobile.png" />
-                        <img src="/images/teamPageImg/img5-mobile.png" />
-                    </>
-                )}
+                        lg:flex-row lg:h-[505px]">
+            <img className="hidden lg:block lg:h-[530px]" src="/images/teamPageImg/img1.png" />
+            <div className="grid grid-cols-2 grid-rows-2 gap-[0.5rem] lg:h-[33.125rem]">
+                <img className="hidden lg:block lg:h-[250px]" src="/images/teamPageImg/img2.png" />
+                <img className="hidden lg:block lg:h-[250px]" src="/images/teamPageImg/img3.png" />
+                <img className="hidden lg:block lg:h-[250px]" src="/images/teamPageImg/img4.png" />
+                <img className="hidden lg:block lg:h-[250px]" src="/images/teamPageImg/img5.png" />
             </div>
 
-
+            <img className="block lg:hidden lg:h-[530px]" src="/images/teamPageImg/img1-mobile.png" />
+            <div className="grid grid-cols-2 grid-rows-2 gap-[0.3rem] lg:h-[33.125rem]">
+                <img className="block lg:hidden" src="/images/teamPageImg/img2-mobile.png" />
+                <img className="block lg:hidden" src="/images/teamPageImg/img3-mobile.png" />
+                <img className="block lg:hidden" src="/images/teamPageImg/img4-mobile.png" />
+                <img className="block lg:hidden" src="/images/teamPageImg/img5-mobile.png" />
+            </div>
         </div>
 
         <FooterLight />
