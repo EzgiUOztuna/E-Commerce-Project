@@ -8,6 +8,7 @@ export default function TeamPage() {
     return <>
         <InnerPageHeader />
 
+        {/* Innovation...*/}
         <div className="flex flex-col font-montserrat font-bold mx-auto gap-4 py-[4rem]
                         lg:w-[55rem]">
             <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#737373]">WHAT WE DO</h5>
@@ -21,7 +22,6 @@ export default function TeamPage() {
                 <h6 className='text-[#BDBDBD]'>Team</h6>
             </div>
         </div>
-
         <div className="flex flex-col justify-center items-center gap-2
                         lg:flex-row lg:h-[31.56rem]">
             <img className="hidden lg:block lg:h-[33.125rem]" src="/images/teamPageImg/img1.png" />
@@ -41,6 +41,7 @@ export default function TeamPage() {
             </div>
         </div>
 
+        {/* Meet team...*/}
         <div className="flex flex-col items-center font-montserrat font-bold
                         lg:py-28 lg:gap-28">
             <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto">Meet Our Team</h2>
@@ -52,15 +53,26 @@ export default function TeamPage() {
                             <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#252B42]">{team.username}</h5>
                             <h6 className="text-sm tracking-[0.2px] text-center text-[#737373]">{team.job}</h6>
                             <div className="flex gap-5">
-                                <Link to={team.facebookUrl}><img src={team.facebookIcon} /></Link>
-                                <Link to={team.instagramUrl}><img src={team.instagramIcon} /></Link>
-                                <Link to={team.twitterUrl}><img src={team.twitterIcon} /></Link>
+                                <Link to={team.facebookUrl}><img src={team.facebookIcon} /></Link> {/*⚠️*/}
+                                <Link to={team.instagramUrl}><img src={team.instagramIcon} /></Link> {/*⚠️*/}
+                                <Link to={team.twitterUrl}><img src={team.twitterIcon} /></Link> {/*⚠️*/}
                             </div>
                         </div>
                     </div>
 
                 ))}
             </div>
+        </div>
+
+        {/* Free trial...*/}
+        <div className="flex flex-col items-center font-montserrat text-center tracking-[0.2px]
+                        lg:gap-9 lg:py-20 ">
+            <h2 className="font-bold leading-[3.125rem] text-[#252B42]
+                           lg:text-[2.5rem]">Start your 14 days free trial</h2>
+            <h6 className="font-normal text-sm leading-5 text-[#737373] mx-auto lg:w-[26rem]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.</h6>
+            <button className="rounded-md border border-[#23A6F0] bg-[#23A6F0] w-44 h-14 mx-auto py-4 px-8">
+                <p className="font-bold text-sm leading-5 text-[#FFFFFF]">Try it free now</p></button> {/*⚠️*/}
+
         </div>
 
         <FooterLight />
