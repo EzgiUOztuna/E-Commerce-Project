@@ -2,7 +2,7 @@ export const teamMembersData = [
     {
         id: 1,
         picture: "/images/teamPageImg/team-1-user-1.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -11,7 +11,7 @@ export const teamMembersData = [
     {
         id: 2,
         picture: "/images/teamPageImg/team-1-user-2.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -20,7 +20,7 @@ export const teamMembersData = [
     {
         id: 3,
         picture: "/images/teamPageImg/team-1-user-3.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -29,7 +29,7 @@ export const teamMembersData = [
     {
         id: 4,
         picture: "/images/teamPageImg/team-1-user-4.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -38,7 +38,7 @@ export const teamMembersData = [
     {
         id: 5,
         picture: "/images/teamPageImg/team-1-user-5.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -47,7 +47,7 @@ export const teamMembersData = [
     {
         id: 6,
         picture: "/images/teamPageImg/team-1-user-6.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -56,7 +56,7 @@ export const teamMembersData = [
     {
         id: 7,
         picture: "/images/teamPageImg/team-1-user-7.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -65,7 +65,7 @@ export const teamMembersData = [
     {
         id: 8,
         picture: "/images/teamPageImg/team-1-user-8.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
@@ -74,7 +74,7 @@ export const teamMembersData = [
     {
         id: 9,
         picture: "/images/teamPageImg/team-1-user-9.jpg",
-        username: "username",
+        username: "Username",
         job: "Profession",
         facebookUrl: "https://www.google.com.tr/?hl=tr",
         instagramUrl: "https://www.google.com.tr/?hl=tr",
