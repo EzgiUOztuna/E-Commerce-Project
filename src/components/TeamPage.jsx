@@ -42,14 +42,15 @@ export default function TeamPage() {
         </div>
 
         {/* Meet team...*/}
-        <div className="flex flex-col items-center font-montserrat font-bold
+        <div className="flex flex-col items-center font-montserrat font-bold py-7
                         lg:py-28 lg:gap-28">
-            <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto">Meet Our Team</h2>
+            <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto py-11  text-center w-[19rem]
+                           lg:w-[38rem] lg:py-0">Meet Our Team</h2>
             <div className="lg:grid grid-cols-3 lg:gap-7">
                 {teamMembersData.map((team, index) => (
-                    <div key={index} className="flex flex-col items-center lg:pt-4">
-                        <img className="lg:w-[19.75rem] lg:h-[15rem]" src={team.picture} />
-                        <div className="flex flex-col gap-7 p-8">
+                    <div key={index} className="flex flex-col items-center pb-8 lg:pb-4">
+                        <img className="w-[19.75rem] h-[15rem]" src={team.picture} />
+                        <div className="flex flex-col p-8 gap-4 lg:gap-7 ">
                             <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#252B42]">{team.username}</h5>
                             <h6 className="text-sm tracking-[0.2px] text-center text-[#737373]">{team.job}</h6>
                             <div className="flex gap-5">
@@ -65,14 +66,19 @@ export default function TeamPage() {
         </div>
 
         {/* Free trial...*/}
-        <div className="flex flex-col items-center font-montserrat text-center tracking-[0.2px]
-                        lg:gap-9 lg:py-20 ">
-            <h2 className="font-bold leading-[3.125rem] text-[#252B42]
-                           lg:text-[2.5rem]">Start your 14 days free trial</h2>
-            <h6 className="font-normal text-sm leading-5 text-[#737373] mx-auto lg:w-[26rem]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.</h6>
+        <div className="flex flex-col items-center font-montserrat text-center tracking-[0.2px] py-24 gap-9
+                        lg:py-20 ">
+            <h2 className="font-bold leading-[3.125rem] text-[#252B42] text-[2.5rem] w-[22rem]
+                           lg:w-[36rem]">Start your 14 days free trial</h2>
+            <h6 className="font-normal text-sm leading-5 text-[#737373] mx-auto w-[22rem] lg:w-[26rem]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.</h6>
             <button className="rounded-md border border-[#23A6F0] bg-[#23A6F0] w-44 h-14 mx-auto py-4 px-8">
                 <p className="font-bold text-sm leading-5 text-[#FFFFFF]">Try it free now</p></button> {/*⚠️*/}
-
+            <div className="flex items-center p-2 gap-8">
+                <Link to="/twitter"><img src="/icons/twitter-team.svg" /></Link> {/*⚠️*/}
+                <Link to="/facebook"><img src="/icons/facebook-team.svg" /></Link> {/*⚠️*/}
+                <Link to="/instagram"><img src="/icons/insta-team.svg" /></Link> {/*⚠️*/}
+                <Link to="/linkedin"><img src="/icons/linkedin-team.svg" /></Link> {/*⚠️*/}
+            </div>
         </div>
 
         <FooterLight />
