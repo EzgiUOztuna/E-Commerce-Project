@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import FooterLight from "./FooterLight";
 import InnerPageHeader from "./InnerPageHeader";
+import { teamMembersData } from "../../public/dataStore/teamMembersData";
 
 export default function TeamPage() {
 
@@ -40,11 +41,17 @@ export default function TeamPage() {
             </div>
         </div>
 
-        <div className="flex items-center font-montserrat font-bold
+        <div className="flex flex-col items-center font-montserrat font-bold
                         lg:py-28 lg:gap-28">
             <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto">Meet Our Team</h2>
-            <div>
+            <div className="lg:grid grid-cols-3 lg: gap-7">
+                {teamMembersData.map((team, index) => (
+                    <div key={index} className="flex flex-col">
+                        <img className="lg:h-[15rem]" src={team.picture} />
 
+                    </div>
+
+                ))}
             </div>
         </div>
 
