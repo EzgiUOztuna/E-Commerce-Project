@@ -47,8 +47,9 @@ export default function TeamPage() {
             <div className="lg:grid grid-cols-3 lg: gap-7">
                 {teamMembersData.map((team, index) => (
                     <div key={index} className="flex flex-col">
-                        <img className="lg:h-[15rem]" src={team.picture} />
-
+                        <img className="lg:w-[19.75rem] lg:h-[15rem]" src={team.picture} />
+                        <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#252B42]">{team.username}</h5>
+                        <h6>{team.job}</h6>
                     </div>
 
                 ))}
