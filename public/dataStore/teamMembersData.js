@@ -2,8 +2,8 @@ export const teamMembersData = [
     {
         id: 1,
         picture: "/images/teamPageImg/team-1-user-1.jpg",
-        username: "Username",
-        job: "Profession",
+        username: "Ezgi Oztuna",
+        job: "Full-stack Developer",
         facebookIcon: "/icons/facebook-blue.svg",
         instagramIcon: "/icons/instagram-blue.svg",
         twitterIcon: "/icons/twitter-blue.svg",
