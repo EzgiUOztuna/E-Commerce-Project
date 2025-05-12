@@ -44,12 +44,19 @@ export default function TeamPage() {
         <div className="flex flex-col items-center font-montserrat font-bold
                         lg:py-28 lg:gap-28">
             <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto">Meet Our Team</h2>
-            <div className="lg:grid grid-cols-3 lg: gap-7">
+            <div className="lg:grid grid-cols-3 lg:gap-7">
                 {teamMembersData.map((team, index) => (
-                    <div key={index} className="flex flex-col">
+                    <div key={index} className="flex flex-col items-center lg:pt-4">
                         <img className="lg:w-[19.75rem] lg:h-[15rem]" src={team.picture} />
-                        <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#252B42]">{team.username}</h5>
-                        <h6>{team.job}</h6>
+                        <div className="flex flex-col gap-7 p-8">
+                            <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#252B42]">{team.username}</h5>
+                            <h6 className="text-sm tracking-[0.2px] text-center text-[#737373]">{team.job}</h6>
+                            <div className="flex gap-5">
+                                <Link to={team.facebookUrl}><img src={team.facebookIcon} /></Link>
+                                <Link to={team.instagramUrl}><img src={team.instagramIcon} /></Link>
+                                <Link to={team.twitterUrl}><img src={team.twitterIcon} /></Link>
+                            </div>
+                        </div>
                     </div>
 
                 ))}
