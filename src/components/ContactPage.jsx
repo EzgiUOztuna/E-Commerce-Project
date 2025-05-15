@@ -3,7 +3,7 @@ import FooterLight from '../components/FooterLight';
 import InnerPageHeader from './InnerPageHeader';
 export default function ContactPage() {
     return <>
-        <div className='font-montserrat lg:bg-[url("/images/contactPageImg/background.png")] lg:bg-no-repeat lg:h-[882px]
+        <div className='font-montserrat lg:bg-[url("/images/contactPageImg/background.png")] lg:bg-no-repeat lg:h-[55.125rem]
                         xl:bg-cover'>
             <InnerPageHeader />
             <div className='flex gap-8 py-8 lg:py-28 lg:items-start '>
