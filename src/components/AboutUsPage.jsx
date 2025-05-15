@@ -93,8 +93,15 @@ export default function AboutUsPage() {
                 </div>
             </div>
 
+            {/* Clients header */}
+            <div className="flex flex-col items-center gap-7 text-center bg-[#FAFAFA] pt-20 pb-8 tracking-[0.2px]">
+                <h2 className="font-bold text-[2.5rem] leading-[3.125rem] text-[#252B42]">Big Companies Are Here</h2>
+                <p className="font-normal text-sm leading-5 lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                <Clients />
+            </div>
 
-            <Clients />
+
+
             {/* ... */}
             <FooterLight />
         </div>
