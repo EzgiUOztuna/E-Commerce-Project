@@ -41,7 +41,7 @@ export default function AboutUsPage() {
 
             {/* Data infos...*/}
             <div>
-                <div className="flex py-20 gap-12 items-center justify-center">
+                <div className="flex flex-col py-20  items-center justify-center gap-24 lg:flex-row lg:gap-12 ">
                     {aboutUsData.analyzeData.map((data, index) => (
                         <div key={index}
                             className="flex flex-col text-center font-bold px-4">
@@ -53,6 +53,18 @@ export default function AboutUsPage() {
 
                 </div>
             </div>
+
+            {/* Video...*/}
+            <div className="py-20">
+                <iframe
+                    className="border rounded-2xl mx-auto w-[19rem] h-[19.75rem] lg:w-[46.875rem] lg:h-[25rem]"
+                    src="https://www.youtube.com/embed/es4x5R-rV9s"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
+
 
             <Clients />
             {/* ... */}
