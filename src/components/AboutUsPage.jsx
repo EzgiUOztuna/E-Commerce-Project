@@ -93,16 +93,40 @@ export default function AboutUsPage() {
                 </div>
             </div>
 
-            {/* Clients header */}
+            {/* Clients */}
             <div className="flex flex-col items-center gap-7 text-center bg-[#FAFAFA] pt-20 pb-8 tracking-[0.2px]">
                 <h2 className="font-bold text-[2.5rem] leading-[3.125rem] text-[#252B42]">Big Companies Are Here</h2>
                 <p className="font-normal text-sm leading-5 lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 <Clients />
             </div>
 
+            {/* Work with us... */}
+            <div className="bg-[#2A7CC7] text-[#FFFFFF] py-9 flex items-center
+                            lg:py-28 lg:h-[40rem]">
+                <div className="flex justify-between items-center mx-auto lg:flex-row">
+                    <div className='flex flex-col gap-8 w-[27rem] py-7 
+                                lg:w-[37.5rem] lg:py-28 lg:ml-[7.25rem]'>
+                        <h5 className='font-bold text-base leading-6 tracking-[0.1px] text-center
+                                       lg:text-left lg:w-[33rem]'>WORK WITH US </h5>
 
 
-            {/* ... */}
+                        <h2 className='font-bold text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-center w-[20rem] mx-auto
+                                   lg:text-left lg:w-[33rem] lg:text-[2.5rem] lg:leading-[5rem] lg:mx-0'>Now Let’s grow Yours</h2>
+
+
+                        <h4 className='font-normal text-sm leading-8 tracking-[0.2px] text-center w-[17rem] mx-auto
+                                       lg:text-left lg:w-[31rem] lg:mx-0'>The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th </h4>
+
+
+                        <button className="border border-[#FFFFFF] rounded-md w-32 h-12 py-45 px-10 mx-auto lg:mx-0">
+                            <p className="font-bold  text-sm leading-6 tracking-[0.2px] text-center">Button</p></button> {/* ⚠️ */}
+                    </div>
+                    {/*<div className='hidden lg:block lg:w-[31rem] xl:w-[45.5rem]'></div>*/}
+
+                </div>
+                <img className='hidden lg:block' src='/images/aboutUsImg/about-us-work-w-us.png' />
+            </div>
+
             <FooterLight />
         </div>
 
