@@ -70,10 +70,10 @@ export default function AboutUsPage() {
             {/* Meet team...*/}
             <div className="flex flex-col items-center font-montserrat font-bold py-7
                             lg:py-28 lg:gap-28">
-                <div className="flex flex-col items-center gap-3 text-center">
-                    <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto py-11 w-[19rem]
+                <div className="flex flex-col items-center gap-2 text-center py-11">
+                    <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto  w-[19rem]
                            lg:w-[38rem] lg:py-0">Meet Our Team</h2>
-                    <p className="font-normal text-sm leading-5 tracking-[0.2] lg:w-[29rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                    <p className="font-normal text-sm leading-5 tracking-[0.2] w-[13rem] lg:w-[29rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 </div>
                 <div className="lg:grid grid-cols-3 lg:gap-7">
                     {teamMembersData.slice(0, 3).map((team, index) => (
@@ -94,18 +94,24 @@ export default function AboutUsPage() {
             </div>
 
             {/* Clients */}
-            <div className="flex flex-col items-center gap-7 text-center bg-[#FAFAFA] pt-20 pb-8 tracking-[0.2px]">
-                <h2 className="font-bold text-[2.5rem] leading-[3.125rem] text-[#252B42]">Big Companies Are Here</h2>
-                <p className="font-normal text-sm leading-5 lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+            <div className="flex flex-col text-center bg-[#FAFAFA] pt-20 pb-8 tracking-[0.2px]">
+                <div className="flex flex-col items-center gap-7 text-center">
+                    <h2 className="font-bold text-[2.5rem] leading-[3.125rem] text-[#252B42] w-[18rem] lg:w-[33rem]">Big Companies Are Here</h2>
+                    <p className="font-normal text-sm leading-5 w-[20rem] lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
                 <Clients />
             </div>
 
             {/* Work with us... */}
-            <div className="bg-[#2A7CC7] text-[#FFFFFF] py-9 flex items-center
-                            lg:py-28 lg:h-[40rem]">
-                <div className="flex justify-between items-center mx-auto lg:flex-row">
-                    <div className='flex flex-col gap-8 w-[27rem] py-7 
-                                lg:w-[37.5rem] lg:py-28 lg:ml-[7.25rem]'>
+            <div className="flex flex-col items-center bg-[#2A7CC7] text-[#FFFFFF] py-9 
+                            lg:flex-row lg:py-28 lg:h-[40rem] lg:justify-between">
+
+
+
+                <div className="flex items-center mx-auto 
+                                lg:flex-row lg:justify-between">
+                    <div className='flex flex-col gap-8  py-7 
+                                    lg:w-[37.5rem] lg:py-28 lg:ml-[7.25rem]'>
                         <h5 className='font-bold text-base leading-6 tracking-[0.1px] text-center
                                        lg:text-left lg:w-[33rem]'>WORK WITH US </h5>
 
@@ -121,10 +127,8 @@ export default function AboutUsPage() {
                         <button className="border border-[#FFFFFF] rounded-md w-32 h-12 py-45 px-10 mx-auto lg:mx-0">
                             <p className="font-bold  text-sm leading-6 tracking-[0.2px] text-center">Button</p></button> {/* ⚠️ */}
                     </div>
-                    {/*<div className='hidden lg:block lg:w-[31rem] xl:w-[45.5rem]'></div>*/}
-
                 </div>
-                <img className='hidden lg:block' src='/images/aboutUsImg/about-us-work-w-us.png' />
+                <img className='hidden lg:block lg:h-[40rem]' src='/images/aboutUsImg/about-us-work-w-us.png' />
             </div>
 
             <FooterLight />
