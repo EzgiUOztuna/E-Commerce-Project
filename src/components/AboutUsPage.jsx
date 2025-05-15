@@ -1,5 +1,7 @@
 import FooterLight from "./FooterLight";
+import Clients from "./Clients";
 import InnerPageHeader from "./InnerPageHeader";
+import { aboutUsData } from "../../public/dataStore/aboutUsData";
 
 export default function AboutUsPage() {
     return <>
@@ -29,20 +31,34 @@ export default function AboutUsPage() {
             </div>
 
             {/* Problems trying...*/}
-            <div className="flex flex-col py-6 mx-auto items-center justify-center
-                            lg:gap-14 lg:flex-row">
+            <div className="flex flex-col py-6 mx-auto items-center justify-center text-center gap-14 lg:flex-row lg:text-left">
                 <div className="flex flex-col py-6 gap-6">
                     <p className="font-normal text-sm leading-5 tracking-[0.2px] text-[#E74040]">Problems trying</p>
-                    <h3 className="font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] lg:w-[25rem]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.</h3>
+                    <h3 className="font-bold text-2xl leading-8 tracking-[0.1px] text-[#252B42] w-72 lg:w-[25rem]">Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.</h3>
                 </div>
-                <p className="font-normal text-sm leading-5 tracking-[0.2px] text-[#737373] lg:w-[33rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                <p className="font-normal text-sm leading-5 tracking-[0.2px] text-[#737373] w-[19rem] lg:w-[33rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
 
             {/* Data infos...*/}
+            <div>
+                <div className="flex py-20 gap-12 items-center justify-center">
+                    {aboutUsData.map((data, index) => (
+                        <div key={index}
+                            className="flex flex-col text-center font-bold px-4">
+                            <h1 className="text-[3.625rem] leading-[5rem] tracking-[0.2px] text-[#252B42]">{data.number}</h1>
+                            <h5 className="text-base leading-6 tracking-[0.1px] text-[#737373]">{data.def}</h5>
+                        </div>
+                    ))}
 
 
+                </div>
+            </div>
+
+            <Clients />
+            {/* ... */}
+            <FooterLight />
         </div>
 
-        <FooterLight />
+
     </>;
 }
