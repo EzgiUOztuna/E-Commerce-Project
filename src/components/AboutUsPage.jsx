@@ -2,6 +2,8 @@ import FooterLight from "./FooterLight";
 import Clients from "./Clients";
 import InnerPageHeader from "./InnerPageHeader";
 import { aboutUsData } from "../../public/dataStore/aboutUsData";
+import { teamMembersData } from "../../public/dataStore/teamMembersData";
+import { Link } from "react-router-dom";
 
 export default function AboutUsPage() {
     return <>
@@ -63,6 +65,32 @@ export default function AboutUsPage() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
+            </div>
+
+            {/* Meet team...*/}
+            <div className="flex flex-col items-center font-montserrat font-bold py-7
+                            lg:py-28 lg:gap-28">
+                <div className="flex flex-col items-center gap-3 text-center">
+                    <h2 className="text-[2.5rem] leading-[3.125rem] tracking-[0.2px] text-[#252B42] mx-auto py-11 w-[19rem]
+                           lg:w-[38rem] lg:py-0">Meet Our Team</h2>
+                    <p className="font-normal text-sm leading-5 tracking-[0.2] lg:w-[29rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                </div>
+                <div className="lg:grid grid-cols-3 lg:gap-7">
+                    {teamMembersData.slice(0, 3).map((team, index) => (
+                        <div key={index} className="flex flex-col items-center pb-8 lg:pb-4">
+                            <img className="w-[19.75rem] h-[15rem]" src={team.picture} />
+                            <div className="flex flex-col p-8 gap-4 lg:gap-7 ">
+                                <h5 className="text-base leading-6 tracking-[0.1px] text-center text-[#252B42]">{team.username}</h5>
+                                <h6 className="text-sm tracking-[0.2px] text-center text-[#737373]">{team.job}</h6>
+                                <div className="flex gap-5">
+                                    <Link to={team.facebookUrl}><img src={team.facebookIcon} /></Link> {/*⚠️*/}
+                                    <Link to={team.instagramUrl}><img src={team.instagramIcon} /></Link> {/*⚠️*/}
+                                    <Link to={team.twitterUrl}><img src={team.twitterIcon} /></Link> {/*⚠️*/}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
 
 
