@@ -1,3 +1,4 @@
+import FooterLight from "./FooterLight";
 import InnerPageHeader from "./InnerPageHeader";
 
 export default function AboutUsPage() {
@@ -42,5 +43,6 @@ export default function AboutUsPage() {
 
         </div>
 
+        <FooterLight />
     </>;
 }
