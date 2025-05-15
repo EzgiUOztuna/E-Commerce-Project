@@ -42,7 +42,7 @@ export default function AboutUsPage() {
             {/* Data infos...*/}
             <div>
                 <div className="flex py-20 gap-12 items-center justify-center">
-                    {aboutUsData.map((data, index) => (
+                    {aboutUsData.analyzeData.map((data, index) => (
                         <div key={index}
                             className="flex flex-col text-center font-bold px-4">
                             <h1 className="text-[3.625rem] leading-[5rem] tracking-[0.2px] text-[#252B42]">{data.number}</h1>
