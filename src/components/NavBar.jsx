@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
 
@@ -91,12 +92,12 @@ export default function NavBar() {
 
                 <div className='w-1/2 order-2 flex items-center gap-[0.5rem]
                                 lg:text-[#23A6F0] lg:gap-0 lg:order-3 lg:max-w-[19.06rem]'>{/*navbar-nav-right*/}
-                    <a href="/login" className='lg:navbar-actions'>{/*login-register*/}
+                    <Link to="/signup" className='lg:navbar-actions'>{/*login-register*/}
                         <img className='hidden lg:block' src='/icons/user.svg'></img>
                         <img className='block lg:hidden' src='/icons/user-mobile.svg'></img>
                         <p className='hidden
                                     lg:block lg:text-center lg:text-[#23A6F0] lg:font-bold lg:text-[0.875rem] lg:leading-[1.5rem] lg:tracking-[0.0125rem] lg:font-montserrat'>Login / Register</p>
-                    </a>
+                    </Link>
                     <a href='/search'><img className='hidden lg:navbar-actions' src='/icons/search.svg'></img></a>{/*search*/}
                     <a href='/search'><img className='block lg:hidden' src='/icons/search-mobile.svg'></img></a>
 
