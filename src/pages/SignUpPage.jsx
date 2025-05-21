@@ -4,6 +4,8 @@ import { useForm } from 'react-hook-form';
 
 export default function SignUpPage() {
     const [roles, setRoles] = useState([]);
+    const [selectedRole, setSelectedRole] = useState('customer');
+
     const { register,
         handleSubmit,
         watch,
@@ -19,7 +21,9 @@ export default function SignUpPage() {
             .catch(error => console.error(error));
     }, []);
 
-
+    const handleRoleChange = (e) => {
+        setSelectedRole(e.target.value);
+    };
 
 
     return <>
@@ -74,9 +78,10 @@ export default function SignUpPage() {
                     {errors.confirmPassword && <div className='text-red-500 text-xs'>{errors.confirmPassword.message}</div>}
 
                     {/* Roles */}
-                    <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
-
+                    <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] text-[#9CA3AF] lg:w-[25rem]'
+                        onChange={handleRoleChange} value={selectedRole}
                         {...register('roles', { required: true })}>
+
                         {roles.map((role) => (
                             <option key={role.id} value={role.code}>
                                 {role.name}
