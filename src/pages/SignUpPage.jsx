@@ -9,16 +9,6 @@ export default function SignUpPage() {
     const password = watch("password");
     console.log(errors);
 
-    /*
-    https://ozmeneyup60.medium.com/react-jste-form-y%C3%B6netimi-react-hook-form-vs-formik-e6d394f30057
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        password: '',
-        verifiedPassword: ''
-    });
-    */
-
     return <>
         <div className='flex items-center bg-[#23A6F0] h-[100vh] '>
             <div className='font-montserrat flex flex-col items-center mx-auto border border-[#BABABA] px-10 py-16 rounded-xl bg-[#FAFAFA] w-[23rem] lg:w-[30rem] '>
@@ -80,3 +70,20 @@ export default function SignUpPage() {
 
     </>;
 }
+
+
+
+
+
+
+
+
+/*
+  https://ozmeneyup60.medium.com/react-jste-form-y%C3%B6netimi-react-hook-form-vs-formik-e6d394f30057
+  const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      password: '',
+      verifiedPassword: ''
+  });
+  */
