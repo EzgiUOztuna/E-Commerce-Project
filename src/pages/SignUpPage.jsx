@@ -19,25 +19,30 @@ export default function SignUpPage() {
     */
 
     return <>
-        <div className='font-montserrat flex flex-col items-center mx-auto mt-10 border border-black w-[40rem] p-10 rounded-xl'>
+        <div className='font-montserrat flex flex-col items-center mx-auto mt-10 border border-[#BABABA] w-[30rem] p-10 rounded-xl'>
             <h1 className='text-4xl font-bold pb-10'>Signup</h1>
-            <form className='flex flex-col items-center'
+            <form className='flex flex-col items-center gap-5'
                 onSubmit={handleSubmit(onSubmit)}>
-                <input type='text'
+                <input className='border border-[#BABABA] rounded-md w-[25rem] px-4 py-2'
+                    type='text'
                     placeholder='First name'
                     {...register("First name", { required: true, min: 3, maxLength: 80 })} />
-                <input type='text'
+                <input className='border border-[#BABABA] rounded-md w-[25rem] px-4 py-2'
+                    type='text'
                     placeholder='Last name'
                     {...register("Last name", { required: true, maxLength: 100 })} />
-                <input type='text'
+                <input className='border border-[#BABABA] rounded-md w-[25rem] px-4 py-2'
+                    type='text'
                     placeholder='Email'
                     {...register("Email", { required: true, pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' } })} />
                 {errors.email && <div>{errors.email.message}</div>}
-                <input type='text'
+                <input className='border border-[#BABABA] rounded-md w-[25rem] px-4 py-2'
+                    type='text'
                     placeholder='Password'
                     {...register('Password', { required: true, minLength: 8, pattern: { value: '(?=.*)(?=.*[a-z])(?=.*[A-Z]).{8,}' }, message: 'Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters' })} />
                 {errors.password && <div>{errors.password.message}</div>}
-                <button type='submit'>Submit</button>
+                <button className='border border-[#BABABA] rounded-md w-[25rem] px-4 py-2'
+                    type='submit'>Submit</button>
             </form>
 
         </div>
