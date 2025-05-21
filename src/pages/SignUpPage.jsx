@@ -81,7 +81,6 @@ export default function SignUpPage() {
                     <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] text-[#9CA3AF] lg:w-[25rem]'
                         onChange={handleRoleChange} value={selectedRole}
                         {...register('roles', { required: true })}>
-
                         {roles.map((role) => (
                             <option key={role.id} value={role.code}>
                                 {role.name}
