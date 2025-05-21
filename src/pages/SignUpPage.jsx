@@ -1,6 +1,9 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 export default function SignUpPage() {
+    const [roles, setRoles] = useState([]);
     const { register,
         handleSubmit,
         watch,
@@ -8,6 +11,16 @@ export default function SignUpPage() {
     const onSubmit = data => console.log(data);
     const password = watch("password");
     console.log(errors);
+
+    const api = axios.create({ baseURL: 'https://workintech-fe-ecommerce.onrender.com' });
+    useEffect(() => {
+        api.get('/roles')
+            .then(response => setRoles(response.data))
+            .catch(error => console.error(error));
+    }, []);
+
+
+
 
     return <>
         <div className='flex items-center bg-[#23A6F0] h-[100vh] '>
@@ -59,6 +72,17 @@ export default function SignUpPage() {
                         })}
                     />
                     {errors.confirmPassword && <div className='text-red-500 text-xs'>{errors.confirmPassword.message}</div>}
+
+                    {/* Roles */}
+                    <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+
+                        {...register('roles', { required: true })}>
+                        {roles.map((role) => (
+                            <option key={role.id} value={role.code}>
+                                {role.name}
+                            </option>
+                        ))}
+                    </select>
 
                     <button className='border border-[#252B42] bg-[#252B42] font-bold text-[#FFFFFF] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
                         type='submit'>Submit</button>
