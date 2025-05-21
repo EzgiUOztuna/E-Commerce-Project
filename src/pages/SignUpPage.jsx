@@ -43,6 +43,7 @@ export default function SignUpPage() {
                     />
                     {errors.email && <div className='text-red-500 text-xs'>{errors.email.message}</div>}
 
+                    {/* Password */}
                     <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
                         type='password'
                         placeholder='Password'
@@ -57,7 +58,8 @@ export default function SignUpPage() {
                         })}
                     />
                     {errors.password && <div className='text-red-500 text-xs'>{errors.password.message}</div>}
-                    {/* Confirm Password*/}
+
+                    {/* Confirm Password */}
                     <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
                         type='password'
                         placeholder='Confirm Password'
