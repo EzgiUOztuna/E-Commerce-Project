@@ -4,15 +4,16 @@ import { useForm } from 'react-hook-form';
 
 export default function SignUpPage() {
     const [roles, setRoles] = useState([]);
-    const [selectedRole, setSelectedRole] = useState('customer');
 
     const { register,
         handleSubmit,
         watch,
         formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
-    const password = watch("password");
     console.log(errors);
+
+    const password = watch("password");
+    const selectedRole = watch('roles');
 
     const api = axios.create({ baseURL: 'https://workintech-fe-ecommerce.onrender.com' });
     useEffect(() => {
@@ -20,11 +21,6 @@ export default function SignUpPage() {
             .then(response => setRoles(response.data))
             .catch(error => console.error(error));
     }, []);
-
-    const handleRoleChange = (e) => {
-        setSelectedRole(e.target.value);
-    };
-
 
     return <>
         <div className='flex items-center bg-[#23A6F0] h-[100vh] '>
@@ -81,7 +77,6 @@ export default function SignUpPage() {
                     <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] text-[#9CA3AF] lg:w-[25rem]'
                         {...register('roles', {
                             required: true,
-                            onChange: { handleRoleChange }
                         })}>
                         {roles.map((role) => (
                             <option key={role.id} value={role.code}>
