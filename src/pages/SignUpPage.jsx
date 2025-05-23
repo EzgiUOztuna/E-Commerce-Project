@@ -88,6 +88,56 @@ export default function SignUpPage() {
                         ))}
                     </select>
 
+                    {selectedRole === 'store' && (
+                        <div>
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                                type='text'
+                                placeholder='Store Name'
+                                {...register('storeName', {
+                                    required: true,
+                                    minLength: { value: 3, message: 'Name must be at least 8 characters' }
+                                })} />
+
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                                type='text'
+                                placeholder='Store Phone'
+                                {...register('storePhone', {
+                                    required: true,
+                                    pattern: {
+                                        value: /^5(0[5-7]|[3-5]\d) ?\d{3} ?\d{4}$/,
+                                        message: 'Please enter a valid Turkish phone number',
+                                    },
+                                })} />
+                            {errors.storePhone && <div className='text-red-500 text-xs'>{errors.storePhone.message}</div>}
+
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                                type='text'
+                                placeholder='Store Tax ID'
+                                {...register('storeTaxId', {
+                                    required: true,
+                                    pattern: {
+                                        value: /^T\d{4}V\d{6}$/,
+                                        message: 'Tax ID must be in format TXXXXVXXXXXX'
+                                    },
+                                })} />
+                            {errors.storeTaxId && <div className='text-red-500 text-xs'>{errors.storeTaxId.message}</div>}
+
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                                type='text'
+                                placeholder='Store Bank Account'
+                                {...register('storeBankAccount', {
+                                    required: 'Bank account (IBAN) is required',
+                                    pattern: {
+                                        value: /^[A-Z]{2}\d{2}[A-Z0-9]{11,30}$/,
+                                        message: 'Please enter a valid IBAN',
+                                    },
+                                })} />
+                            {errors.storeBankAccount && <div className='text-red-500 text-xs'>{errors.storeBankAccount.message}</div>}
+
+                        </div>
+
+                    )}
+
                     <button className='border border-[#252B42] bg-[#252B42] font-bold text-[#FFFFFF] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
                         type='submit'>Submit</button>
                 </form>
