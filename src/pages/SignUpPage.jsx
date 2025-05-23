@@ -45,7 +45,7 @@ export default function SignUpPage() {
                             pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' }
                         })}
                     />
-                    {errors.email && <div className='text-red-500 text-xs'>{errors.email.message}</div>}
+                    {errors.email && <div className='error-text'>{errors.email.message}</div>}
 
                     {/* Password */}
                     <input className='select-menu '
@@ -61,7 +61,7 @@ export default function SignUpPage() {
                             },
                         })}
                     />
-                    {errors.password && <div className='text-red-500 text-xs'>{errors.password.message}</div>}
+                    {errors.password && <div className='error-text'>{errors.password.message}</div>}
 
                     {/* Confirm Password */}
                     <input className='select-menu '
@@ -72,7 +72,7 @@ export default function SignUpPage() {
                             validate: (value) => value === password || "Passwords do not match",
                         })}
                     />
-                    {errors.confirmPassword && <div className='text-red-500 text-xs'>{errors.confirmPassword.message}</div>}
+                    {errors.confirmPassword && <div className='error-text'>{errors.confirmPassword.message}</div>}
 
                     {/* Roles */}
                     <select className='select-menu text-[#9CA3AF]'
@@ -90,17 +90,17 @@ export default function SignUpPage() {
                     {selectedRole === 'store' && (
                         <div className='flex flex-col items-end gap-2'>
                             {/* Store Name*/}
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
+                            <input className='store-select-role'
                                 type='text'
                                 placeholder='Store Name'
                                 {...register('storeName', {
                                     required: true,
                                     minLength: { value: 3, message: 'Name must be at least 8 characters' }
                                 })} />
-                            {errors.storeName && <div className='text-red-500 text-xs'>{errors.storeName.message}</div>}
+                            {errors.storeName && <div className='error-text'>{errors.storeName.message}</div>}
 
                             {/* Store Phone*/}
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
+                            <input className='store-select-role'
                                 type='text'
                                 placeholder='Store Phone'
                                 {...register('storePhone', {
@@ -110,10 +110,10 @@ export default function SignUpPage() {
                                         message: 'Please enter a valid Turkish phone number',
                                     },
                                 })} />
-                            {errors.storePhone && <div className='text-red-500 text-xs'>{errors.storePhone.message}</div>}
+                            {errors.storePhone && <div className='error-text'>{errors.storePhone.message}</div>}
 
                             {/* Store Tax*/}
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
+                            <input className='store-select-role'
                                 type='text'
                                 placeholder='Store Tax ID'
                                 {...register('storeTaxId', {
@@ -123,10 +123,10 @@ export default function SignUpPage() {
                                         message: 'Tax ID must be in format TXXXXVXXXXXX'
                                     },
                                 })} />
-                            {errors.storeTaxId && <div className='text-red-500 text-xs'>{errors.storeTaxId.message}</div>}
+                            {errors.storeTaxId && <div className='error-text'>{errors.storeTaxId.message}</div>}
 
                             {/* Store Bank Account*/}
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
+                            <input className='store-select-role'
                                 type='text'
                                 placeholder='Store Bank Account'
                                 {...register('storeBankAccount', {
@@ -136,7 +136,7 @@ export default function SignUpPage() {
                                         message: 'Please enter a valid IBAN',
                                     },
                                 })} />
-                            {errors.storeBankAccount && <div className='text-red-500 text-xs'>{errors.storeBankAccount.message}</div>}
+                            {errors.storeBankAccount && <div className='error-text'>{errors.storeBankAccount.message}</div>}
                         </div>
                     )}
 
