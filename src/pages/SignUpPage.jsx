@@ -26,6 +26,7 @@ export default function SignUpPage() {
         <div className='flex items-center bg-[#23A6F0] h-[100vh] '>
             <div className='font-montserrat flex flex-col items-center mx-auto border border-[#BABABA] px-10 py-16 rounded-xl bg-[#FAFAFA] w-[23rem] lg:w-[30rem] '>
                 <h1 className='text-4xl font-bold pb-10'>Signup</h1>
+
                 <form className='flex flex-col items-center gap-5'
                     onSubmit={handleSubmit(onSubmit)}>
                     <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
@@ -85,9 +86,10 @@ export default function SignUpPage() {
                         ))}
                     </select>
 
+                    {/* Selected 'STORE' */}
                     {selectedRole === 'store' && (
-                        <div>
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                        <div className='flex flex-col items-end gap-2'>
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Name'
                                 {...register('storeName', {
@@ -95,7 +97,7 @@ export default function SignUpPage() {
                                     minLength: { value: 3, message: 'Name must be at least 8 characters' }
                                 })} />
 
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Phone'
                                 {...register('storePhone', {
@@ -107,7 +109,7 @@ export default function SignUpPage() {
                                 })} />
                             {errors.storePhone && <div className='text-red-500 text-xs'>{errors.storePhone.message}</div>}
 
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Tax ID'
                                 {...register('storeTaxId', {
@@ -119,7 +121,7 @@ export default function SignUpPage() {
                                 })} />
                             {errors.storeTaxId && <div className='text-red-500 text-xs'>{errors.storeTaxId.message}</div>}
 
-                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                            <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Bank Account'
                                 {...register('storeBankAccount', {
