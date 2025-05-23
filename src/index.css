@@ -38,4 +38,8 @@
     .hover-contact-div {
         @apply lg:h-[22rem] lg:hover:bg-[#252B42] lg:hover:text-[#FFFFFF] lg:transition-transform lg:duration-500 lg:hover:scale-110;
     }
+
+    .select-menu {
+        @apply border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]
+    }
 }
