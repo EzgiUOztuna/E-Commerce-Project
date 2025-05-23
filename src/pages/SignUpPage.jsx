@@ -29,15 +29,15 @@ export default function SignUpPage() {
 
                 <form className='flex flex-col items-center gap-5'
                     onSubmit={handleSubmit(onSubmit)}>
-                    <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                    <input className='select-menu '
                         type='text'
                         placeholder='First name'
                         {...register("firstName", { required: true, min: 3, maxLength: 80 })} />
-                    <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                    <input className='select-menu '
                         type='text'
                         placeholder='Last name'
                         {...register("lastName", { required: true, maxLength: 100 })} />
-                    <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                    <input className='select-menu '
                         type='text'
                         placeholder='Email'
                         {...register("email", {
@@ -48,7 +48,7 @@ export default function SignUpPage() {
                     {errors.email && <div className='text-red-500 text-xs'>{errors.email.message}</div>}
 
                     {/* Password */}
-                    <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                    <input className='select-menu '
                         type='password'
                         placeholder='Password'
                         {...register('password', {
@@ -64,7 +64,7 @@ export default function SignUpPage() {
                     {errors.password && <div className='text-red-500 text-xs'>{errors.password.message}</div>}
 
                     {/* Confirm Password */}
-                    <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
+                    <input className='select-menu '
                         type='password'
                         placeholder='Confirm Password'
                         {...register('confirmPassword', {
@@ -75,7 +75,7 @@ export default function SignUpPage() {
                     {errors.confirmPassword && <div className='text-red-500 text-xs'>{errors.confirmPassword.message}</div>}
 
                     {/* Roles */}
-                    <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] text-[#9CA3AF] lg:w-[25rem]'
+                    <select className='select-menu text-[#9CA3AF]'
                         {...register('roles', {
                             required: true,
                         })}>
