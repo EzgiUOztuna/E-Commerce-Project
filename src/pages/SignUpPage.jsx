@@ -79,8 +79,10 @@ export default function SignUpPage() {
 
                     {/* Roles */}
                     <select className='border border-[#BABABA] rounded-md px-4 py-2 w-[20rem] text-[#9CA3AF] lg:w-[25rem]'
-                        onChange={handleRoleChange}
-                        {...register('roles', { required: true })}>
+                        {...register('roles', {
+                            required: true,
+                            onChange: { handleRoleChange }
+                        })}>
                         {roles.map((role) => (
                             <option key={role.id} value={role.code}>
                                 {role.name}
@@ -133,9 +135,7 @@ export default function SignUpPage() {
                                     },
                                 })} />
                             {errors.storeBankAccount && <div className='text-red-500 text-xs'>{errors.storeBankAccount.message}</div>}
-
                         </div>
-
                     )}
 
                     <button className='border border-[#252B42] bg-[#252B42] font-bold text-[#FFFFFF] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
