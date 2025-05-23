@@ -89,6 +89,7 @@ export default function SignUpPage() {
                     {/* Selected 'STORE' */}
                     {selectedRole === 'store' && (
                         <div className='flex flex-col items-end gap-2'>
+                            {/* Store Name*/}
                             <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Name'
@@ -96,7 +97,7 @@ export default function SignUpPage() {
                                     required: true,
                                     minLength: { value: 3, message: 'Name must be at least 8 characters' }
                                 })} />
-
+                            {/* Store Phone*/}
                             <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Phone'
@@ -108,7 +109,7 @@ export default function SignUpPage() {
                                     },
                                 })} />
                             {errors.storePhone && <div className='text-red-500 text-xs'>{errors.storePhone.message}</div>}
-
+                            {/* Store Tax*/}
                             <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Tax ID'
@@ -120,7 +121,7 @@ export default function SignUpPage() {
                                     },
                                 })} />
                             {errors.storeTaxId && <div className='text-red-500 text-xs'>{errors.storeTaxId.message}</div>}
-
+                            {/* Store Bank Account*/}
                             <input className='border border-[#BABABA] rounded-md px-4 py-2 w-[15rem] lg:w-[20rem]'
                                 type='text'
                                 placeholder='Store Bank Account'
