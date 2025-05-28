@@ -8,6 +8,7 @@ export default function SignUpPage() {
     const [loading, setLoading] = useState(false);
     const [confirmPassword, setConfirmPassword] = useState('');
     const [confirmError, setConfirmError] = useState('');
+    const [errorMessage, setErrorMessage] = useState(null);
     const navigate = useNavigate();
 
     const { register,
@@ -23,10 +24,27 @@ export default function SignUpPage() {
     const api = axios.create({ baseURL: 'https://workintech-fe-ecommerce.onrender.com' });
 
     const onSubmit = (data) => {
-        console.log("Form submitted successfully: ", data);
+        console.log("Form submitted successfully: ", JSON.stringify(data, null, 2));
+
         setLoading(true);
 
-        /*api.post('/signup', data)
+        const payload = {
+            name: data.name,
+            email: data.email,
+            password: data.password,
+            role_id: data.role_id
+        };
+
+        if (data.role_id === '2') {
+            payload.store = {
+                name: data.store_name,
+                phone: data.phone,
+                tax_no: data.tax_no,
+                bank_account: data.bank_account
+            };
+        }
+
+        api.post('/signup', payload)
             .then(response => {
                 //console.log("Form submitted successfully: ", response.data);
                 navigate(-1, {
@@ -37,8 +55,15 @@ export default function SignUpPage() {
             })
             .catch(error => {
                 setLoading(false);
-                console.error('Error: ', error.response?.data || error.message)
-            })*/
+                //console.error('Error: ', error.response.data || error.message)
+                const serverMessage =
+                    error.response?.data?.error === 'An error occurred' &&
+                        error.response?.data?.err?.code === 'SQLITE_CONSTRAINT'
+                        ? 'This email address is already registered.'
+                        : error.response?.data?.error || 'Something went wrong. Please try again.';
+
+                setErrorMessage(serverMessage);
+            })
     }
 
     useEffect(() => {
@@ -126,11 +151,11 @@ export default function SignUpPage() {
                             <input className='store-select-role'
                                 type='text'
                                 placeholder='Store Name'
-                                {...register('name', {
+                                {...register('store_name', {
                                     required: true,
                                     minLength: { value: 3, message: 'Name must be at least 8 characters' }
                                 })} />
-                            {errors.name && <div className='error-text'>{errors.name.message}</div>}
+                            {errors.store_name && <div className='error-text'>{errors.store_name.message}</div>}
 
                             {/* Store Phone*/}
                             <input className='store-select-role'
@@ -140,7 +165,7 @@ export default function SignUpPage() {
                                     required: true,
                                     pattern: {
                                         value: /^5(0[5-7]|[3-5]\d) ?\d{3} ?\d{4}$/,
-                                        message: 'Please enter a valid Turkish phone number',
+                                        message: 'Please enter a valid Turkish phone number without 0',
                                     },
                                 })} />
                             {errors.phone && <div className='error-text'>{errors.phone.message}</div>}
@@ -175,6 +200,8 @@ export default function SignUpPage() {
 
                     <button className='border border-[#252B42] bg-[#252B42] font-bold text-[#FFFFFF] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
                         type='submit' disabled={loading}>{loading ? 'Sending...' : 'Submit'}</button>
+
+                    {errorMessage && (<div className='error-text'>{errorMessage}</div>)}
                 </form>
             </div>
         </div>
