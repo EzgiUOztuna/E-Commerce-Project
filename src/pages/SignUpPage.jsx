@@ -11,17 +11,20 @@ export default function SignUpPage() {
         formState: { errors } } = useForm({
             mode: "all"
         });
-    console.log(errors);
-
-    const onSubmit = (data) => {
-        console.log("Form submitted successfully: ", data);
-    }
-
 
     const password = watch("password");
     const selectedRole = watch('roles');
 
     const api = axios.create({ baseURL: 'https://workintech-fe-ecommerce.onrender.com' });
+
+    const onSubmit = (data) => {
+        api.post('/signup', data)
+            .then(response => {
+                console.log("Form submitted successfully: ", response.data);
+            })
+
+    }
+
     useEffect(() => {
         api.get('/roles')
             .then(response => {
@@ -152,11 +155,6 @@ export default function SignUpPage() {
         </div>
     </>;
 }
-
-
-
-
-
 
 
 
