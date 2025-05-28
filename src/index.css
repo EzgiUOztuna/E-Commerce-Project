@@ -48,6 +48,6 @@
     }
 
     .error-text {
-        @apply text-red-500 text-xs;
+        @apply text-red-500 text-xs w-full;
     }
 }
