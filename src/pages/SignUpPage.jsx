@@ -44,7 +44,7 @@ export default function SignUpPage() {
                         placeholder='Email'
                         {...register("email", {
                             required: { value: true, message: "Email is required" },
-                            pattern: { value: /^[^\s@]+@(gmail|hotmail|yahoo|icloud)\.(com|net|org)$/, message: 'Invalid email address' }
+                            pattern: { value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, message: 'Invalid email address' }
                         })}
                     />
                     {errors.email && <div className='error-text'>{errors.email.message}</div>}
