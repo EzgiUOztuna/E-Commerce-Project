@@ -22,7 +22,7 @@ export default function SignUpPage() {
             .then(response => {
                 console.log("Form submitted successfully: ", response.data);
             })
-
+            .catch(error => console.error('Error: ', error.response?.data || error.message))
     }
 
     useEffect(() => {
