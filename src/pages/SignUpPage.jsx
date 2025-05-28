@@ -8,7 +8,11 @@ export default function SignUpPage() {
     const { register,
         handleSubmit,
         watch,
-        formState: { errors } } = useForm();
+        formState: { errors } } = useForm({
+            defaultValues: {
+                roles: ''
+            }
+        });
     const onSubmit = data => console.log(data);
     console.log(errors);
 
@@ -18,7 +22,9 @@ export default function SignUpPage() {
     const api = axios.create({ baseURL: 'https://workintech-fe-ecommerce.onrender.com' });
     useEffect(() => {
         api.get('/roles')
-            .then(response => setRoles(response.data))
+            .then(response => {
+                setRoles(response.data)
+            })
             .catch(error => console.error(error));
     }, []);
 
@@ -75,10 +81,7 @@ export default function SignUpPage() {
                     {errors.confirmPassword && <div className='error-text'>{errors.confirmPassword.message}</div>}
 
                     {/* Roles */}
-                    <select className='select-menu text-[#9CA3AF]'
-                        {...register('roles', {
-                            required: true,
-                        })}>
+                    <select {...register('roles', { required: true })} className='select-menu text-[#9CA3AF]'>
                         {roles.map((role) => (
                             <option key={role.id} value={role.code}>
                                 {role.name}
