@@ -8,7 +8,9 @@ export default function SignUpPage() {
     const { register,
         handleSubmit,
         watch,
-        formState: { errors } } = useForm();
+        formState: { errors } } = useForm({
+            mode: "all"
+        });
     const onSubmit = data => console.log("Form submitted: ", data);
     console.log(errors);
 
@@ -140,7 +142,7 @@ export default function SignUpPage() {
                     )}
 
                     <button className='border border-[#252B42] bg-[#252B42] font-bold text-[#FFFFFF] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
-                        type='submit'>Submit</button>
+                        type='submit' >Submit</button>
                 </form>
             </div>
         </div>
