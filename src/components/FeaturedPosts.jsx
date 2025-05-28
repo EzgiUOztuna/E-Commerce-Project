@@ -16,9 +16,9 @@ export default function FeaturedPosts() {
                 {featuredPostsData.map((item, index) => (
                     <div key={index} className="flex flex-col shadow-custom w-[20.5rem] lg:w-[22rem]">
                         <img src={item.image} />
-                        <p className="absolute w-14 h-6 rounded-md border border-[#E74040] bg-[#E74040] px-3 mt-5 ml-5">
+                        <div className="absolute w-14 h-6 rounded-md border border-[#E74040] bg-[#E74040] px-3 mt-5 ml-5">
                             <h6 className="font-bold text-sm leading-6 tracking-[0.2px] text-center text-[#FFFFFF]">NEW</h6>
-                        </p>
+                        </div>
                         <div className="flex flex-col pt-6 pb-9 px-6 gap-3">
                             <div className="flex gap-4 font-normal text-xs leading-4 tracking-[0.2px]">
                                 <p className="text-[#8EC2F2]">Google</p>
