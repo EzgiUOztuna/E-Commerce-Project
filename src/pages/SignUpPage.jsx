@@ -143,11 +143,8 @@ export default function SignUpPage() {
                     <button className='border border-[#252B42] bg-[#252B42] font-bold text-[#FFFFFF] rounded-md px-4 py-2 w-[20rem] lg:w-[25rem]'
                         type='submit'>Submit</button>
                 </form>
-
             </div>
         </div>
-
-
     </>;
 }
 
