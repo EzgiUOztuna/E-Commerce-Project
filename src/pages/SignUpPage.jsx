@@ -11,7 +11,6 @@ export default function SignUpPage() {
         formState: { errors } } = useForm({
             mode: "all"
         });
-    const onSubmit = data => console.log("Form submitted: ", data);
     console.log(errors);
 
     const password = watch("password");
@@ -25,6 +24,21 @@ export default function SignUpPage() {
             })
             .catch(error => console.error(error));
     }, []);
+
+    const onSubmit = (data) => {
+        console.log("Sending data:", data);
+        axios.post('https://workintech-fe-ecommerce.onrender.com/signup', data)
+            .then((response) => {
+                console.log("Form submitted successfully: ", response.data);
+            })
+            .catch((error) => {
+                if (error.response) {
+                    console.error('Error: ', error.response.data.message || 'Signup failed...');
+                } else {
+                    console.error('Error: ', error.message);
+                }
+            });
+    };
 
     return <>
         <div className='flex items-center bg-[#23A6F0] h-[100vh] '>
@@ -148,12 +162,6 @@ export default function SignUpPage() {
         </div>
     </>;
 }
-
-
-
-
-
-
 
 
 /*
