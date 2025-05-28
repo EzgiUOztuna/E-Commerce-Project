@@ -13,6 +13,11 @@ export default function SignUpPage() {
         });
     console.log(errors);
 
+    const onSubmit = (data) => {
+        console.log("Form submitted successfully: ", data);
+    }
+
+
     const password = watch("password");
     const selectedRole = watch('roles');
 
@@ -24,21 +29,6 @@ export default function SignUpPage() {
             })
             .catch(error => console.error(error));
     }, []);
-
-    const onSubmit = (data) => {
-        console.log("Sending data:", data);
-        axios.post('https://workintech-fe-ecommerce.onrender.com/signup', data)
-            .then((response) => {
-                console.log("Form submitted successfully: ", response.data);
-            })
-            .catch((error) => {
-                if (error.response) {
-                    console.error('Error: ', error.response.data.message || 'Signup failed...');
-                } else {
-                    console.error('Error: ', error.message);
-                }
-            });
-    };
 
     return <>
         <div className='flex items-center bg-[#23A6F0] h-[100vh] '>
@@ -60,7 +50,7 @@ export default function SignUpPage() {
                         placeholder='Email'
                         {...register("email", {
                             required: { value: true, message: "Email is required" },
-                            pattern: { value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, message: 'Invalid email address' }
+                            pattern: { value: /^[a-zA-Z0–9._%+-]+@[a-zA-Z0–9.-]+\.[a-zA-Z]{2,}$/, message: 'Invalid email address' }
                         })}
                     />
                     {errors.email && <div className='error-text'>{errors.email.message}</div>}
@@ -162,6 +152,12 @@ export default function SignUpPage() {
         </div>
     </>;
 }
+
+
+
+
+
+
 
 
 /*
