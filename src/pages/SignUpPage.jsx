@@ -19,7 +19,6 @@ export default function SignUpPage() {
 
     const password = watch("password");
     const selectedRole = watch('role_id');
-    console.log("Selected Role: ", selectedRole);
 
     const api = axios.create({ baseURL: 'https://workintech-fe-ecommerce.onrender.com' });
 
