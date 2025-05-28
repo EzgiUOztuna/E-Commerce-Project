@@ -9,6 +9,7 @@ export default function SignUpPage() {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [confirmError, setConfirmError] = useState('');
     const [errorMessage, setErrorMessage] = useState(null);
+    const [successMessage, setSuccessMessage] = useState('');
     const navigate = useNavigate();
 
     const { register,
@@ -47,11 +48,13 @@ export default function SignUpPage() {
         api.post('/signup', payload)
             .then(response => {
                 //console.log("Form submitted successfully: ", response.data);
-                navigate(-1, {
-                    state: {
-                        warning: 'You need to click link in email to activate your account!',
-                    }
-                });
+                //navigate(-1, {
+                //    state: {
+                //        warning: 'You need to click link in email to activate your account!', /* ⚠️Ekranda görünmesini sağlayacağız şu an için state'e atayarak yapıldı. */
+                //    }
+                //});
+                setSuccessMessage('You need to click link in email to activate your account!');
+                setLoading(false);
             })
             .catch(error => {
                 setLoading(false);
@@ -96,10 +99,6 @@ export default function SignUpPage() {
                         type='text'
                         placeholder='Full Name'
                         {...register("name", { required: true, min: 3, maxLength: 80 })} />
-                    {/*<input className='select-menu '
-                        type='text'
-                        placeholder='Last name'
-                        {...register("lastName", { required: true, maxLength: 100 })} />*/}
                     <input className='select-menu '
                         type='text'
                         placeholder='Email'
@@ -202,6 +201,7 @@ export default function SignUpPage() {
                         type='submit' disabled={loading}>{loading ? 'Sending...' : 'Submit'}</button>
 
                     {errorMessage && (<div className='error-text'>{errorMessage}</div>)}
+                    {successMessage && (<div className="text-green-600 p-2 rounded mb-4 text-sm">{successMessage}</div>)}
                 </form>
             </div>
         </div>
