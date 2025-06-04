@@ -7,6 +7,6 @@ const clientInitial = {
     language: '',
 }
 
-const clientReducer = (state = clientInitial, action) => {
+const clientReducer = (state = clientInitial, action = {}) => {
     return state;
 }
