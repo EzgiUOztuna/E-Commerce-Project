@@ -3,6 +3,7 @@ import { clientReducer } from "./reducers/clientReducer";
 import { productReducer } from "./reducers/productReducer";
 import { shoppingCartReducer } from "./reducers/shoppingCartReducer";
 import logger from "redux-logger";
+import { thunk } from "redux-thunk";
 
 export const reducers = combineReducers({
     clients: clientReducer,
@@ -10,4 +11,4 @@ export const reducers = combineReducers({
     shoppingCart: shoppingCartReducer,
 })
 
-export const store = createStore(reducers, applyMiddleware(logger));
+export const store = createStore(reducers, applyMiddleware(thunk, logger));
