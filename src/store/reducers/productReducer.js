@@ -6,13 +6,26 @@ export const ProductActions = {
     setLimit: 'SET_LIMIT',
     setOffset: 'SET_OFFSET',
     setFilter: 'SET_FILTER'
-}
+};
 
-export const productReducer = (state, action) => {
+const productInitial = {
+    categories: [],
+    productList: [],
+    total: {},
+    limit: 25,
+    offset: 0,
+    filter: '',
+    fetchState: 'NOT_FETCHED', // "NOT_FETCHED" by default | one of "NOT_FETCHED", "FETCHING", "FETCHED", "FAILED"
+};
+
+export const productReducer = (state = productInitial, action) => {
     switch (action.type) {
-        case value:
-            break;
+        case ProductActions.setCategories:
+            return { ...state, categories: action.payload };
+        case ProductActions.setProductList:
+            return { ...state, productList: action.payload };
+
         default:
-            break;
+            return state;
     }
-}
+};
