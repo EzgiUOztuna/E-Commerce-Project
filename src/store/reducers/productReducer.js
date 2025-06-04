@@ -18,7 +18,7 @@ const productInitial = {
     fetchState: 'NOT_FETCHED', // "NOT_FETCHED" by default | one of "NOT_FETCHED", "FETCHING", "FETCHED", "FAILED"
 };
 
-export const productReducer = (state = productInitial, action) => {
+export const productReducer = (state = productInitial, action = {}) => {
     switch (action.type) {
         case ProductActions.setCategories:
             return { ...state, categories: action.payload };
