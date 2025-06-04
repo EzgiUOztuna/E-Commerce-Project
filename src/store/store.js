@@ -1,7 +1,10 @@
-import { legacy_createStore as createStore } from "redux";
+import { combineReducers, legacy_createStore as createStore } from "redux";
+import { clientReducer } from "./reducers/clientReducer";
+import { productReducer } from "./reducers/productReducer";
 
-const globalReducer = (state, action) => {
-    return state;
-}
+export const reducers = combineReducers({
+    clients: clientReducer,
+    products: productReducer,
+})
 
-export const store = createStore(globalReducer);
+export const store = createStore(reducers);
