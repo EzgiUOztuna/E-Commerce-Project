@@ -1,9 +1,4 @@
-export const ClientActions = {
-    setUser: 'SET_USER',
-    setRoles: 'SET_ROLES',
-    setTheme: 'SET_THEME',
-    setLanguage: 'SET_LANGUAGE',
-};
+import { SET_ROLES, SET_USER } from "../actions/clientActions";
 
 const clientInitial = {
     user: {},
@@ -16,9 +11,9 @@ const clientInitial = {
 
 export const clientReducer = (state = clientInitial, action = {}) => {
     switch (action.type) {
-        case ClientActions.setUser:
+        case SET_USER:
             return { ...state, user: action.payload };
-        case ClientActions.setRoles:
+        case SET_ROLES:
             return { ...state, roles: action.payload };
         // ⚠️ Diğerleri de gelecek
         default:
