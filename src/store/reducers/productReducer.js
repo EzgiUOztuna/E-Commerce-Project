@@ -1,12 +1,4 @@
-export const ProductActions = {
-    setCategories: 'SET_CATEGORIES',
-    setProductList: 'SET_PRODUCT_LIST',
-    setTotal: 'SET_TOTAL',
-    setFetchState: 'SET_FETCH_STATE',
-    setLimit: 'SET_LIMIT',
-    setOffset: 'SET_OFFSET',
-    setFilter: 'SET_FILTER'
-};
+import { SET_CATEGORIES, SET_PRODUCT_LIST } from "../actions/productActions";
 
 const productInitial = {
     categories: [],
@@ -20,9 +12,9 @@ const productInitial = {
 
 export const productReducer = (state = productInitial, action = {}) => {
     switch (action.type) {
-        case ProductActions.setCategories:
+        case SET_CATEGORIES:
             return { ...state, categories: action.payload };
-        case ProductActions.setProductList:
+        case SET_PRODUCT_LIST:
             return { ...state, productList: action.payload };
         // ⚠️ Diğerleri de gelecek
         default:
