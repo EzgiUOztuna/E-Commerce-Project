@@ -4,8 +4,12 @@ import InnerPages from './pages/InnerPages';
 import ProductDetailsPages from './pages/ProductDetailsPages';
 import ShopPages from './pages/ShopPages';
 import SignUpPage from './pages/SignUpPage';
+//import { useDispatch } from 'react-redux';
 
 function App() {
+
+  //const dispatch = useDispatch();
+
 
   return (
     <>
