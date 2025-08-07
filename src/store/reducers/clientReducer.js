@@ -12,9 +12,15 @@ const clientInitial = {
 export const clientReducer = (state = clientInitial, action = {}) => {
     switch (action.type) {
         case SET_USER:
-            return { ...state, user: action.payload };
+            return {
+                ...state,
+                user: action.payload
+            };
         case SET_ROLES:
-            return { ...state, roles: action.payload };
+            return {
+                ...state,
+                roles: action.payload
+            };
         // ⚠️ Diğerleri de gelecek
         default:
             return state;
