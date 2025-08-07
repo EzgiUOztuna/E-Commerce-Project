@@ -11,4 +11,4 @@ export const reducers = combineReducers({
     shoppingCart: shoppingCartReducer,
 })
 
-export const store = createStore(reducers, applyMiddleware(thunk, logger));
+export const myStore = createStore(reducers, applyMiddleware(thunk, logger));
