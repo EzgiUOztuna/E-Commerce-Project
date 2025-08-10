@@ -1,12 +1,12 @@
 import { SET_ROLES, SET_USER } from "../actions/clientActions";
 
 const clientInitial = {
-    user: {},
-    addressList: [],
-    creditCards: [],
-    roles: [],
-    theme: '',
-    language: '',
+    user: {}, //{Object}
+    addressList: [], //{Object Array}
+    creditCards: [], //{Object Array}
+    roles: [], //{Object Array}
+    theme: '', //{String}
+    language: '', //{String}
 }
 
 export const clientReducer = (state = clientInitial, action = {}) => {
