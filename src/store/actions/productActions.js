@@ -19,11 +19,17 @@ export const SET_FILTER = 'setFilter';
 export const SET_FETCH_STATE = 'setFetchState';
 
 
-export function setCategories(value) {
-    return { type: SET_CATEGORIES, payload: value };
+export function setCategories(categories) {
+    return {
+        type: SET_CATEGORIES,
+        payload: categories
+    };
 }
 
 // {String} | "NOT_FETCHED" by default | one of "NOT_FETCHED", "FETCHING", "FETCHED", "FAILED"
 export function setFetchState(value) {
-    return { type: SET_FETCH_STATE, payload: value };
+    return {
+        type: SET_FETCH_STATE,
+        payload: value
+    };
 }
